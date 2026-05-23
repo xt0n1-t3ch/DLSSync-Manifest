@@ -1,0 +1,49 @@
+name: validate
+
+on:
+  pull_request:
+    paths:
+      - "manifest.json"
+      - "manifest.schema.json"
+      - ".github/workflows/validate.yml"
+  push:
+    branches: [main]
+    paths:
+      - "manifest.json"
+      - "manifest.schema.json"
+      - ".github/workflows/validate.yml"
+  workflow_dispatch:
+
+jobs:
+  schema:
+    name: Validate manifest against schema
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Setup Node
+        uses: actions/setup-node@v5
+        with:
+          node-version: "22"
+
+      - name: ajv-cli validate (Draft 2020-12)
+        run: |
+          npx --yes ajv-cli@5 validate \
+            -s manifest.schema.json \
+            -d manifest.json \
+            --strict=false \
+            --spec=draft2020 \
+            --all-errors
+
+      - name: Probe public jsDelivr endpoint
+        run: |
+          set -euo pipefail
+          URL="https://cdn.jsdelivr.net/gh/${GITHUB_REPOSITORY}@main/manifest.json"
+          echo "Probing $URL"
+          status=$(curl -s -o /tmp/cdn.json -w "%{http_code}" "$URL" || echo "fail")
+          if [ "$status" = "200" ]; then
+            echo "jsDelivr returned 200 — CDN is live."
+            jq '.schema_version, (.vendors | length)' /tmp/cdn.json
+          else
+            echo "jsDelivr returned $status — CDN may be warming up (12h edge cache). Not failing."
+          fi

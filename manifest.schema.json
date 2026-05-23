@@ -1,0 +1,128 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cdn.jsdelivr.net/gh/xt0n1-t3ch/DLSSync-Manifest@main/manifest.schema.json",
+  "title": "DLSSync manifest",
+  "description": "Catalog of upscaler / frame-generation / reflex / DirectStorage DLLs consumed by https://github.com/xt0n1-t3ch/DLSSync. Source of truth for the manifest builder lives in crates/manifest-builder of the DLSSync repo. Do not hand-edit; CI rebuilds hourly from upstream sources.",
+  "type": "object",
+  "required": ["schema_version", "generated_at", "vendors"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": 2,
+      "description": "Bump only when consumers (dll-catalog crate) require a coordinated migration."
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "vendors": {
+      "type": "object",
+      "patternProperties": {
+        "^[a-z][a-z0-9_]*$": {
+          "type": "object",
+          "patternProperties": {
+            "^[a-z][a-z0-9_]*$": { "$ref": "#/$defs/FamilyEntry" }
+          },
+          "additionalProperties": false,
+          "minProperties": 1
+        }
+      },
+      "additionalProperties": false,
+      "minProperties": 1
+    },
+    "incompatible_games": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true,
+      "default": []
+    }
+  },
+  "$defs": {
+    "FamilyEntry": {
+      "type": "object",
+      "required": ["latest", "releases"],
+      "additionalProperties": false,
+      "properties": {
+        "latest": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Version string of the release the app should default to (must appear in releases[].version)."
+        },
+        "releases": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/Release" },
+          "minItems": 1
+        }
+      }
+    },
+    "Release": {
+      "type": "object",
+      "required": [
+        "version",
+        "version_packed",
+        "filename",
+        "sha256",
+        "size_bytes",
+        "signed",
+        "released_at",
+        "source",
+        "cdn_url"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "version": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Upstream version tag, leading 'v' stripped."
+        },
+        "version_packed": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "16-bit-per-component packed u64 (major<<48 | minor<<32 | build<<16 | patch). Used for ordering."
+        },
+        "filename": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9_.+-]+\\.dll$",
+          "description": "Canonical DLL filename, lowercase preferred."
+        },
+        "sha256": {
+          "type": "string",
+          "oneOf": [
+            { "pattern": "^[0-9a-f]{64}$", "description": "SHA-256 of the DLL bytes (post-extraction from upstream zip)." },
+            { "pattern": "^[0-9a-f]{32}$", "description": "MD5 fallback for entries sourced from beeradmoore/dlss-swapper, which only ships MD5." }
+          ]
+        },
+        "size_bytes": { "type": "integer", "minimum": 0 },
+        "signed": { "type": "boolean" },
+        "released_at": { "type": "string", "format": "date-time" },
+        "source": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Upstream identifier. URL for GitHub releases, 'nuget:pkg@ver' for NuGet, 'beeradmoore/dlss-swapper' for community archive."
+        },
+        "cdn_url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https://",
+          "description": "Direct download URL. Points to upstream GitHub release asset or NuGet flat-container. The manifest repo itself does NOT mirror DLL artifacts."
+        },
+        "release_notes": { "type": ["string", "null"] },
+        "signature_subject": {
+          "type": ["string", "null"],
+          "description": "Authenticode subject expected at install time. NVIDIA Corporation / Intel Corporation / Advanced Micro Devices, Inc. / Microsoft Corporation."
+        },
+        "channel": {
+          "type": "string",
+          "enum": ["stable", "experimental"],
+          "default": "stable"
+        },
+        "is_dev": { "type": "boolean", "default": false },
+        "min_driver": {
+          "type": ["string", "null"],
+          "description": "Minimum GPU driver version where this release is known good. Null = no constraint."
+        }
+      }
+    }
+  }
+}
