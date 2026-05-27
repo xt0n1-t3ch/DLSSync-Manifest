@@ -35,9 +35,47 @@
       "items": { "type": "string", "minLength": 1 },
       "uniqueItems": true,
       "default": []
+    },
+    "anticheat": {
+      "type": ["object", "null"],
+      "description": "Optional anti-cheat dataset distilled from AreWeAntiCheatYet, keyed by Steam appid (decimal string) and by normalized game name (lowercase, alphanumeric only). Consumed by the DLSSync detection resolver as the manifest layer; merged with the embedded snapshot and the opt-in live refresh.",
+      "additionalProperties": false,
+      "properties": {
+        "by_appid": {
+          "type": "object",
+          "patternProperties": {
+            "^[0-9]+$": { "$ref": "#/$defs/AntiCheatEntry" }
+          },
+          "additionalProperties": false
+        },
+        "by_name": {
+          "type": "object",
+          "patternProperties": {
+            "^[a-z0-9]+$": { "$ref": "#/$defs/AntiCheatEntry" }
+          },
+          "additionalProperties": false
+        }
+      }
     }
   },
   "$defs": {
+    "AntiCheatEntry": {
+      "type": "object",
+      "required": ["anticheats"],
+      "additionalProperties": false,
+      "properties": {
+        "anticheats": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "uniqueItems": true,
+          "minItems": 1
+        },
+        "status": {
+          "type": ["string", "null"],
+          "description": "AreWeAntiCheatYet status (e.g. Supported, Broken, Denied, Planned). Optional."
+        }
+      }
+    },
     "FamilyEntry": {
       "type": "object",
       "required": ["latest", "releases"],
