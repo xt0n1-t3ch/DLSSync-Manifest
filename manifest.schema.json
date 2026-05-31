@@ -159,6 +159,16 @@
         "min_driver": {
           "type": ["string", "null"],
           "description": "Minimum GPU driver version where this release is known good. Null = no constraint."
+        },
+        "hash_algorithm": {
+          "type": "string",
+          "enum": ["sha256", "md5"],
+          "default": "sha256",
+          "description": "Algorithm the sha256 field carries: sha256 for GitHub/NuGet sources, md5 for beeradmoore/dlss-swapper entries."
+        },
+        "zip_entry": {
+          "type": ["string", "null"],
+          "description": "Exact path of the wanted DLL inside a multi-copy SDK zip (e.g. bin/x64/sl.dlss_g.dll). Disambiguates the signed production binary from the development copy that shares the same filename. Null = match by basename."
         }
       }
     }
