@@ -44,6 +44,12 @@ jobs:
         working-directory: .dlssync-src
         run: cargo build --release -p manifest-builder
 
+      - name: Require signing key (refuse to publish unsigned)
+        env:
+          KEY: ${{ secrets.DLSSYNC_MANIFEST_SIGNING_KEY }}
+        run: |
+          [ -n "$KEY" ] || { echo "::error::DLSSYNC_MANIFEST_SIGNING_KEY is empty — refusing to publish an unsigned manifest"; exit 1; }
+
       - name: Run manifest-builder (emits manifest.json + manifest.json.sig)
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -66,9 +72,27 @@ jobs:
             --spec=draft2020 \
             --all-errors
 
+      - name: Verify signature against production public key
+        run: |
+          cat > verify-sig.mjs <<'EOF'
+          import { readFileSync } from "node:fs";
+          const pk = Buffer.from("e9dd0828f9ee5ecb72e0a811723a79c6e5373ca1c20bd5b255d68a2b3928fcd3", "hex");
+          const b64u = (b) => b.toString("base64").replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "");
+          const vk = await crypto.subtle.importKey("jwk", { kty: "OKP", crv: "Ed25519", x: b64u(pk) }, { name: "Ed25519" }, false, ["verify"]);
+          const m = readFileSync("manifest.json");
+          const s = Buffer.from(readFileSync("manifest.json.sig", "utf8").trim(), "hex");
+          if (!(await crypto.subtle.verify({ name: "Ed25519" }, vk, s, m))) {
+            console.error("::error::manifest.json.sig does not verify against the production public key");
+            process.exit(1);
+          }
+          console.log("manifest.json.sig verifies against the production public key");
+          EOF
+          node verify-sig.mjs
+          rm -f verify-sig.mjs
+
       - name: Commit and push if changed
         run: |
-          if git diff --quiet -- manifest.json; then
+          if git diff --quiet -- manifest.json manifest.json.sig; then
             echo "Manifest unchanged — no commit"
             exit 0
           fi
