@@ -70,6 +70,12 @@
           "uniqueItems": true,
           "minItems": 1
         },
+        "anti_tamper": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "uniqueItems": true,
+          "description": "Anti-tamper / heavy DRM engines (Denuvo, Arxan, VMProtect). May be empty."
+        },
         "status": {
           "type": ["string", "null"],
           "description": "AreWeAntiCheatYet status (e.g. Supported, Broken, Denied, Planned). Optional."
