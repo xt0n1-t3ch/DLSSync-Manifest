@@ -56,6 +56,13 @@
           "additionalProperties": false
         }
       }
+    },
+    "anti_cheat_binaries": {
+      "type": "array",
+      "description": "Optional manifest-supplied anti-cheat binary filename signatures. DLSSync merges these rows over the compiled detector table; the field is omitted when empty.",
+      "items": { "$ref": "#/$defs/AntiCheatBinary" },
+      "uniqueItems": true,
+      "default": []
     }
   },
   "$defs": {
@@ -78,6 +85,23 @@
         "status": {
           "type": ["string", "null"],
           "description": "AreWeAntiCheatYet status (e.g. Supported, Broken, Denied, Planned). Optional."
+        }
+      }
+    },
+    "AntiCheatBinary": {
+      "type": "object",
+      "required": ["needle", "name"],
+      "additionalProperties": false,
+      "properties": {
+        "needle": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Lowercase filename substring matched against files on disk."
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Canonical anti-cheat engine name reported by DLSSync."
         }
       }
     },

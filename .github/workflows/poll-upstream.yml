@@ -8,6 +8,8 @@ on:
     branches: [main]
     paths:
       - ".github/workflows/poll-upstream.yml"
+      - ".github/scripts/verify-manifest-signature.mjs"
+      - "manifest.schema.json"
 
 permissions:
   contents: write
@@ -65,7 +67,8 @@ jobs:
 
       - name: Validate manifest against schema
         run: |
-          npx --yes ajv-cli@5 validate \
+          npx --yes -p ajv-cli@5.0.0 -p ajv-formats@3.0.1 ajv validate \
+            -c ajv-formats \
             -s manifest.schema.json \
             -d manifest.json \
             --strict=false \
@@ -73,22 +76,7 @@ jobs:
             --all-errors
 
       - name: Verify signature against production public key
-        run: |
-          cat > verify-sig.mjs <<'EOF'
-          import { readFileSync } from "node:fs";
-          const pk = Buffer.from("e9dd0828f9ee5ecb72e0a811723a79c6e5373ca1c20bd5b255d68a2b3928fcd3", "hex");
-          const b64u = (b) => b.toString("base64").replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "");
-          const vk = await crypto.subtle.importKey("jwk", { kty: "OKP", crv: "Ed25519", x: b64u(pk) }, { name: "Ed25519" }, false, ["verify"]);
-          const m = readFileSync("manifest.json");
-          const s = Buffer.from(readFileSync("manifest.json.sig", "utf8").trim(), "hex");
-          if (!(await crypto.subtle.verify({ name: "Ed25519" }, vk, s, m))) {
-            console.error("::error::manifest.json.sig does not verify against the production public key");
-            process.exit(1);
-          }
-          console.log("manifest.json.sig verifies against the production public key");
-          EOF
-          node verify-sig.mjs
-          rm -f verify-sig.mjs
+        run: node .github/scripts/verify-manifest-signature.mjs manifest.json manifest.json.sig
 
       - name: Commit and push if changed
         run: |

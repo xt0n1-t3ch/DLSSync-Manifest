@@ -1,0 +1,9 @@
+* text=auto
+.gitattributes text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.mjs text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+manifest.json text eol=lf
+manifest.json.sig -text
