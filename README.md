@@ -4,11 +4,14 @@ DLL catalog consumed by [DLSSync](https://github.com/xt0n1-t3ch/DLSSync) — an 
 
 This repository holds nothing but the catalog data. The application code, manifest builder, and tests live in the [DLSSync](https://github.com/xt0n1-t3ch/DLSSync) repository.
 
+Current app release line: `v1.6.9`. The manifest schema remains `schema_version: 2`; v1.6.9 only hardens validation, signing, and the generated catalog shape.
+
 ## What's in here
 
 | File | Purpose |
 |---|---|
 | `manifest.json` | Canonical catalog. Generated hourly from upstream sources by CI. Do not hand-edit. |
+| `manifest.json.sig` | Detached Ed25519 signature over the exact `manifest.json` bytes. |
 | `manifest.schema.json` | JSON Schema (Draft 2020-12) that the manifest must validate against. |
 | `.github/workflows/poll-upstream.yml` | Hourly cron that rebuilds `manifest.json` via the Rust `manifest-builder` from the DLSSync app repo. |
 | `.github/workflows/validate.yml` | Schema validation on every push / PR. |
@@ -60,6 +63,8 @@ The manifest validates against `manifest.schema.json` (Draft 2020-12). The curre
 }
 ```
 
+Optional top-level `anti_cheat_binaries` entries carry manifest-supplied anti-cheat binary filename signatures. The DLSSync builder omits the field when it is empty, and the app treats a missing field as an empty list for backward compatibility.
+
 ## Why a separate repository
 
 1. The manifest rebuilds on an hourly cron. Keeping it in the app repo would pollute the git log of the application code with hundreds of `chore: rebuild manifest` commits.
@@ -79,7 +84,8 @@ cargo run --release -p manifest-builder -- --out manifest.json
 Then validate against the schema:
 
 ```pwsh
-npx --yes ajv-cli@5 validate -s manifest.schema.json -d manifest.json --strict=false --spec=draft2020 --all-errors
+npx --yes -p ajv-cli@5.0.0 -p ajv-formats@3.0.1 ajv validate -c ajv-formats -s manifest.schema.json -d manifest.json --strict=false --spec=draft2020 --all-errors
+node .github/scripts/verify-manifest-signature.mjs manifest.json manifest.json.sig
 ```
 
 ## License
