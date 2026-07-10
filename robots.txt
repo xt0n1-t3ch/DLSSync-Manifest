@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://xt0n1-t3ch.github.io/DLSSync-Manifest/sitemap.xml

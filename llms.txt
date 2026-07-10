@@ -1,0 +1,11 @@
+# DLSSync Manifest
+
+> Public, Ed25519-signed catalog for DLSS, FSR, XeSS, Streamline, Reflex, and DirectStorage runtime metadata.
+
+- Catalog: https://xt0n1-t3ch.github.io/DLSSync-Manifest/manifest.json
+- Detached signature: https://xt0n1-t3ch.github.io/DLSSync-Manifest/manifest.json.sig
+- JSON Schema: https://xt0n1-t3ch.github.io/DLSSync-Manifest/manifest.schema.json
+- Source: https://github.com/xt0n1-t3ch/DLSSync-Manifest
+- Application: https://github.com/xt0n1-t3ch/DLSSync
+
+DLSSync does not rehost runtime binaries. Catalog entries retain declared provenance, expected hashes, publisher metadata, and their upstream or community-archive download locations.

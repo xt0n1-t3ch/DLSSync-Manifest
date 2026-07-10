@@ -8,6 +8,9 @@ on:
       - "manifest.json"
       - "manifest.json.sig"
       - "manifest.schema.json"
+      - "package.json"
+      - "package-lock.json"
+      - "scripts/**"
       - ".github/workflows/validate.yml"
   push:
     branches: [main]
@@ -17,6 +20,9 @@ on:
       - "manifest.json"
       - "manifest.json.sig"
       - "manifest.schema.json"
+      - "package.json"
+      - "package-lock.json"
+      - "scripts/**"
       - ".github/workflows/validate.yml"
   workflow_dispatch:
 
@@ -35,18 +41,13 @@ jobs:
         with:
           node-version: "22"
 
-      - name: ajv-cli validate (Draft 2020-12 + formats)
-        run: |
-          npx --yes -p ajv-cli@5.0.0 -p ajv-formats@3.0.1 ajv validate \
-            -c ajv-formats \
-            -s manifest.schema.json \
-            -d manifest.json \
-            --strict=false \
-            --spec=draft2020 \
-            --all-errors
+      - run: npm ci
+
+      - name: Validate schema and semantic invariants
+        run: npm run validate && npm run semantic-diff
 
       - name: Verify signature against production public key
-        run: node .github/scripts/verify-manifest-signature.mjs manifest.json manifest.json.sig
+        run: npm run verify-signature
 
       - name: Probe public jsDelivr endpoint
         run: |

@@ -58,6 +58,7 @@ jobs:
           DLSSYNC_MANIFEST_SIGNING_KEY: ${{ secrets.DLSSYNC_MANIFEST_SIGNING_KEY }}
           RUST_LOG: info
         run: |
+          cp manifest.json /tmp/manifest-before.json
           .dlssync-src/target/release/manifest-builder --out manifest.json
 
       - name: Setup Node (for ajv-cli)
@@ -65,18 +66,13 @@ jobs:
         with:
           node-version: "22"
 
-      - name: Validate manifest against schema
-        run: |
-          npx --yes -p ajv-cli@5.0.0 -p ajv-formats@3.0.1 ajv validate \
-            -c ajv-formats \
-            -s manifest.schema.json \
-            -d manifest.json \
-            --strict=false \
-            --spec=draft2020 \
-            --all-errors
+      - run: npm ci
+
+      - name: Validate schema and semantic delta
+        run: npm run validate && npm run semantic-diff -- /tmp/manifest-before.json manifest.json
 
       - name: Verify signature against production public key
-        run: node .github/scripts/verify-manifest-signature.mjs manifest.json manifest.json.sig
+        run: npm run verify-signature
 
       - name: Commit and push if changed
         run: |

@@ -3,6 +3,9 @@ dist/
 .tmp/
 *.log
 .dlssync-src/
+__pycache__/
+*.pyc
+.codegraph/
 
 CLAUDE.md
 claude.md

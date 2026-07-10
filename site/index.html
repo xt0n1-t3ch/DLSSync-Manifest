@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>DLSSync Signed Catalog — DLSS, FSR, XeSS and DirectStorage</title>
+  <meta name="description" content="Live, Ed25519-signed catalog of DLSS, FSR, XeSS, Streamline, Reflex and DirectStorage DLL metadata with declared provenance and per-entry hashes.">
+  <link rel="canonical" href="https://xt0n1-t3ch.github.io/DLSSync-Manifest/">
+  <meta property="og:title" content="DLSSync Signed Runtime Catalog">
+  <meta property="og:description" content="Signed runtime metadata with declared provenance, per-entry hashes and Authenticode enforcement, verified by schema validation and Ed25519.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://xt0n1-t3ch.github.io/DLSSync-Manifest/">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Dataset","name":"DLSSync Signed Runtime Catalog","description":"Signed metadata for DLSS, FSR, XeSS and DirectStorage runtime releases","license":"https://www.apache.org/licenses/LICENSE-2.0","isAccessibleForFree":true,"distribution":{"@type":"DataDownload","encodingFormat":"application/json","contentUrl":"https://xt0n1-t3ch.github.io/DLSSync-Manifest/manifest.json"}}</script>
+  <style>html{color-scheme:dark;font-family:Inter,system-ui,sans-serif;background:#090b10;color:#f5f7fb}body{max-width:1080px;margin:auto;padding:64px 24px}a{color:#8ac7ff}.hero{padding:40px;border:1px solid #293142;border-radius:24px;background:radial-gradient(circle at top right,#123c4d,#11151e 55%)}h1{font-size:clamp(2.4rem,7vw,5rem);line-height:.95;margin:.25em 0}.proof{color:#5ee2aa;font-weight:700;text-transform:uppercase;letter-spacing:.12em}.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin:24px 0}.card{padding:18px;border:1px solid #293142;border-radius:16px;background:#11151e}.card strong{display:block;font-size:1.8rem}.card span{color:#aeb7c8}.trust{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}.mono{font-family:ui-monospace,monospace;font-size:.8rem;overflow-wrap:anywhere}</style>
+</head>
+<body>
+  <main>
+    <section class="hero"><span class="proof">Ed25519 verified public catalog</span><h1>Know every byte before it moves.</h1><p>DLSSync indexes runtime releases from their upstream sources, signs the catalog, and enforces hash plus publisher identity at apply time.</p><p><a href="manifest.json">Open manifest</a> · <a href="manifest.json.sig">Signature</a> · <a href="manifest.schema.json">Schema</a> · <a href="https://github.com/xt0n1-t3ch/DLSSync">DLSSync source</a></p></section>
+    <section class="stats" aria-label="Catalog statistics"><div class="card"><strong id="vendors">—</strong><span>vendors</span></div><div class="card"><strong id="families">—</strong><span>runtime families</span></div><div class="card"><strong id="releases">—</strong><span>verified release records</span></div><div class="card"><strong id="freshness">—</strong><span>generated</span></div></section>
+    <section class="trust"><div class="card"><h2>Detached signature</h2><p>The app verifies the exact manifest bytes against a pinned Ed25519 public key before persistence.</p></div><div class="card"><h2>Declared provenance</h2><p>Catalog records point to upstream vendor releases or the labeled community archive. This repository does not rehost DLL binaries.</p></div><div class="card"><h2>Apply-time enforcement</h2><p>Expected hashes and Authenticode publisher identity are checked before a game file changes.</p></div><div class="card"><h2>Independent contract</h2><p class="mono">npm ci && npm run validate && npm run verify-signature</p></div></section>
+  </main>
+  <script type="module">const m=await fetch('./manifest.json').then(r=>r.json());const f=Object.values(m.vendors).flatMap(v=>Object.values(v));vendors.textContent=Object.keys(m.vendors).length;families.textContent=f.length;releases.textContent=f.reduce((n,x)=>n+x.releases.length,0);freshness.textContent=new Date(m.generated_at).toLocaleString();</script>
+</body>
+</html>

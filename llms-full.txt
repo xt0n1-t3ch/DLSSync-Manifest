@@ -1,0 +1,27 @@
+# DLSSync signed runtime catalog
+
+DLSSync-Manifest is the public catalog contract consumed by DLSSync. It indexes NVIDIA DLSS and Streamline, AMD FidelityFX, Intel XeSS/XeLL, and Microsoft DirectStorage releases.
+
+## Trust model
+
+1. CI builds catalog metadata from declared upstream sources.
+2. `manifest.schema.json` validates the complete document.
+3. CI rejects empty output, timestamp regression, and unexpected mass removal.
+4. `manifest.json.sig` is an Ed25519 signature over the exact catalog bytes.
+5. DLSSync verifies the detached signature before persistence.
+6. Downloads come from upstream vendor or project locations rather than this repository.
+7. DLSSync verifies the expected file hash and Authenticode publisher before applying a DLL.
+
+Production Ed25519 public key (hex): `e9dd0828f9ee5ecb72e0a811723a79c6e5373ca1c20bd5b255d68a2b3928fcd3`.
+
+## Independent verification
+
+Run `npm ci && npm run validate && npm run verify-signature && npm run semantic-diff` from the repository root.
+
+## Machine-readable endpoints
+
+- `/manifest.json`
+- `/manifest.json.sig`
+- `/manifest.schema.json`
+- `/llms.txt`
+- `/llms-full.txt`

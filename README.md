@@ -1,20 +1,38 @@
-# DLSSync-Manifest
+# DLSSync Signed Runtime Catalog
+
+[![Catalog freshness](https://img.shields.io/github/last-commit/xt0n1-t3ch/DLSSync-Manifest/main?label=catalog%20freshness)](https://github.com/xt0n1-t3ch/DLSSync-Manifest/commits/main)
+[![Schema and signature](https://github.com/xt0n1-t3ch/DLSSync-Manifest/actions/workflows/validate.yml/badge.svg)](https://github.com/xt0n1-t3ch/DLSSync-Manifest/actions/workflows/validate.yml)
+[![Ed25519](https://img.shields.io/badge/catalog-Ed25519%20signed-19c37d)](manifest.json.sig)
+[![JSON Schema 2020-12](https://img.shields.io/badge/schema-2020--12-5b8cff)](manifest.schema.json)
+[![License](https://img.shields.io/github/license/xt0n1-t3ch/DLSSync-Manifest)](LICENSE)
 
 DLL catalog consumed by [DLSSync](https://github.com/xt0n1-t3ch/DLSSync) — an open-source Windows updater that keeps DLSS, FSR, XeSS and DirectStorage DLLs in sync with NVIDIA, AMD, Intel and Microsoft publisher releases.
 
 This repository holds nothing but the catalog data. The application code, manifest builder, and tests live in the [DLSSync](https://github.com/xt0n1-t3ch/DLSSync) repository.
 
-Current app release line: `v1.6.9`. The manifest schema remains `schema_version: 2`; v1.6.9 only hardens validation, signing, and the generated catalog shape.
+Current app release line: `v1.7.0`. The public manifest remains `schema_version: 2` and is independently verifiable without installing DLSSync.
+
+## Why this catalog is different
+
+- **Detached Ed25519 signature:** a CDN cannot replace both payload and hash metadata without the private signing key.
+- **Exact-byte verification:** the signature covers the precise `manifest.json` bytes cached by the application.
+- **Declared provenance:** every release retains its source and download URL; binaries are never hosted in this repository.
+- **Apply-time checks:** DLSSync verifies the expected file hash and requires the declared Authenticode publisher before changing a game.
+- **Atomic recovery:** an invalid, empty, older, or unsigned refresh never replaces the last trusted catalog.
+- **Public contract:** schema, signing key, verification script, semantic-diff gate, and live catalog page are all inspectable.
+
+[Browse the live catalog](https://xt0n1-t3ch.github.io/DLSSync-Manifest/) or read the compact [`llms.txt`](llms.txt) index.
 
 ## What's in here
 
 | File | Purpose |
 |---|---|
-| `manifest.json` | Canonical catalog. Generated hourly from upstream sources by CI. Do not hand-edit. |
+| `manifest.json` | Canonical catalog. Generated hourly from declared upstream sources by CI. Do not hand-edit. |
 | `manifest.json.sig` | Detached Ed25519 signature over the exact `manifest.json` bytes. |
 | `manifest.schema.json` | JSON Schema (Draft 2020-12) that the manifest must validate against. |
 | `.github/workflows/poll-upstream.yml` | Hourly cron that rebuilds `manifest.json` via the Rust `manifest-builder` from the DLSSync app repo. |
-| `.github/workflows/validate.yml` | Schema validation on every push / PR. |
+| `.github/workflows/validate.yml` | Schema, signature, and semantic validation on every push / PR. |
+| `package.json` | Pinned validator toolchain used locally and in CI. |
 
 ## Public endpoint
 
@@ -38,7 +56,22 @@ DLSSync consumes this URL by default. Override at runtime via the `DLSSYNC_MANIF
 | AMD | FidelityFX SDK (`fsr_upscaler`, `fsr_fg`, `fsr_loader`) | [GPUOpen-LibrariesAndSDKs/FidelityFX-SDK](https://github.com/GPUOpen-LibrariesAndSDKs/FidelityFX-SDK/releases) | `amd_fidelityfx_*.dll`, `ffx_fsr3upscaler_x64.dll`, `ffx_frameinterpolation_x64.dll` |
 | Microsoft | DirectStorage (`direct_storage`, `direct_storage_core`) | [Microsoft.Direct3D.DirectStorage on NuGet](https://www.nuget.org/packages/Microsoft.Direct3D.DirectStorage) | `dstorage.dll`, `dstoragecore.dll` |
 
-The `cdn_url` field on every release points to the upstream GitHub release asset or NuGet flat-container URL. This repo does **not** mirror DLL binaries — DLSSync downloads them directly from the publisher, verifies the SHA-256 against the manifest, and verifies the Authenticode publisher subject at install time.
+The `cdn_url` field on every release points to its declared upstream asset. This repo does **not** mirror DLL binaries. Historical NVIDIA DLSS records, along with much of the AMD FSR and Intel XeSS back-catalog, currently use the established `dlss-swapper` community archive (MD5-hashed) because those vendors do not publish every historical redistributable as a stable first-party asset; those entries are labeled by source rather than being presented as vendor-direct. DLSSync still verifies their recorded hash and Authenticode publisher at install time.
+
+## Independent verification
+
+```pwsh
+npm ci
+npm run validate
+npm run verify-signature
+npm run semantic-diff
+```
+
+Production Ed25519 public key:
+
+```text
+e9dd0828f9ee5ecb72e0a811723a79c6e5373ca1c20bd5b255d68a2b3928fcd3
+```
 
 ## Schema
 
