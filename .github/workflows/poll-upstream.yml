@@ -36,12 +36,6 @@ jobs:
       - name: Setup Rust toolchain
         uses: dtolnay/rust-toolchain@stable
 
-      - name: Rust cache
-        uses: Swatinem/rust-cache@v2
-        with:
-          workspaces: .dlssync-src -> target
-          shared-key: manifest-builder
-
       - name: Build manifest-builder
         working-directory: .dlssync-src
         run: cargo build --release -p manifest-builder
