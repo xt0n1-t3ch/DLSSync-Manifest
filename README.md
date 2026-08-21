@@ -8,7 +8,7 @@
 
 DLL catalog consumed by [DLSSync](https://github.com/xt0n1-t3ch/DLSSync) — an open-source Windows updater that keeps DLSS, FSR, XeSS and DirectStorage DLLs in sync with NVIDIA, AMD, Intel and Microsoft publisher releases.
 
-This repository holds nothing but the catalog data. The application code, manifest builder, and tests live in the [DLSSync](https://github.com/xt0n1-t3ch/DLSSync) repository.
+This repository holds the catalog data plus the validator scripts that gate it. The application code, manifest builder, and their tests live in the [DLSSync](https://github.com/xt0n1-t3ch/DLSSync) repository.
 
 Current app release line: `v1.7.0`. The public manifest remains `schema_version: 2` and is independently verifiable without installing DLSSync.
 
@@ -32,6 +32,8 @@ Current app release line: `v1.7.0`. The public manifest remains `schema_version:
 | `manifest.schema.json` | JSON Schema (Draft 2020-12) that the manifest must validate against. |
 | `.github/workflows/poll-upstream.yml` | Hourly cron that rebuilds `manifest.json` via the Rust `manifest-builder` from the DLSSync app repo. |
 | `.github/workflows/validate.yml` | Schema, signature, and semantic validation on every push / PR. |
+| `scripts/lib/` | Validator logic (catalog diff, schema validation, signature verification) shared by the CLI entrypoints. |
+| `test/` | Unit tests for `scripts/lib/` plus CLI-level tests for the validator entrypoints. |
 | `package.json` | Pinned validator toolchain used locally and in CI. |
 
 ## Public endpoint
@@ -65,6 +67,13 @@ npm ci
 npm run validate
 npm run verify-signature
 npm run semantic-diff
+```
+
+Validator unit tests (`node:test`, no extra dependencies):
+
+```pwsh
+npm test
+npm run test:coverage
 ```
 
 Production Ed25519 public key:

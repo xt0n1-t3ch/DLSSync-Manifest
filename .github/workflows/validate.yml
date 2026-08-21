@@ -11,6 +11,7 @@ on:
       - "package.json"
       - "package-lock.json"
       - "scripts/**"
+      - "test/**"
       - ".github/workflows/validate.yml"
   push:
     branches: [main]
@@ -23,6 +24,7 @@ on:
       - "package.json"
       - "package-lock.json"
       - "scripts/**"
+      - "test/**"
       - ".github/workflows/validate.yml"
   workflow_dispatch:
 
@@ -43,6 +45,9 @@ jobs:
           package-manager-cache: false
 
       - run: npm ci
+
+      - name: Unit tests
+        run: npm test
 
       - name: Validate schema and semantic invariants
         run: npm run validate && npm run semantic-diff
