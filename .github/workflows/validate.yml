@@ -4,6 +4,7 @@ on:
   pull_request:
     paths:
       - ".gitattributes"
+      - ".github/actions/verify-manifest/action.yml"
       - ".github/scripts/verify-manifest-signature.mjs"
       - "manifest.json"
       - "manifest.json.sig"
@@ -16,6 +17,7 @@ on:
     branches: [main]
     paths:
       - ".gitattributes"
+      - ".github/actions/verify-manifest/action.yml"
       - ".github/scripts/verify-manifest-signature.mjs"
       - "manifest.json"
       - "manifest.json.sig"
@@ -36,19 +38,8 @@ jobs:
     steps:
       - uses: actions/checkout@v5
 
-      - name: Setup Node
-        uses: actions/setup-node@v5
-        with:
-          node-version: "22"
-          package-manager-cache: false
-
-      - run: npm ci
-
-      - name: Validate schema and semantic invariants
-        run: npm run validate && npm run semantic-diff
-
-      - name: Verify signature against production public key
-        run: npm run verify-signature
+      - name: Validate schema, semantic invariants and signature
+        uses: ./.github/actions/verify-manifest
 
       - name: Probe public jsDelivr endpoint
         run: |
