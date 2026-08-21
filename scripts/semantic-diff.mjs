@@ -1,8 +1,8 @@
-import { readFileSync } from "node:fs";
+import { readJson } from "./read-json.mjs";
 
 const beforePath = process.argv[2];
 const afterPath = process.argv[3] ?? "manifest.json";
-const after = JSON.parse(readFileSync(afterPath, "utf8"));
+const after = readJson(afterPath);
 
 function releases(manifest) {
   const result = new Map();
@@ -23,8 +23,18 @@ if (!beforePath) {
   process.exit(0);
 }
 
-const before = JSON.parse(readFileSync(beforePath, "utf8"));
-if (Date.parse(after.generated_at) < Date.parse(before.generated_at)) {
+const before = readJson(beforePath);
+const afterGeneratedAt = Date.parse(after.generated_at);
+const beforeGeneratedAt = Date.parse(before.generated_at);
+if (Number.isNaN(afterGeneratedAt)) {
+  console.error(`::error::invalid generated_at in ${afterPath}: ${after.generated_at}`);
+  process.exit(1);
+}
+if (Number.isNaN(beforeGeneratedAt)) {
+  console.error(`::error::invalid generated_at in ${beforePath}: ${before.generated_at}`);
+  process.exit(1);
+}
+if (afterGeneratedAt < beforeGeneratedAt) {
   throw new Error(`generated_at regressed: ${before.generated_at} -> ${after.generated_at}`);
 }
 const previous = releases(before);
@@ -36,3 +46,8 @@ if (removalRatio > 0.15 && process.env.ALLOW_LARGE_CATALOG_REMOVAL !== "1") {
   throw new Error(`refusing ${(removalRatio * 100).toFixed(1)}% release removal without ALLOW_LARGE_CATALOG_REMOVAL=1`);
 }
 console.log(JSON.stringify({ before: previous.size, after: next.size, added: added.length, removed: removed.length, changed: changed.length }));
+if (changed.length > 0) {
+  const keys = changed.slice(0, 20).map(([key]) => key);
+  const remaining = changed.length - keys.length;
+  console.warn(`::warning::hash changed for published release keys: ${keys.join(", ")}${remaining > 0 ? ` (+${remaining} more)` : ""}`);
+}
