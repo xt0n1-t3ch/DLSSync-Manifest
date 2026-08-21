@@ -23,6 +23,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
+        with:
+          persist-credentials: false
       - run: cp manifest.json manifest.json.sig manifest.schema.json llms.txt llms-full.txt robots.txt sitemap.xml site/
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
