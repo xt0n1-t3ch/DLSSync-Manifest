@@ -8,6 +8,7 @@ on:
     branches: [main]
     paths:
       - ".github/workflows/poll-upstream.yml"
+      - ".github/actions/verify-manifest/action.yml"
       - ".github/scripts/verify-manifest-signature.mjs"
       - "manifest.schema.json"
 
@@ -55,19 +56,10 @@ jobs:
           cp manifest.json /tmp/manifest-before.json
           .dlssync-src/target/release/manifest-builder --out manifest.json
 
-      - name: Setup Node (for ajv-cli)
-        uses: actions/setup-node@v5
+      - name: Validate schema, semantic delta and signature
+        uses: ./.github/actions/verify-manifest
         with:
-          node-version: "22"
-          package-manager-cache: false
-
-      - run: npm ci
-
-      - name: Validate schema and semantic delta
-        run: npm run validate && npm run semantic-diff -- /tmp/manifest-before.json manifest.json
-
-      - name: Verify signature against production public key
-        run: npm run verify-signature
+          before-manifest: /tmp/manifest-before.json
 
       - name: Commit and push if changed
         run: |

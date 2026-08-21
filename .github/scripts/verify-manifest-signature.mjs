@@ -1,13 +1,12 @@
-import { readFileSync } from "node:fs";
+import { fail, readBytes, readText } from "../../scripts/lib/manifest-io.mjs";
 
 const publicKeyHex = "e9dd0828f9ee5ecb72e0a811723a79c6e5373ca1c20bd5b255d68a2b3928fcd3";
 const manifestPath = process.argv[2] ?? "manifest.json";
 const signaturePath = process.argv[3] ?? `${manifestPath}.sig`;
-const signatureHex = readFileSync(signaturePath, "utf8").trim();
+const signatureHex = readText(signaturePath).trim();
 
 if (!/^[0-9a-fA-F]{128}$/.test(signatureHex)) {
-  console.error(`::error::${signaturePath} must be a 128-character Ed25519 signature hex string`);
-  process.exit(1);
+  fail(`${signaturePath} must be a 128-character Ed25519 signature hex string`);
 }
 
 const publicKey = Buffer.from(publicKeyHex, "hex");
@@ -20,12 +19,11 @@ const verificationKey = await crypto.subtle.importKey(
   false,
   ["verify"],
 );
-const manifest = readFileSync(manifestPath);
+const manifest = readBytes(manifestPath);
 const signature = Buffer.from(signatureHex, "hex");
 
 if (!(await crypto.subtle.verify({ name: "Ed25519" }, verificationKey, signature, manifest))) {
-  console.error(`::error::${signaturePath} does not verify ${manifestPath} against the production public key`);
-  process.exit(1);
+  fail(`${signaturePath} does not verify ${manifestPath} against the production public key`);
 }
 
 console.log(`${signaturePath} verifies ${manifestPath} against the production public key`);
