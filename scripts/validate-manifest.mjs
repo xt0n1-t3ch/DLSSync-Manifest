@@ -9,7 +9,7 @@ const manifest = readJson(manifestPath);
 const ajv = new Ajv2020({ allErrors: true, strict: false });
 addFormats(ajv);
 if (!ajv.validate(schema, manifest)) {
-  console.error(ajv.errorsText(ajv.errors, { separator: "\n" }));
+  console.error(`::error::manifest validation failed for ${manifestPath}: ${ajv.errorsText(ajv.errors, { separator: "\n" })}`);
   process.exit(1);
 }
 console.log(`manifest schema valid: ${Object.keys(manifest.vendors).length} vendors`);
