@@ -44,6 +44,7 @@ jobs:
         env:
           KEY: ${{ secrets.DLSSYNC_MANIFEST_SIGNING_KEY }}
         run: |
+          set -euo pipefail
           [ -n "$KEY" ] || { echo "::error::DLSSYNC_MANIFEST_SIGNING_KEY is empty — refusing to publish an unsigned manifest"; exit 1; }
 
       - name: Run manifest-builder (emits manifest.json + manifest.json.sig)
@@ -52,6 +53,7 @@ jobs:
           DLSSYNC_MANIFEST_SIGNING_KEY: ${{ secrets.DLSSYNC_MANIFEST_SIGNING_KEY }}
           RUST_LOG: info
         run: |
+          set -euo pipefail
           cp manifest.json /tmp/manifest-before.json
           .dlssync-src/target/release/manifest-builder --out manifest.json
 
@@ -71,6 +73,7 @@ jobs:
 
       - name: Commit and push if changed
         run: |
+          set -euo pipefail
           if git diff --quiet -- manifest.json manifest.json.sig; then
             echo "Manifest unchanged — no commit"
             exit 0

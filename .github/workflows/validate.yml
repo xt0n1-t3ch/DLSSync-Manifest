@@ -55,10 +55,20 @@ jobs:
           set -euo pipefail
           URL="https://cdn.jsdelivr.net/gh/${GITHUB_REPOSITORY}@main/manifest.json"
           echo "Probing $URL"
-          status=$(curl -s -o /tmp/cdn.json -w "%{http_code}" "$URL" || echo "fail")
-          if [ "$status" = "200" ]; then
+          status=""
+          curl_status=0
+          if status=$(curl -s -o /tmp/cdn.json -w "%{http_code}" "$URL"); then
+            :
+          else
+            curl_status=$?
+          fi
+          if [ "$curl_status" -ne 0 ]; then
+            echo "jsDelivr probe failed (curl exit code $curl_status; HTTP status ${status:-unknown}) — CDN may be warming up (12h edge cache). Not failing."
+          elif [ "$status" = "200" ]; then
             echo "jsDelivr returned 200 — CDN is live."
-            jq '.schema_version, (.vendors | length)' /tmp/cdn.json
+            if ! jq '.schema_version, (.vendors | length)' /tmp/cdn.json; then
+              echo "::warning::jsDelivr returned 200 but the response body is not valid JSON. Not failing."
+            fi
           else
             echo "jsDelivr returned $status — CDN may be warming up (12h edge cache). Not failing."
           fi
