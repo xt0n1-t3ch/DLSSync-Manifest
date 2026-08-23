@@ -171,8 +171,8 @@
         "cdn_url": {
           "type": "string",
           "format": "uri",
-          "pattern": "^https://",
-          "description": "Direct download URL. Points to upstream GitHub release asset or NuGet flat-container. The manifest repo itself does NOT mirror DLL artifacts."
+          "pattern": "^https://[A-Za-z0-9][A-Za-z0-9.-]*(:[0-9]{1,5})?/[^\\\\\\s]*$",
+          "description": "Direct download URL. HTTPS with a bare hostname authority: no embedded credentials (userinfo), no backslashes and no whitespace, so consumers cannot be redirected by host-confusion tricks. Points to upstream GitHub release asset or NuGet flat-container. The manifest repo itself does NOT mirror DLL artifacts."
         },
         "release_notes": { "type": ["string", "null"] },
         "signature_subject": {
