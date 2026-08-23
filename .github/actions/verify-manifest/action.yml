@@ -1,0 +1,42 @@
+name: Verify manifest
+description: Validate manifest.json against the schema, gate semantic catalog changes, and verify the detached Ed25519 signature.
+
+inputs:
+  node-version:
+    description: Node version used to run the pinned validator toolchain.
+    required: false
+    default: "22"
+  before-manifest:
+    description: Optional path to the previous manifest, enabling the semantic delta gate.
+    required: false
+    default: ""
+
+runs:
+  using: composite
+  steps:
+    - name: Setup Node
+      uses: actions/setup-node@v5
+      with:
+        node-version: ${{ inputs.node-version }}
+        package-manager-cache: false
+
+    - name: Install pinned validator toolchain
+      shell: bash
+      run: npm ci
+
+    - name: Validate schema and semantic invariants
+      shell: bash
+      env:
+        BEFORE_MANIFEST: ${{ inputs.before-manifest }}
+      run: |
+        set -euo pipefail
+        npm run validate
+        if [ -n "$BEFORE_MANIFEST" ]; then
+          npm run semantic-diff -- "$BEFORE_MANIFEST" manifest.json
+        else
+          npm run semantic-diff
+        fi
+
+    - name: Verify signature against production public key
+      shell: bash
+      run: npm run verify-signature
