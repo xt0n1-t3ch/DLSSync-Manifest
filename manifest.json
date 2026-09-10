@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-09-10T11:56:03.955799939Z",
+  "generated_at": "2026-09-10T14:31:33.757855Z",
   "vendors": {
     "amd": {
       "fsr_fg": {
@@ -1728,37 +1728,37 @@
             "version": "1.4.0-preview1-2603.504",
             "version_packed": 281492156579840,
             "filename": "dstorage.dll",
-            "sha256": "88e5e2f4eedbf0b604d7cecd724bb0c809d5f3479f00f0d138ec1006e354f0a4",
-            "size_bytes": 192544,
+            "sha256": "4ae887a8cd21db2cfecd97c34b5f4da48d8370d4646f3853d60db809aa02a8bf",
+            "size_bytes": 207392,
             "signed": true,
             "released_at": "2026-09-10T11:56:03.577809853Z",
             "source": "nuget:microsoft.direct3d.directstorage@1.4.0-preview1-2603.504",
             "cdn_url": "https://api.nuget.org/v3-flatcontainer/microsoft.direct3d.directstorage/1.4.0-preview1-2603.504/microsoft.direct3d.directstorage.1.4.0-preview1-2603.504.nupkg",
             "release_notes": null,
-            "signature_subject": "Microsoft Corporation",
+            "signature_subject": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
             "channel": "experimental",
             "is_dev": false,
             "min_driver": null,
             "hash_algorithm": "sha256",
-            "zip_entry": "native/bin/ARM64/dstorage.dll"
+            "zip_entry": "native/bin/x64/dstorage.dll"
           },
           {
             "version": "1.4.0-preview2-2606.904",
             "version_packed": 281492156579840,
             "filename": "dstorage.dll",
-            "sha256": "b7ee2299a6ed8bb6d1df64f8f869ea3ad4f4da33de55b8fd0e4ce4debfb40275",
-            "size_bytes": 192312,
+            "sha256": "ac4a39ce3d6301d1449a86b54e6f6190fcf93b9dfd92ecf8dcb143ee75e38fdb",
+            "size_bytes": 207200,
             "signed": true,
             "released_at": "2026-09-10T11:56:03.612720376Z",
             "source": "nuget:microsoft.direct3d.directstorage@1.4.0-preview2-2606.904",
             "cdn_url": "https://api.nuget.org/v3-flatcontainer/microsoft.direct3d.directstorage/1.4.0-preview2-2606.904/microsoft.direct3d.directstorage.1.4.0-preview2-2606.904.nupkg",
             "release_notes": null,
-            "signature_subject": "Microsoft Corporation",
+            "signature_subject": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
             "channel": "experimental",
             "is_dev": false,
             "min_driver": null,
             "hash_algorithm": "sha256",
-            "zip_entry": "native/bin/ARM64/dstorage.dll"
+            "zip_entry": "native/bin/x64/dstorage.dll"
           }
         ]
       },
@@ -1949,37 +1949,37 @@
             "version": "1.4.0-preview1-2603.504",
             "version_packed": 281492156579840,
             "filename": "dstoragecore.dll",
-            "sha256": "8b2f4be29a6cfd090c74e0110864f78a0b7386a4b1b3ba8aaaf9ffd11e69b293",
-            "size_bytes": 2572832,
+            "sha256": "c6a160899d2c607e1547476b210e36b1ce059a78feb6dc027a2a0cf4a6f22b78",
+            "size_bytes": 2517064,
             "signed": true,
             "released_at": "2026-09-10T11:56:03.577809853Z",
             "source": "nuget:microsoft.direct3d.directstorage@1.4.0-preview1-2603.504",
             "cdn_url": "https://api.nuget.org/v3-flatcontainer/microsoft.direct3d.directstorage/1.4.0-preview1-2603.504/microsoft.direct3d.directstorage.1.4.0-preview1-2603.504.nupkg",
             "release_notes": null,
-            "signature_subject": "Microsoft Corporation",
+            "signature_subject": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
             "channel": "experimental",
             "is_dev": false,
             "min_driver": null,
             "hash_algorithm": "sha256",
-            "zip_entry": "native/bin/ARM64/dstoragecore.dll"
+            "zip_entry": "native/bin/x64/dstoragecore.dll"
           },
           {
             "version": "1.4.0-preview2-2606.904",
             "version_packed": 281492156579840,
             "filename": "dstoragecore.dll",
-            "sha256": "fd86c767c1a84946a051a454e059f2cb32293d44e8dd60a0dfc7635933510e06",
-            "size_bytes": 2572600,
+            "sha256": "4e92a4ba8a1851281cfc003ef833b64c9e56b7a6a667e30eae4a004a4b41f02a",
+            "size_bytes": 2517304,
             "signed": true,
             "released_at": "2026-09-10T11:56:03.612720376Z",
             "source": "nuget:microsoft.direct3d.directstorage@1.4.0-preview2-2606.904",
             "cdn_url": "https://api.nuget.org/v3-flatcontainer/microsoft.direct3d.directstorage/1.4.0-preview2-2606.904/microsoft.direct3d.directstorage.1.4.0-preview2-2606.904.nupkg",
             "release_notes": null,
-            "signature_subject": "Microsoft Corporation",
+            "signature_subject": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
             "channel": "experimental",
             "is_dev": false,
             "min_driver": null,
             "hash_algorithm": "sha256",
-            "zip_entry": "native/bin/ARM64/dstoragecore.dll"
+            "zip_entry": "native/bin/x64/dstoragecore.dll"
           }
         ]
       }
@@ -4563,19 +4563,19 @@
             "version": "2.14.1",
             "version_packed": 563010083028992,
             "filename": "sl.reflex.dll",
-            "sha256": "7615df87f9bd4931ef48c6066d21fb1fa88366bcc850a8f3595c02bb3e1eac93",
-            "size_bytes": 377472,
+            "sha256": "0ce9725e3e03ea9e7f81d008b57f33ee365973d2e349131c8b1c3e3378fe2db0",
+            "size_bytes": 388736,
             "signed": true,
             "released_at": "2026-09-08T15:29:48Z",
             "source": "NVIDIA-RTX/Streamline@v2.14.1",
-            "cdn_url": "https://github.com/NVIDIA-RTX/Streamline/releases/download/v2.14.1/streamline-sdk-v2.14.1-aarch64.zip",
+            "cdn_url": "https://github.com/NVIDIA-RTX/Streamline/releases/download/v2.14.1/streamline-sdk-v2.14.1.zip",
             "release_notes": "Streamline SDK 2.14.1",
-            "signature_subject": "NVIDIA Corporation",
+            "signature_subject": "CN=NVIDIA Corporation, OU=2008B9F, O=NVIDIA Corporation, L=Santa Clara, S=California, C=US",
             "channel": "stable",
             "is_dev": false,
             "min_driver": null,
             "hash_algorithm": "sha256",
-            "zip_entry": "bin/arm64/sl.reflex.dll"
+            "zip_entry": "bin/x64/sl.reflex.dll"
           }
         ]
       },
@@ -4712,19 +4712,19 @@
             "version": "2.14.1",
             "version_packed": 563010083028992,
             "filename": "sl.dlss_g.dll",
-            "sha256": "dfa1091762836e5e21fca00eab1bcdbc40e257dbc50d918e174cb70655ce1eb9",
-            "size_bytes": 628352,
+            "sha256": "f4a6b2b14dcc0b1485989e430d3b4e3a44ac1800b92ba1ad74f476e64fb2b09c",
+            "size_bytes": 636032,
             "signed": true,
             "released_at": "2026-09-08T15:29:48Z",
             "source": "NVIDIA-RTX/Streamline@v2.14.1",
-            "cdn_url": "https://github.com/NVIDIA-RTX/Streamline/releases/download/v2.14.1/streamline-sdk-v2.14.1-aarch64.zip",
+            "cdn_url": "https://github.com/NVIDIA-RTX/Streamline/releases/download/v2.14.1/streamline-sdk-v2.14.1.zip",
             "release_notes": "Streamline SDK 2.14.1",
-            "signature_subject": "NVIDIA Corporation",
+            "signature_subject": "CN=NVIDIA Corporation, OU=2008B9F, O=NVIDIA Corporation, L=Santa Clara, S=California, C=US",
             "channel": "stable",
             "is_dev": false,
             "min_driver": null,
             "hash_algorithm": "sha256",
-            "zip_entry": "bin/arm64/sl.dlss_g.dll"
+            "zip_entry": "bin/x64/sl.dlss_g.dll"
           }
         ]
       },
@@ -4861,19 +4861,19 @@
             "version": "2.14.1",
             "version_packed": 563010083028992,
             "filename": "sl.dlss_d.dll",
-            "sha256": "3d435592369392be4c50885b09c1d16b16662f21885cc47cd7e7d939fbaa0ec1",
-            "size_bytes": 430720,
+            "sha256": "026b9f4f9ea848f2f5aa0e2024fc6b1c885f57eea5d41078124dba14f873b86b",
+            "size_bytes": 437376,
             "signed": true,
             "released_at": "2026-09-08T15:29:48Z",
             "source": "NVIDIA-RTX/Streamline@v2.14.1",
-            "cdn_url": "https://github.com/NVIDIA-RTX/Streamline/releases/download/v2.14.1/streamline-sdk-v2.14.1-aarch64.zip",
+            "cdn_url": "https://github.com/NVIDIA-RTX/Streamline/releases/download/v2.14.1/streamline-sdk-v2.14.1.zip",
             "release_notes": "Streamline SDK 2.14.1",
-            "signature_subject": "NVIDIA Corporation",
+            "signature_subject": "CN=NVIDIA Corporation, OU=2008B9F, O=NVIDIA Corporation, L=Santa Clara, S=California, C=US",
             "channel": "stable",
             "is_dev": false,
             "min_driver": null,
             "hash_algorithm": "sha256",
-            "zip_entry": "bin/arm64/sl.dlss_d.dll"
+            "zip_entry": "bin/x64/sl.dlss_d.dll"
           }
         ]
       },
@@ -5010,19 +5010,19 @@
             "version": "2.14.1",
             "version_packed": 563010083028992,
             "filename": "sl.dlss.dll",
-            "sha256": "99bd0f74659ea0b8e26be9d9d3ffcf88279717387e474a75d9973697b1155dcd",
-            "size_bytes": 410240,
+            "sha256": "73bf52c0cfaa5900a8f3f4a91306e4625e7cca696dfb305aae44c9f97b582e1f",
+            "size_bytes": 422016,
             "signed": true,
             "released_at": "2026-09-08T15:29:48Z",
             "source": "NVIDIA-RTX/Streamline@v2.14.1",
-            "cdn_url": "https://github.com/NVIDIA-RTX/Streamline/releases/download/v2.14.1/streamline-sdk-v2.14.1-aarch64.zip",
+            "cdn_url": "https://github.com/NVIDIA-RTX/Streamline/releases/download/v2.14.1/streamline-sdk-v2.14.1.zip",
             "release_notes": "Streamline SDK 2.14.1",
-            "signature_subject": "NVIDIA Corporation",
+            "signature_subject": "CN=NVIDIA Corporation, OU=2008B9F, O=NVIDIA Corporation, L=Santa Clara, S=California, C=US",
             "channel": "stable",
             "is_dev": false,
             "min_driver": null,
             "hash_algorithm": "sha256",
-            "zip_entry": "bin/arm64/sl.dlss.dll"
+            "zip_entry": "bin/x64/sl.dlss.dll"
           }
         ]
       },
@@ -5159,19 +5159,19 @@
             "version": "2.14.1",
             "version_packed": 563010083028992,
             "filename": "sl.interposer.dll",
-            "sha256": "a3a06dcd10aad322a1017599b16819a3561d6fc06abdd36b5c59a85e7e9de5b5",
-            "size_bytes": 662656,
+            "sha256": "8c87c9499461da561edd529aa9bf7831d67d7b94ebb1c1a5ed54ef4934e1ea4c",
+            "size_bytes": 652928,
             "signed": true,
             "released_at": "2026-09-08T15:29:48Z",
             "source": "NVIDIA-RTX/Streamline@v2.14.1",
-            "cdn_url": "https://github.com/NVIDIA-RTX/Streamline/releases/download/v2.14.1/streamline-sdk-v2.14.1-aarch64.zip",
+            "cdn_url": "https://github.com/NVIDIA-RTX/Streamline/releases/download/v2.14.1/streamline-sdk-v2.14.1.zip",
             "release_notes": "Streamline SDK 2.14.1",
-            "signature_subject": "NVIDIA Corporation",
+            "signature_subject": "CN=NVIDIA Corporation, OU=2008B9F, O=NVIDIA Corporation, L=Santa Clara, S=California, C=US",
             "channel": "stable",
             "is_dev": false,
             "min_driver": null,
             "hash_algorithm": "sha256",
-            "zip_entry": "bin/arm64/sl.interposer.dll"
+            "zip_entry": "bin/x64/sl.interposer.dll"
           }
         ]
       },
@@ -5308,19 +5308,19 @@
             "version": "2.14.1",
             "version_packed": 563010083028992,
             "filename": "sl.common.dll",
-            "sha256": "7c71da26c43732b06af78b982e4717819dd6951dd33d71e0cc74df209c48fd86",
-            "size_bytes": 883328,
+            "sha256": "82924a8954dd671e09351c5de0eb87ad0eb25b944cc9f9ab955ca1d9950de15d",
+            "size_bytes": 843392,
             "signed": true,
             "released_at": "2026-09-08T15:29:48Z",
             "source": "NVIDIA-RTX/Streamline@v2.14.1",
-            "cdn_url": "https://github.com/NVIDIA-RTX/Streamline/releases/download/v2.14.1/streamline-sdk-v2.14.1-aarch64.zip",
+            "cdn_url": "https://github.com/NVIDIA-RTX/Streamline/releases/download/v2.14.1/streamline-sdk-v2.14.1.zip",
             "release_notes": "Streamline SDK 2.14.1",
-            "signature_subject": "NVIDIA Corporation",
+            "signature_subject": "CN=NVIDIA Corporation, OU=2008B9F, O=NVIDIA Corporation, L=Santa Clara, S=California, C=US",
             "channel": "stable",
             "is_dev": false,
             "min_driver": null,
             "hash_algorithm": "sha256",
-            "zip_entry": "bin/arm64/sl.common.dll"
+            "zip_entry": "bin/x64/sl.common.dll"
           }
         ]
       },
@@ -5457,19 +5457,19 @@
             "version": "2.14.1",
             "version_packed": 563010083028992,
             "filename": "sl.directsr.dll",
-            "sha256": "025e4638afeaf87b301850ad039e98fc7005e713b67adf3858f7978e45d27cf8",
-            "size_bytes": 360576,
+            "sha256": "4b2c0c90195c3a9991b4e0b59004113511a90802c85d81fc7faa7c7c75f53927",
+            "size_bytes": 369792,
             "signed": true,
             "released_at": "2026-09-08T15:29:48Z",
             "source": "NVIDIA-RTX/Streamline@v2.14.1",
-            "cdn_url": "https://github.com/NVIDIA-RTX/Streamline/releases/download/v2.14.1/streamline-sdk-v2.14.1-aarch64.zip",
+            "cdn_url": "https://github.com/NVIDIA-RTX/Streamline/releases/download/v2.14.1/streamline-sdk-v2.14.1.zip",
             "release_notes": "Streamline SDK 2.14.1",
-            "signature_subject": "NVIDIA Corporation",
+            "signature_subject": "CN=NVIDIA Corporation, OU=2008B9F, O=NVIDIA Corporation, L=Santa Clara, S=California, C=US",
             "channel": "stable",
             "is_dev": false,
             "min_driver": null,
             "hash_algorithm": "sha256",
-            "zip_entry": "bin/arm64/sl.directsr.dll"
+            "zip_entry": "bin/x64/sl.directsr.dll"
           }
         ]
       },
@@ -5606,19 +5606,19 @@
             "version": "2.14.1",
             "version_packed": 563010083028992,
             "filename": "sl.nis.dll",
-            "sha256": "e82c06baf80b19e7b521a2e7f6a86c946696fc3d39d3a6bf4f63ad40018dbf9b",
-            "size_bytes": 1139840,
+            "sha256": "556870e456d268601188919927b3b122f76b25f9b221cc4b15d3ef649f0ad27b",
+            "size_bytes": 1155712,
             "signed": true,
             "released_at": "2026-09-08T15:29:48Z",
             "source": "NVIDIA-RTX/Streamline@v2.14.1",
-            "cdn_url": "https://github.com/NVIDIA-RTX/Streamline/releases/download/v2.14.1/streamline-sdk-v2.14.1-aarch64.zip",
+            "cdn_url": "https://github.com/NVIDIA-RTX/Streamline/releases/download/v2.14.1/streamline-sdk-v2.14.1.zip",
             "release_notes": "Streamline SDK 2.14.1",
-            "signature_subject": "NVIDIA Corporation",
+            "signature_subject": "CN=NVIDIA Corporation, OU=2008B9F, O=NVIDIA Corporation, L=Santa Clara, S=California, C=US",
             "channel": "stable",
             "is_dev": false,
             "min_driver": null,
             "hash_algorithm": "sha256",
-            "zip_entry": "bin/arm64/sl.nis.dll"
+            "zip_entry": "bin/x64/sl.nis.dll"
           }
         ]
       },
@@ -5755,19 +5755,19 @@
             "version": "2.14.1",
             "version_packed": 563010083028992,
             "filename": "sl.pcl.dll",
-            "sha256": "b44213285af63580621559ea6613941b3ff57fbe47d15d05271d1460188f369b",
-            "size_bytes": 352384,
+            "sha256": "f13d51cfa05f4cd514df2026049e2db8adf359221713170ad386fd499915b582",
+            "size_bytes": 360064,
             "signed": true,
             "released_at": "2026-09-08T15:29:48Z",
             "source": "NVIDIA-RTX/Streamline@v2.14.1",
-            "cdn_url": "https://github.com/NVIDIA-RTX/Streamline/releases/download/v2.14.1/streamline-sdk-v2.14.1-aarch64.zip",
+            "cdn_url": "https://github.com/NVIDIA-RTX/Streamline/releases/download/v2.14.1/streamline-sdk-v2.14.1.zip",
             "release_notes": "Streamline SDK 2.14.1",
-            "signature_subject": "NVIDIA Corporation",
+            "signature_subject": "CN=NVIDIA Corporation, OU=2008B9F, O=NVIDIA Corporation, L=Santa Clara, S=California, C=US",
             "channel": "stable",
             "is_dev": false,
             "min_driver": null,
             "hash_algorithm": "sha256",
-            "zip_entry": "bin/arm64/sl.pcl.dll"
+            "zip_entry": "bin/x64/sl.pcl.dll"
           }
         ]
       }

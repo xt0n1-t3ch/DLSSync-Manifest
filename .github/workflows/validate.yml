@@ -45,7 +45,7 @@ jobs:
       - run: npm ci
 
       - name: Validate schema and semantic invariants
-        run: npm run validate && npm run semantic-diff
+        run: npm test && npm run validate && npm run semantic-diff
 
       - name: Verify signature against production public key
         run: npm run verify-signature
