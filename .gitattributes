@@ -7,3 +7,4 @@
 *.yaml text eol=lf
 manifest.json text eol=lf
 manifest.json.sig -text
+manifest-v3.json.sig -text

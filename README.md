@@ -8,9 +8,9 @@
 
 DLL catalog consumed by [DLSSync](https://github.com/xt0n1-t3ch/DLSSync) — an open-source Windows updater that keeps DLSS, FSR, XeSS and DirectStorage DLLs in sync with NVIDIA, AMD, Intel and Microsoft publisher releases.
 
-This repository holds nothing but the catalog data. The application code, manifest builder, and tests live in the [DLSSync](https://github.com/xt0n1-t3ch/DLSSync) repository.
+This repository holds catalog data, schemas, validators, and publication workflows. The application code and manifest builder live in the [DLSSync](https://github.com/xt0n1-t3ch/DLSSync) repository.
 
-Current app release line: `v1.7.0`. The public manifest remains `schema_version: 2` and is independently verifiable without installing DLSSync.
+The published app release remains `v1.6.9`; `v1.7.0` is in development. `manifest.json` preserves schema v2 for existing clients. `manifest-v3.json` adds inspected artifact identity, package versions, dependencies, and source health. Both documents have independent Ed25519 signatures.
 
 ## Why this catalog is different
 
@@ -27,10 +27,13 @@ Current app release line: `v1.7.0`. The public manifest remains `schema_version:
 
 | File | Purpose |
 |---|---|
-| `manifest.json` | Canonical catalog. Generated hourly from declared upstream sources by CI. Do not hand-edit. |
+| `manifest.json` | Legacy v2 catalog for existing clients. Generated from the same accepted observations as v3. |
 | `manifest.json.sig` | Detached Ed25519 signature over the exact `manifest.json` bytes. |
-| `manifest.schema.json` | JSON Schema (Draft 2020-12) that the manifest must validate against. |
-| `.github/workflows/poll-upstream.yml` | Hourly cron that rebuilds `manifest.json` via the Rust `manifest-builder` from the DLSSync app repo. |
+| `manifest.schema.json` | JSON Schema for v2. |
+| `manifest-v3.json` / `.sig` | Extended v3 catalog and its detached signature. |
+| `manifest-v3.schema.json` | JSON Schema for v3. |
+| `builder-ref.txt` | Exact reviewed application commit used by the Windows publisher. |
+| `.github/workflows/poll-upstream.yml` | Hourly Windows job that tests the pinned generator and validates both signed catalogs before publication. |
 | `.github/workflows/validate.yml` | Schema, signature, and semantic validation on every push / PR. |
 | `package.json` | Pinned validator toolchain used locally and in CI. |
 
@@ -42,7 +45,7 @@ The catalog is served via [jsDelivr](https://www.jsdelivr.com/), which mirrors G
 https://cdn.jsdelivr.net/gh/xt0n1-t3ch/DLSSync-Manifest@main/manifest.json
 ```
 
-DLSSync consumes this URL by default. Override at runtime via the `DLSSYNC_MANIFEST_URL` environment variable.
+Existing clients continue using this v2 URL. The v1.7.0 development client uses the adjacent `manifest-v3.json` URL. Append `.sig` to either URL for its detached signature. Override at runtime via `DLSSYNC_MANIFEST_URL`.
 
 ## Upstream sources
 
@@ -75,7 +78,7 @@ e9dd0828f9ee5ecb72e0a811723a79c6e5373ca1c20bd5b255d68a2b3928fcd3
 
 ## Schema
 
-The manifest validates against `manifest.schema.json` (Draft 2020-12). The current schema version is `2`. Each release entry carries:
+The v2 document validates against `manifest.schema.json`; v3 uses `manifest-v3.schema.json`. Both use Draft 2020-12. The legacy release fields include:
 
 ```json
 {
@@ -106,12 +109,12 @@ Optional top-level `anti_cheat_binaries` entries carry manifest-supplied anti-ch
 
 ## Build locally
 
-The builder lives in the app repo, not here:
+The builder lives in the app repo. Check out the commit in `builder-ref.txt`. Supply `DLSSYNC_MANIFEST_SIGNING_KEY` through your secret store. Run on Windows to inspect Authenticode:
 
 ```pwsh
 git clone https://github.com/xt0n1-t3ch/DLSSync.git
 cd DLSSync
-cargo run --release -p manifest-builder -- --out manifest.json
+cargo run --release -p manifest-builder -- --out manifest.json --out-v3 manifest-v3.json
 ```
 
 Then validate against the schema:

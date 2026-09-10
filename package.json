@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "validate": "node scripts/validate-manifest.mjs",
-    "verify-signature": "node .github/scripts/verify-manifest-signature.mjs manifest.json manifest.json.sig",
+    "verify-signature": "node .github/scripts/verify-manifest-signature.mjs manifest.json manifest.json.sig && node .github/scripts/verify-manifest-signature.mjs manifest-v3.json manifest-v3.json.sig",
     "semantic-diff": "node scripts/semantic-diff.mjs",
     "test": "node --test scripts/*.test.mjs"
   },
