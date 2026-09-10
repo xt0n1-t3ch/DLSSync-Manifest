@@ -1,0 +1,474 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cdn.jsdelivr.net/gh/xt0n1-t3ch/DLSSync-Manifest@main/manifest-v3.schema.json",
+  "title": "DLSSync artifact catalog v3",
+  "description": "File identity, package identity, architecture, source health, and runtime dependencies. The v2 endpoint remains separate.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "generated_at",
+    "vendors"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": 3,
+      "description": "Bump only when consumers (dll-catalog crate) require a coordinated migration."
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "vendors": {
+      "type": "object",
+      "patternProperties": {
+        "^[a-z][a-z0-9_]*$": {
+          "type": "object",
+          "patternProperties": {
+            "^[a-z][a-z0-9_]*$": {
+              "$ref": "#/$defs/FamilyEntry"
+            }
+          },
+          "additionalProperties": false,
+          "minProperties": 1
+        }
+      },
+      "additionalProperties": false,
+      "minProperties": 1
+    },
+    "incompatible_games": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true,
+      "default": []
+    },
+    "anticheat": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "description": "Optional anti-cheat dataset distilled from AreWeAntiCheatYet, keyed by Steam appid (decimal string) and by normalized game name (lowercase, alphanumeric only). Consumed by the DLSSync detection resolver as the manifest layer; merged with the embedded snapshot and the opt-in live refresh.",
+      "additionalProperties": false,
+      "properties": {
+        "by_appid": {
+          "type": "object",
+          "patternProperties": {
+            "^[0-9]+$": {
+              "$ref": "#/$defs/AntiCheatEntry"
+            }
+          },
+          "additionalProperties": false
+        },
+        "by_name": {
+          "type": "object",
+          "patternProperties": {
+            "^[a-z0-9]+$": {
+              "$ref": "#/$defs/AntiCheatEntry"
+            }
+          },
+          "additionalProperties": false
+        }
+      }
+    },
+    "anti_cheat_binaries": {
+      "type": "array",
+      "description": "Optional manifest-supplied anti-cheat binary filename signatures. DLSSync merges these rows over the compiled detector table; the field is omitted when empty.",
+      "items": {
+        "$ref": "#/$defs/AntiCheatBinary"
+      },
+      "uniqueItems": true,
+      "default": []
+    },
+    "sources": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "#/$defs/SourceHealth"
+      }
+    }
+  },
+  "$defs": {
+    "AntiCheatEntry": {
+      "type": "object",
+      "required": [
+        "anticheats"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "anticheats": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "anti_tamper": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true,
+          "description": "Anti-tamper / heavy DRM engines (Denuvo, Arxan, VMProtect). May be empty."
+        },
+        "status": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "AreWeAntiCheatYet status (e.g. Supported, Broken, Denied, Planned). Optional."
+        }
+      }
+    },
+    "AntiCheatBinary": {
+      "type": "object",
+      "required": [
+        "needle",
+        "name"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "needle": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Lowercase filename substring matched against files on disk."
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Canonical anti-cheat engine name reported by DLSSync."
+        }
+      }
+    },
+    "FamilyEntry": {
+      "type": "object",
+      "required": [
+        "latest",
+        "releases"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "latest": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Version string of the release the app should default to (must appear in releases[].version)."
+        },
+        "releases": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Release"
+          },
+          "minItems": 1
+        }
+      }
+    },
+    "Release": {
+      "type": "object",
+      "required": [
+        "version",
+        "version_packed",
+        "filename",
+        "sha256",
+        "size_bytes",
+        "signed",
+        "released_at",
+        "source",
+        "cdn_url"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "version": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Observed PE file version for inspected artifacts. Historical entries preserve their recorded version."
+        },
+        "version_packed": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "16-bit-per-component packed u64 (major<<48 | minor<<32 | build<<16 | patch). Used for ordering."
+        },
+        "filename": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9_.+-]+\\.dll$",
+          "description": "Canonical DLL filename, lowercase preferred."
+        },
+        "sha256": {
+          "type": "string",
+          "oneOf": [
+            {
+              "pattern": "^[0-9a-f]{64}$",
+              "description": "SHA-256 of the DLL bytes (post-extraction from upstream zip)."
+            },
+            {
+              "pattern": "^[0-9a-f]{32}$",
+              "description": "MD5 fallback for entries sourced from beeradmoore/dlss-swapper, which only ships MD5."
+            }
+          ]
+        },
+        "size_bytes": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "signed": {
+          "type": "boolean"
+        },
+        "released_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "source": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Upstream identifier. URL for GitHub releases, 'nuget:pkg@ver' for NuGet, 'beeradmoore/dlss-swapper' for community archive."
+        },
+        "cdn_url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https://",
+          "description": "Direct download URL. Points to upstream GitHub release asset or NuGet flat-container. The manifest repo itself does NOT mirror DLL artifacts."
+        },
+        "release_notes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "signature_subject": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Authenticode subject expected at install time. NVIDIA Corporation / Intel Corporation / Advanced Micro Devices, Inc. / Microsoft Corporation."
+        },
+        "channel": {
+          "type": "string",
+          "enum": [
+            "stable",
+            "experimental"
+          ],
+          "default": "stable"
+        },
+        "is_dev": {
+          "type": "boolean",
+          "default": false
+        },
+        "min_driver": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Minimum GPU driver version where this release is known good. Null = no constraint."
+        },
+        "hash_algorithm": {
+          "type": "string",
+          "enum": [
+            "sha256",
+            "md5"
+          ],
+          "default": "sha256",
+          "description": "Algorithm the sha256 field carries: sha256 for GitHub/NuGet sources, md5 for beeradmoore/dlss-swapper entries."
+        },
+        "zip_entry": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Exact path of the wanted DLL inside a multi-copy SDK zip (e.g. bin/x64/sl.dlss_g.dll). Disambiguates the signed production binary from the development copy that shares the same filename. Null = match by basename."
+        },
+        "artifact": {
+          "$ref": "#/$defs/ArtifactDescriptor"
+        }
+      }
+    },
+    "SourceHealth": {
+      "type": "object",
+      "required": [
+        "last_attempt",
+        "last_success",
+        "error",
+        "families"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "last_attempt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "last_success": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "error": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "families": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_]*/[a-z][a-z0-9_]*$"
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    "ArtifactDescriptor": {
+      "type": "object",
+      "required": [
+        "id",
+        "family",
+        "filename",
+        "file_version",
+        "package_version",
+        "package_id",
+        "compatibility_line",
+        "architecture",
+        "hash",
+        "size_bytes",
+        "source_url",
+        "archive_entry",
+        "expected_publisher",
+        "observed_publisher",
+        "signature_status",
+        "dependencies",
+        "checked_at"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "family": {
+          "type": "string",
+          "minLength": 1
+        },
+        "filename": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9_.+-]+\\.dll$",
+          "description": "Canonical DLL filename, lowercase preferred."
+        },
+        "file_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "package_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "package_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "compatibility_line": {
+          "type": "string",
+          "minLength": 1
+        },
+        "architecture": {
+          "const": "x64"
+        },
+        "hash": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "algorithm",
+            "digest"
+          ],
+          "properties": {
+            "algorithm": {
+              "enum": [
+                "sha256",
+                "md5"
+              ]
+            },
+            "digest": {
+              "type": "string",
+              "pattern": "^(?:[0-9a-f]{32}|[0-9a-f]{64})$"
+            }
+          }
+        },
+        "size_bytes": {
+          "type": "string",
+          "pattern": "^[0-9]+$"
+        },
+        "source_url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https://"
+        },
+        "archive_entry": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "expected_publisher": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "observed_publisher": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "signature_status": {
+          "enum": [
+            "not_checked",
+            "missing",
+            "verified",
+            "untrusted"
+          ]
+        },
+        "dependencies": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "uniqueItems": true
+        },
+        "checked_at": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    }
+  }
+}

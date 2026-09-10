@@ -8,6 +8,8 @@ on:
       - "manifest.json"
       - "manifest.json.sig"
       - "manifest.schema.json"
+      - "manifest-v3*"
+      - "builder-ref.txt"
       - "package.json"
       - "package-lock.json"
       - "scripts/**"
@@ -20,6 +22,8 @@ on:
       - "manifest.json"
       - "manifest.json.sig"
       - "manifest.schema.json"
+      - "manifest-v3*"
+      - "builder-ref.txt"
       - "package.json"
       - "package-lock.json"
       - "scripts/**"
@@ -39,7 +43,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v5
         with:
-          node-version: "22"
+          node-version: "24.18.0"
           package-manager-cache: false
 
       - run: npm ci
