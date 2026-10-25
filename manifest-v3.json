@@ -1,6 +1,6 @@
 {
   "schema_version": 3,
-  "generated_at": "2026-10-25T14:41:28.013699Z",
+  "generated_at": "2026-10-25T17:58:34.661898600Z",
   "vendors": {
     "amd": {
       "fsr_denoiser": {
@@ -27,7 +27,7 @@
               "observed_publisher": "Advanced Micro Devices",
               "signature_status": "verified",
               "dependencies": [],
-              "checked_at": "2026-10-25T14:41:08.699440500+00:00"
+              "checked_at": "2026-10-25T17:58:15.385366+00:00"
             },
             "version": "1.0.0.604",
             "version_packed": 281474976711260,
@@ -67,7 +67,7 @@
               "observed_publisher": "Advanced Micro Devices",
               "signature_status": "verified",
               "dependencies": [],
-              "checked_at": "2026-10-25T14:41:04.264330900+00:00"
+              "checked_at": "2026-10-25T17:58:11.005302500+00:00"
             },
             "version": "1.0.0.604",
             "version_packed": 281474976711260,
@@ -107,7 +107,7 @@
               "observed_publisher": "Advanced Micro Devices",
               "signature_status": "verified",
               "dependencies": [],
-              "checked_at": "2026-10-25T14:41:00.477072500+00:00"
+              "checked_at": "2026-10-25T17:58:07.710427200+00:00"
             },
             "version": "1.1.0.0",
             "version_packed": 281479271677952,
@@ -147,7 +147,7 @@
               "observed_publisher": "Advanced Micro Devices",
               "signature_status": "verified",
               "dependencies": [],
-              "checked_at": "2026-10-25T14:40:56.900423+00:00"
+              "checked_at": "2026-10-25T17:58:04.342953300+00:00"
             },
             "version": "1.2.0.2740",
             "version_packed": 281483566647988,
@@ -210,7 +210,7 @@
               "observed_publisher": "Advanced Micro Devices",
               "signature_status": "verified",
               "dependencies": [],
-              "checked_at": "2026-10-25T14:41:10.954874+00:00"
+              "checked_at": "2026-10-25T17:58:16.978005100+00:00"
             },
             "version": "3.1.5.44888",
             "version_packed": 844429225471832,
@@ -250,7 +250,7 @@
               "observed_publisher": "Advanced Micro Devices",
               "signature_status": "verified",
               "dependencies": [],
-              "checked_at": "2026-10-25T14:41:00.040456400+00:00"
+              "checked_at": "2026-10-25T17:58:07.125684200+00:00"
             },
             "version": "4.0.0.0",
             "version_packed": 1125899906842624,
@@ -290,7 +290,7 @@
               "observed_publisher": "Advanced Micro Devices",
               "signature_status": "verified",
               "dependencies": [],
-              "checked_at": "2026-10-25T14:41:08.303129300+00:00"
+              "checked_at": "2026-10-25T17:58:14.636894700+00:00"
             },
             "version": "4.0.0.604",
             "version_packed": 1125899906843228,
@@ -330,7 +330,7 @@
               "observed_publisher": "Advanced Micro Devices",
               "signature_status": "verified",
               "dependencies": [],
-              "checked_at": "2026-10-25T14:41:03.850696700+00:00"
+              "checked_at": "2026-10-25T17:58:10.610407200+00:00"
             },
             "version": "4.0.0.604",
             "version_packed": 1125899906843228,
@@ -370,7 +370,7 @@
               "observed_publisher": "Advanced Micro Devices",
               "signature_status": "verified",
               "dependencies": [],
-              "checked_at": "2026-10-25T14:40:56.316943300+00:00"
+              "checked_at": "2026-10-25T17:58:03.810641+00:00"
             },
             "version": "4.0.1.2740",
             "version_packed": 1125899906910900,
@@ -415,7 +415,7 @@
               "observed_publisher": "Advanced Micro Devices",
               "signature_status": "verified",
               "dependencies": [],
-              "checked_at": "2026-10-25T14:41:11.171602+00:00"
+              "checked_at": "2026-10-25T17:58:17.068236800+00:00"
             },
             "version": "1.0.2.44888",
             "version_packed": 281474976886616,
@@ -473,7 +473,7 @@
               "observed_publisher": "Advanced Micro Devices",
               "signature_status": "verified",
               "dependencies": [],
-              "checked_at": "2026-10-25T14:41:08.441051700+00:00"
+              "checked_at": "2026-10-25T17:58:14.753622700+00:00"
             },
             "version": "2.1.0.604",
             "version_packed": 562954248389212,
@@ -513,7 +513,7 @@
               "observed_publisher": "Advanced Micro Devices",
               "signature_status": "verified",
               "dependencies": [],
-              "checked_at": "2026-10-25T14:41:03.982069+00:00"
+              "checked_at": "2026-10-25T17:58:10.721127100+00:00"
             },
             "version": "2.1.0.604",
             "version_packed": 562954248389212,
@@ -553,7 +553,7 @@
               "observed_publisher": "Advanced Micro Devices",
               "signature_status": "verified",
               "dependencies": [],
-              "checked_at": "2026-10-25T14:41:00.182559500+00:00"
+              "checked_at": "2026-10-25T17:58:07.253442900+00:00"
             },
             "version": "2.2.0.0",
             "version_packed": 562958543355904,
@@ -593,7 +593,7 @@
               "observed_publisher": "Advanced Micro Devices",
               "signature_status": "verified",
               "dependencies": [],
-              "checked_at": "2026-10-25T14:40:56.432650+00:00"
+              "checked_at": "2026-10-25T17:58:03.884738300+00:00"
             },
             "version": "2.3.0.2740",
             "version_packed": 562962838325940,
@@ -624,7 +624,7 @@
             "sha256": "cfcd38f47665ddff195b80c62e3b57e2",
             "size_bytes": 6470360,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915913200Z",
+            "released_at": "2026-10-25T17:56:32.765878200Z",
             "source": "F1 2024",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/fsr_31_dx12/fsr_31_dx12_v1.0.0.36208_CFCD38F47665DDFF195B80C62E3B57E2.zip",
             "release_notes": "3.1.0",
@@ -656,7 +656,7 @@
               "observed_publisher": "Advanced Micro Devices",
               "signature_status": "verified",
               "dependencies": [],
-              "checked_at": "2026-10-25T14:41:25.691387700+00:00"
+              "checked_at": "2026-10-25T17:58:28.910305+00:00"
             },
             "version": "1.0.0.36604",
             "version_packed": 281474976747260,
@@ -682,7 +682,7 @@
             "sha256": "071eb42e3cbd0989a12465e0e529bcac",
             "size_bytes": 6475480,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915914400Z",
+            "released_at": "2026-10-25T17:56:32.765879600Z",
             "source": "FidelityFX-SDK-1.1.zip",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/fsr_31_dx12/fsr_31_dx12_v1.0.0.36604_071EB42E3CBD0989A12465E0E529BCAC.zip",
             "release_notes": "3.1.0",
@@ -700,7 +700,7 @@
             "sha256": "46f7049b30404d8c4ef685a13ef0bc43",
             "size_bytes": 6475992,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915915200Z",
+            "released_at": "2026-10-25T17:56:32.765880600Z",
             "source": "Horizon Zero Dawn Remastered",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/fsr_31_dx12/fsr_31_dx12_v1.0.0.36752_46F7049B30404D8C4EF685A13EF0BC43.zip",
             "release_notes": "3.1.0",
@@ -732,7 +732,7 @@
               "observed_publisher": "Advanced Micro Devices",
               "signature_status": "verified",
               "dependencies": [],
-              "checked_at": "2026-10-25T14:41:22.131643700+00:00"
+              "checked_at": "2026-10-25T17:58:25.640292200+00:00"
             },
             "version": "1.0.1.37507",
             "version_packed": 281474976813699,
@@ -758,7 +758,7 @@
             "sha256": "2fcbe69a137dba1ff45071a9b64c9581",
             "size_bytes": 6609624,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915916Z",
+            "released_at": "2026-10-25T17:56:32.765881500Z",
             "source": "FidelityFX-SDK-v1.1.1.zip",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/fsr_31_dx12/fsr_31_dx12_v1.0.1.37507_2FCBE69A137DBA1FF45071A9B64C9581.zip",
             "release_notes": "3.1.1",
@@ -790,7 +790,7 @@
               "observed_publisher": "Advanced Micro Devices",
               "signature_status": "verified",
               "dependencies": [],
-              "checked_at": "2026-10-25T14:41:17.570437700+00:00"
+              "checked_at": "2026-10-25T17:58:21.807331900+00:00"
             },
             "version": "1.0.1.38338",
             "version_packed": 281474976814530,
@@ -816,7 +816,7 @@
             "sha256": "2dc40d2f183920624be396b624466157",
             "size_bytes": 6634192,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915916700Z",
+            "released_at": "2026-10-25T17:56:32.765882200Z",
             "source": "FidelityFX-SDK-v1.1.2.zip",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/fsr_31_dx12/fsr_31_dx12_v1.0.1.38338_2DC40D2F183920624BE396B624466157.zip",
             "release_notes": "3.1.2",
@@ -848,7 +848,7 @@
               "observed_publisher": "Advanced Micro Devices",
               "signature_status": "verified",
               "dependencies": [],
-              "checked_at": "2026-10-25T14:41:15.060894900+00:00"
+              "checked_at": "2026-10-25T17:58:20.089440700+00:00"
             },
             "version": "1.0.1.39157",
             "version_packed": 281474976815349,
@@ -874,7 +874,7 @@
             "sha256": "3ef374f8f7eb44d211bcc0c063a520d9",
             "size_bytes": 6647504,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915917400Z",
+            "released_at": "2026-10-25T17:56:32.765883Z",
             "source": "FidelityFX-SDK-v1.1.3.zip",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/fsr_31_dx12/fsr_31_dx12_v1.0.1.39157_3EF374F8F7EB44D211BCC0C063A520D9.zip",
             "release_notes": "3.1.3",
@@ -924,7 +924,7 @@
               "observed_publisher": "Advanced Micro Devices",
               "signature_status": "verified",
               "dependencies": [],
-              "checked_at": "2026-10-25T14:41:12.869017200+00:00"
+              "checked_at": "2026-10-25T17:58:18.215080900+00:00"
             },
             "version": "1.0.1.41314",
             "version_packed": 281474976817506,
@@ -1004,7 +1004,7 @@
               "observed_publisher": "Advanced Micro Devices",
               "signature_status": "verified",
               "dependencies": [],
-              "checked_at": "2026-10-25T14:41:10.580519800+00:00"
+              "checked_at": "2026-10-25T17:58:16.734301200+00:00"
             },
             "version": "4.0.2.44888",
             "version_packed": 1125899907018584,
@@ -1084,7 +1084,7 @@
               "observed_publisher": "Advanced Micro Devices",
               "signature_status": "verified",
               "dependencies": [],
-              "checked_at": "2026-10-25T14:41:06.765354700+00:00"
+              "checked_at": "2026-10-25T17:58:13.138814700+00:00"
             },
             "version": "4.0.3.604",
             "version_packed": 1125899907039836,
@@ -1124,7 +1124,7 @@
               "observed_publisher": "Advanced Micro Devices",
               "signature_status": "verified",
               "dependencies": [],
-              "checked_at": "2026-10-25T14:41:02.423782600+00:00"
+              "checked_at": "2026-10-25T17:58:09.156860600+00:00"
             },
             "version": "4.0.3.604",
             "version_packed": 1125899907039836,
@@ -1164,7 +1164,7 @@
               "observed_publisher": "Advanced Micro Devices",
               "signature_status": "verified",
               "dependencies": [],
-              "checked_at": "2026-10-25T14:40:58.647367900+00:00"
+              "checked_at": "2026-10-25T17:58:05.619533500+00:00"
             },
             "version": "4.1.0.0",
             "version_packed": 1125904201809920,
@@ -1204,7 +1204,7 @@
               "observed_publisher": "Advanced Micro Devices",
               "signature_status": "verified",
               "dependencies": [],
-              "checked_at": "2026-10-25T14:40:54.678350300+00:00"
+              "checked_at": "2026-10-25T17:58:02.063204400+00:00"
             },
             "version": "4.1.1.2740",
             "version_packed": 1125904201878196,
@@ -1249,7 +1249,7 @@
               "observed_publisher": "Advanced Micro Devices",
               "signature_status": "verified",
               "dependencies": [],
-              "checked_at": "2026-10-25T14:41:26.180843600+00:00"
+              "checked_at": "2026-10-25T17:58:29.370405800+00:00"
             },
             "version": "1.0.0.36604",
             "version_packed": 281474976747260,
@@ -1275,7 +1275,7 @@
             "sha256": "a2bc75bc5455e870d71890c774541da9",
             "size_bytes": 9200344,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915929500Z",
+            "released_at": "2026-10-25T17:56:32.765896800Z",
             "source": "FidelityFX-SDK-1.1.zip",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/fsr_31_vk/fsr_31_vk_v1.0.0.36604_A2BC75BC5455E870D71890C774541DA9.zip",
             "release_notes": "3.1.0",
@@ -1307,7 +1307,7 @@
               "observed_publisher": "Advanced Micro Devices",
               "signature_status": "verified",
               "dependencies": [],
-              "checked_at": "2026-10-25T14:41:22.770058500+00:00"
+              "checked_at": "2026-10-25T17:58:26.067255+00:00"
             },
             "version": "1.0.1.37507",
             "version_packed": 281474976813699,
@@ -1333,7 +1333,7 @@
             "sha256": "1fc735751d2632e926016206398b8654",
             "size_bytes": 9262808,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915930300Z",
+            "released_at": "2026-10-25T17:56:32.765897800Z",
             "source": "FidelityFX-SDK-v1.1.1.zip",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/fsr_31_vk/fsr_31_vk_v1.0.1.37507_1FC735751D2632E926016206398B8654.zip",
             "release_notes": "3.1.1",
@@ -1365,7 +1365,7 @@
               "observed_publisher": "Advanced Micro Devices",
               "signature_status": "verified",
               "dependencies": [],
-              "checked_at": "2026-10-25T14:41:18.098711500+00:00"
+              "checked_at": "2026-10-25T17:58:22.220677400+00:00"
             },
             "version": "1.0.1.38338",
             "version_packed": 281474976814530,
@@ -1391,7 +1391,7 @@
             "sha256": "0d0cdc8d5865027d100daa35b605793f",
             "size_bytes": 9277136,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915931100Z",
+            "released_at": "2026-10-25T17:56:32.765898700Z",
             "source": "FidelityFX-SDK-v1.1.2.zip",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/fsr_31_vk/fsr_31_vk_v1.0.1.38338_0D0CDC8D5865027D100DAA35B605793F.zip",
             "release_notes": "3.1.2",
@@ -1423,7 +1423,7 @@
               "observed_publisher": "Advanced Micro Devices",
               "signature_status": "verified",
               "dependencies": [],
-              "checked_at": "2026-10-25T14:41:15.484618+00:00"
+              "checked_at": "2026-10-25T17:58:20.521682800+00:00"
             },
             "version": "1.0.1.39157",
             "version_packed": 281474976815349,
@@ -1449,7 +1449,7 @@
             "sha256": "23a87c10a859d5756edbe5a6d7f692b5",
             "size_bytes": 9284304,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915931900Z",
+            "released_at": "2026-10-25T17:56:32.765899400Z",
             "source": "FidelityFX-SDK-v1.1.3.zip",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/fsr_31_vk/fsr_31_vk_v1.0.1.39157_23A87C10A859D5756EDBE5A6D7F692B5.zip",
             "release_notes": "3.1.3",
@@ -1499,7 +1499,7 @@
               "observed_publisher": "Advanced Micro Devices",
               "signature_status": "verified",
               "dependencies": [],
-              "checked_at": "2026-10-25T14:41:13.294434100+00:00"
+              "checked_at": "2026-10-25T17:58:18.519476+00:00"
             },
             "version": "1.0.1.41314",
             "version_packed": 281474976817506,
@@ -1572,7 +1572,7 @@
             "sha256": "d469069d3935032f907106331161e78a",
             "size_bytes": 237968,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915987100Z",
+            "released_at": "2026-10-25T17:56:32.765967600Z",
             "source": "Marvel Rivals",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/xell/xell_v1.0.0.139_D469069D3935032F907106331161E78A.zip",
             "release_notes": "",
@@ -1622,7 +1622,7 @@
               "observed_publisher": "Intel Corporation",
               "signature_status": "verified",
               "dependencies": [],
-              "checked_at": "2026-10-25T14:40:16.938991600+00:00"
+              "checked_at": "2026-10-25T17:57:36.847839600+00:00"
             },
             "version": "1.1.0.6",
             "version_packed": 281479271677958,
@@ -1662,7 +1662,7 @@
               "observed_publisher": "Intel Corporation",
               "signature_status": "verified",
               "dependencies": [],
-              "checked_at": "2026-10-25T14:40:11.370816800+00:00"
+              "checked_at": "2026-10-25T17:57:33.016948800+00:00"
             },
             "version": "1.2.0.9",
             "version_packed": 281483566645257,
@@ -1702,7 +1702,7 @@
               "observed_publisher": "Intel Corporation",
               "signature_status": "verified",
               "dependencies": [],
-              "checked_at": "2026-10-25T14:40:06.785654500+00:00"
+              "checked_at": "2026-10-25T17:57:29.221886700+00:00"
             },
             "version": "1.2.1.13",
             "version_packed": 281483566710797,
@@ -1742,7 +1742,7 @@
               "observed_publisher": "Intel Corporation",
               "signature_status": "verified",
               "dependencies": [],
-              "checked_at": "2026-10-25T14:40:02.163025100+00:00"
+              "checked_at": "2026-10-25T17:57:25.339247800+00:00"
             },
             "version": "1.3.0.5",
             "version_packed": 281487861612549,
@@ -1782,7 +1782,7 @@
               "observed_publisher": "Intel Corporation",
               "signature_status": "verified",
               "dependencies": [],
-              "checked_at": "2026-10-25T14:39:57.700404100+00:00"
+              "checked_at": "2026-10-25T17:57:22.312592500+00:00"
             },
             "version": "1.3.0.5",
             "version_packed": 281487861612549,
@@ -1862,7 +1862,7 @@
               "observed_publisher": "Intel Corporation",
               "signature_status": "verified",
               "dependencies": [],
-              "checked_at": "2026-10-25T14:39:53.423243500+00:00"
+              "checked_at": "2026-10-25T17:57:19.116656800+00:00"
             },
             "version": "1.3.2.10",
             "version_packed": 281487861743626,
@@ -1911,7 +1911,7 @@
             "sha256": "bf976a1c2e466b1be6fc4b17d76b50d5",
             "size_bytes": 59355536,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915977200Z",
+            "released_at": "2026-10-25T17:56:32.765956400Z",
             "source": "Marvel Rivals",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/xess_fg/xess_fg_v1.0.0.16_BF976A1C2E466B1BE6FC4B17D76B50D5.zip",
             "release_notes": "",
@@ -1981,7 +1981,7 @@
               "dependencies": [
                 "088e4af489d816fa56166830981d9080d8cdd7086411faf429eae842ac614c38"
               ],
-              "checked_at": "2026-10-25T14:40:16.938984200+00:00"
+              "checked_at": "2026-10-25T17:57:36.847851700+00:00"
             },
             "version": "1.1.0.19",
             "version_packed": 281479271677971,
@@ -2023,7 +2023,7 @@
               "dependencies": [
                 "f830ef9f34c773fc2cdcd5ff983ffc8ad444565154c23c7da46c8633cc06bce5"
               ],
-              "checked_at": "2026-10-25T14:40:11.370851500+00:00"
+              "checked_at": "2026-10-25T17:57:33.016955+00:00"
             },
             "version": "1.2.0.87",
             "version_packed": 281483566645335,
@@ -2065,7 +2065,7 @@
               "dependencies": [
                 "a3d7a4b1b789af995d43697b6f7e5adea313c57f2c1c454bf96973c0c9f5583c"
               ],
-              "checked_at": "2026-10-25T14:40:06.785662100+00:00"
+              "checked_at": "2026-10-25T17:57:29.221883500+00:00"
             },
             "version": "1.2.2.118",
             "version_packed": 281483566776438,
@@ -2107,7 +2107,7 @@
               "dependencies": [
                 "da764c681fb639cdda067e302a99327dece3ac6cbc808085944dd58378fe62ab"
               ],
-              "checked_at": "2026-10-25T14:40:02.163022+00:00"
+              "checked_at": "2026-10-25T17:57:25.339244200+00:00"
             },
             "version": "1.3.1.68",
             "version_packed": 281487861678148,
@@ -2189,7 +2189,7 @@
               "dependencies": [
                 "9fd9622c1dc0400fa826cbd1e8ba80dfad17b85c3af1ea491fff40b611272c51"
               ],
-              "checked_at": "2026-10-25T14:39:57.700400700+00:00"
+              "checked_at": "2026-10-25T17:57:22.312600200+00:00"
             },
             "version": "1.3.1.78",
             "version_packed": 281487861678158,
@@ -2231,7 +2231,7 @@
               "dependencies": [
                 "41f2609a96c18814deb3a4587b78de18e2f2a1e9ff968810c95addbe5bd19eda"
               ],
-              "checked_at": "2026-10-25T14:39:53.423261700+00:00"
+              "checked_at": "2026-10-25T17:57:19.116653200+00:00"
             },
             "version": "1.3.1.78",
             "version_packed": 281487861678158,
@@ -2294,7 +2294,7 @@
               "observed_publisher": "Intel Corporation",
               "signature_status": "verified",
               "dependencies": [],
-              "checked_at": "2026-10-25T14:40:52.380689800+00:00"
+              "checked_at": "2026-10-25T17:57:59.927984100+00:00"
             },
             "version": "1.0.0.59",
             "version_packed": 281474976710715,
@@ -2320,7 +2320,7 @@
             "sha256": "feb7639e1043d0dc88d638c21871f566",
             "size_bytes": 9271976,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915940400Z",
+            "released_at": "2026-10-25T17:56:32.765910900Z",
             "source": "XeSS.SDK.1.0.zip",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/xess/xess_v1.0.0.59_FEB7639E1043D0DC88D638C21871F566.zip",
             "release_notes": "",
@@ -2370,7 +2370,7 @@
               "observed_publisher": "Intel Corporation",
               "signature_status": "verified",
               "dependencies": [],
-              "checked_at": "2026-10-25T14:40:43.702995800+00:00"
+              "checked_at": "2026-10-25T17:57:53.866963900+00:00"
             },
             "version": "1.0.1.12",
             "version_packed": 281474976776204,
@@ -2396,7 +2396,7 @@
             "sha256": "049bfea8c51245a545dc242a7317b9d3",
             "size_bytes": 9272488,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915941300Z",
+            "released_at": "2026-10-25T17:56:32.765912Z",
             "source": "XeSS.SDK.1.0.1.zip",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/xess/xess_v1.0.1.12_049BFEA8C51245A545DC242A7317B9D3.zip",
             "release_notes": "",
@@ -2432,7 +2432,7 @@
             "sha256": "c9fb6bb716a087fd537790bebe710d4c",
             "size_bytes": 15275688,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915942100Z",
+            "released_at": "2026-10-25T17:56:32.765912900Z",
             "source": "Forza Horizon 5",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/xess/xess_v1.1.0.18_C9FB6BB716A087FD537790BEBE710D4C.zip",
             "release_notes": "",
@@ -2464,7 +2464,7 @@
               "observed_publisher": "Intel Corporation",
               "signature_status": "verified",
               "dependencies": [],
-              "checked_at": "2026-10-25T14:40:33.318725+00:00"
+              "checked_at": "2026-10-25T17:57:48.263364100+00:00"
             },
             "version": "1.1.0.21",
             "version_packed": 281479271677973,
@@ -2490,7 +2490,7 @@
             "sha256": "7b20cc0a10008f0846ddac99981ac77f",
             "size_bytes": 15275688,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915942800Z",
+            "released_at": "2026-10-25T17:56:32.765913700Z",
             "source": "XeSS_SDK_1.1.0.zip",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/xess/xess_v1.1.0.21_7B20CC0A10008F0846DDAC99981AC77F.zip",
             "release_notes": "",
@@ -2558,7 +2558,7 @@
               "observed_publisher": "Intel Corporation",
               "signature_status": "verified",
               "dependencies": [],
-              "checked_at": "2026-10-25T14:40:29.739288200+00:00"
+              "checked_at": "2026-10-25T17:57:45.971080200+00:00"
             },
             "version": "1.2.0.13",
             "version_packed": 281483566645261,
@@ -2584,7 +2584,7 @@
             "sha256": "b0130df92c02efde7c2c4df42d69ee70",
             "size_bytes": 67777552,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915944Z",
+            "released_at": "2026-10-25T17:56:32.765915700Z",
             "source": "XeSS_SDK-1.2.0.zip",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/xess/xess_v1.2.0.13_B0130DF92C02EFDE7C2C4DF42D69EE70.zip",
             "release_notes": "",
@@ -2634,7 +2634,7 @@
               "observed_publisher": "Intel Corporation",
               "signature_status": "verified",
               "dependencies": [],
-              "checked_at": "2026-10-25T14:40:25.640092800+00:00"
+              "checked_at": "2026-10-25T17:57:42.959475800+00:00"
             },
             "version": "1.3.0.28",
             "version_packed": 281487861612572,
@@ -2660,7 +2660,7 @@
             "sha256": "dd62b2ef2da5a9be89e18302e38970a2",
             "size_bytes": 74108944,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915944700Z",
+            "released_at": "2026-10-25T17:56:32.765916800Z",
             "source": "XeSS_SDK-1.3.0.zip",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/xess/xess_v1.3.0.28_DD62B2EF2DA5A9BE89E18302E38970A2.zip",
             "release_notes": "",
@@ -2710,7 +2710,7 @@
               "observed_publisher": "Intel Corporation",
               "signature_status": "verified",
               "dependencies": [],
-              "checked_at": "2026-10-25T14:40:21.004123600+00:00"
+              "checked_at": "2026-10-25T17:57:39.836981300+00:00"
             },
             "version": "1.3.1.32",
             "version_packed": 281487861678112,
@@ -2736,7 +2736,7 @@
             "sha256": "10623c59d5e4571bfd6118337ac69491",
             "size_bytes": 67095056,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915945300Z",
+            "released_at": "2026-10-25T17:56:32.765917500Z",
             "source": "XeSS_SDK-1.3.1.zip",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/xess/xess_v1.3.1.32_10623C59D5E4571BFD6118337AC69491.zip",
             "release_notes": "",
@@ -2754,7 +2754,7 @@
             "sha256": "367be8343b288372ff8523438f53b62d",
             "size_bytes": 120278928,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915946Z",
+            "released_at": "2026-10-25T17:56:32.765918400Z",
             "source": "Marvel Rivals",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/xess/xess_v2.0.0.18_367BE8343B288372FF8523438F53B62D.zip",
             "release_notes": "",
@@ -2858,7 +2858,7 @@
               "observed_publisher": "Intel Corporation",
               "signature_status": "verified",
               "dependencies": [],
-              "checked_at": "2026-10-25T14:40:16.938995800+00:00"
+              "checked_at": "2026-10-25T17:57:36.847854800+00:00"
             },
             "version": "2.0.1.41",
             "version_packed": 562949953486889,
@@ -2898,7 +2898,7 @@
               "observed_publisher": "Intel Corporation",
               "signature_status": "verified",
               "dependencies": [],
-              "checked_at": "2026-10-25T14:40:11.370845400+00:00"
+              "checked_at": "2026-10-25T17:57:33.016944300+00:00"
             },
             "version": "2.0.2.53",
             "version_packed": 562949953552437,
@@ -2978,7 +2978,7 @@
               "observed_publisher": "Intel Corporation",
               "signature_status": "verified",
               "dependencies": [],
-              "checked_at": "2026-10-25T14:40:06.785658700+00:00"
+              "checked_at": "2026-10-25T17:57:29.221872600+00:00"
             },
             "version": "2.0.2.68",
             "version_packed": 562949953552452,
@@ -3018,7 +3018,7 @@
               "observed_publisher": "Intel Corporation",
               "signature_status": "verified",
               "dependencies": [],
-              "checked_at": "2026-10-25T14:40:02.163010600+00:00"
+              "checked_at": "2026-10-25T17:57:25.339240500+00:00"
             },
             "version": "2.0.2.68",
             "version_packed": 562949953552452,
@@ -3058,7 +3058,7 @@
               "observed_publisher": "Intel Corporation",
               "signature_status": "verified",
               "dependencies": [],
-              "checked_at": "2026-10-25T14:39:57.700397+00:00"
+              "checked_at": "2026-10-25T17:57:22.312604+00:00"
             },
             "version": "2.0.2.68",
             "version_packed": 562949953552452,
@@ -3098,7 +3098,7 @@
               "observed_publisher": "Intel Corporation",
               "signature_status": "verified",
               "dependencies": [],
-              "checked_at": "2026-10-25T14:39:53.423256900+00:00"
+              "checked_at": "2026-10-25T17:57:19.116639800+00:00"
             },
             "version": "2.0.2.68",
             "version_packed": 562949953552452,
@@ -3161,7 +3161,7 @@
               "observed_publisher": "Intel Corporation",
               "signature_status": "verified",
               "dependencies": [],
-              "checked_at": "2026-10-25T14:40:16.938999500+00:00"
+              "checked_at": "2026-10-25T17:57:36.847847200+00:00"
             },
             "version": "2.0.1.41",
             "version_packed": 562949953486889,
@@ -3201,7 +3201,7 @@
               "observed_publisher": "Intel Corporation",
               "signature_status": "verified",
               "dependencies": [],
-              "checked_at": "2026-10-25T14:40:11.370855100+00:00"
+              "checked_at": "2026-10-25T17:57:33.016918+00:00"
             },
             "version": "2.0.2.53",
             "version_packed": 562949953552437,
@@ -3281,7 +3281,7 @@
               "observed_publisher": "Intel Corporation",
               "signature_status": "verified",
               "dependencies": [],
-              "checked_at": "2026-10-25T14:40:06.785647400+00:00"
+              "checked_at": "2026-10-25T17:57:29.221880+00:00"
             },
             "version": "2.0.2.68",
             "version_packed": 562949953552452,
@@ -3321,7 +3321,7 @@
               "observed_publisher": "Intel Corporation",
               "signature_status": "verified",
               "dependencies": [],
-              "checked_at": "2026-10-25T14:40:02.163018300+00:00"
+              "checked_at": "2026-10-25T17:57:25.339233+00:00"
             },
             "version": "2.0.2.68",
             "version_packed": 562949953552452,
@@ -3361,7 +3361,7 @@
               "observed_publisher": "Intel Corporation",
               "signature_status": "verified",
               "dependencies": [],
-              "checked_at": "2026-10-25T14:39:57.700389300+00:00"
+              "checked_at": "2026-10-25T17:57:22.312607700+00:00"
             },
             "version": "2.0.2.68",
             "version_packed": 562949953552452,
@@ -3401,7 +3401,7 @@
               "observed_publisher": "Intel Corporation",
               "signature_status": "verified",
               "dependencies": [],
-              "checked_at": "2026-10-25T14:39:53.423266+00:00"
+              "checked_at": "2026-10-25T17:57:19.116648600+00:00"
             },
             "version": "2.0.2.68",
             "version_packed": 562949953552452,
@@ -3486,7 +3486,7 @@
               "dependencies": [
                 "ec42bc5d01252b2275c7b33da4edf3e0f295e8ed648c564b18e03b422da02bcb"
               ],
-              "checked_at": "2026-10-25T14:41:26.437607400+00:00"
+              "checked_at": "2026-10-25T17:58:29.656205600+00:00"
             },
             "version": "1.0.2203.901",
             "version_packed": 281475121087365,
@@ -3528,7 +3528,7 @@
               "dependencies": [
                 "82424fe1614ce02076e540e247ac11efb68b89397baeaa85931eaaaa7e608c44"
               ],
-              "checked_at": "2026-10-25T14:41:26.504897600+00:00"
+              "checked_at": "2026-10-25T17:58:29.856069600+00:00"
             },
             "version": "1.0.2205.2402",
             "version_packed": 281475121219938,
@@ -3606,7 +3606,7 @@
               "dependencies": [
                 "1c9e095a10eb606f22981bd55490994cef29cd374082667fe4350a69f2af2e19"
               ],
-              "checked_at": "2026-10-25T14:41:26.624062300+00:00"
+              "checked_at": "2026-10-25T17:58:30.284901600+00:00"
             },
             "version": "1.1.2211.304",
             "version_packed": 281479416578352,
@@ -3648,7 +3648,7 @@
               "dependencies": [
                 "948c1c324d3fe1e9cbf699da7b0672061c6b217e41ec3ebcd3ced9a27ccf3ba8"
               ],
-              "checked_at": "2026-10-25T14:41:26.749709+00:00"
+              "checked_at": "2026-10-25T17:58:30.655765+00:00"
             },
             "version": "1.1.2212.610",
             "version_packed": 281479416644194,
@@ -3780,7 +3780,7 @@
               "dependencies": [
                 "00caebf397aed097c0a5938818b0deaf5661fd7f82d30460ccd7070a66301ab4"
               ],
-              "checked_at": "2026-10-25T14:41:26.863223600+00:00"
+              "checked_at": "2026-10-25T17:58:30.999709200+00:00"
             },
             "version": "1.2.2304.1701",
             "version_packed": 281483717641893,
@@ -3822,7 +3822,7 @@
               "dependencies": [
                 "d997d61b6cb3584de6c7671643d0528cfb579350bee157c9501223e817609179"
               ],
-              "checked_at": "2026-10-25T14:41:26.973670800+00:00"
+              "checked_at": "2026-10-25T17:58:31.495111600+00:00"
             },
             "version": "1.2.2305.1502",
             "version_packed": 281483717707230,
@@ -3864,7 +3864,7 @@
               "dependencies": [
                 "7a28e37942214ccc458be758b29d253d9c5381d59808c61063c2a89046643cd2"
               ],
-              "checked_at": "2026-10-25T14:41:27.102639600+00:00"
+              "checked_at": "2026-10-25T17:58:31.809267500+00:00"
             },
             "version": "1.2.2311.1405",
             "version_packed": 281483718100349,
@@ -3906,7 +3906,7 @@
               "dependencies": [
                 "915ec4a463aa892dfa96f7d48fa6cb5fdbd1d01711e4c9c27d566f93dd5be8ec"
               ],
-              "checked_at": "2026-10-25T14:41:27.207533400+00:00"
+              "checked_at": "2026-10-25T17:58:32.148086600+00:00"
             },
             "version": "1.2.2407.1501",
             "version_packed": 281483724391901,
@@ -3948,7 +3948,7 @@
               "dependencies": [
                 "1f95974515e4e52d6615c9a5c42e870d31272c57c0e229cf60f984bd305c91c5"
               ],
-              "checked_at": "2026-10-25T14:41:27.316248600+00:00"
+              "checked_at": "2026-10-25T17:58:32.497718700+00:00"
             },
             "version": "1.2.2504.401",
             "version_packed": 281483730747793,
@@ -4008,7 +4008,7 @@
               "dependencies": [
                 "1cfeb88675f7a0feb624504764ccfec413b3dd97b5ba6410afd53a2596313f38"
               ],
-              "checked_at": "2026-10-25T14:41:27.430886400+00:00"
+              "checked_at": "2026-10-25T17:58:33.309978600+00:00"
             },
             "version": "1.3.2506.2501",
             "version_packed": 281488025848261,
@@ -4086,7 +4086,7 @@
               "dependencies": [
                 "51050f42200bfaad725445e0e426b5c4ff5a905fc87624470f2aecd59323992c"
               ],
-              "checked_at": "2026-10-25T14:41:27.571740800+00:00"
+              "checked_at": "2026-10-25T17:58:33.819875600+00:00"
             },
             "version": "1.4.2603.504",
             "version_packed": 281492327170552,
@@ -4094,7 +4094,7 @@
             "sha256": "4ae887a8cd21db2cfecd97c34b5f4da48d8370d4646f3853d60db809aa02a8bf",
             "size_bytes": 207392,
             "signed": true,
-            "released_at": "2026-10-25T14:41:27.571731800Z",
+            "released_at": "2026-10-25T17:58:33.819867400Z",
             "source": "nuget:microsoft.direct3d.directstorage@1.4.0-preview1-2603.504",
             "cdn_url": "https://api.nuget.org/v3-flatcontainer/microsoft.direct3d.directstorage/1.4.0-preview1-2603.504/microsoft.direct3d.directstorage.1.4.0-preview1-2603.504.nupkg",
             "release_notes": null,
@@ -4128,7 +4128,7 @@
               "dependencies": [
                 "1af17f2e68fc465d59c50e23b8b871140733ec1bbb3e190f5416a7b93315c196"
               ],
-              "checked_at": "2026-10-25T14:41:27.740865300+00:00"
+              "checked_at": "2026-10-25T17:58:34.449447200+00:00"
             },
             "version": "1.4.2606.904",
             "version_packed": 281492327367560,
@@ -4136,7 +4136,7 @@
             "sha256": "ac4a39ce3d6301d1449a86b54e6f6190fcf93b9dfd92ecf8dcb143ee75e38fdb",
             "size_bytes": 207200,
             "signed": true,
-            "released_at": "2026-10-25T14:41:27.740856300Z",
+            "released_at": "2026-10-25T17:58:34.449438600Z",
             "source": "nuget:microsoft.direct3d.directstorage@1.4.0-preview2-2606.904",
             "cdn_url": "https://api.nuget.org/v3-flatcontainer/microsoft.direct3d.directstorage/1.4.0-preview2-2606.904/microsoft.direct3d.directstorage.1.4.0-preview2-2606.904.nupkg",
             "release_notes": null,
@@ -4211,7 +4211,7 @@
               "dependencies": [
                 "3d0ab65788cefba70f649ef8f27a40badff9c4c29f7d84dba26e330617ec3f1f"
               ],
-              "checked_at": "2026-10-25T14:41:26.437615300+00:00"
+              "checked_at": "2026-10-25T17:58:29.656214900+00:00"
             },
             "version": "1.0.2203.901",
             "version_packed": 281475121087365,
@@ -4253,7 +4253,7 @@
               "dependencies": [
                 "80798c1ccd6834072dc67c9b554612ae7240521e8d4e8059d4b3c26ab63797fe"
               ],
-              "checked_at": "2026-10-25T14:41:26.504905800+00:00"
+              "checked_at": "2026-10-25T17:58:29.856062300+00:00"
             },
             "version": "1.0.2205.2402",
             "version_packed": 281475121219938,
@@ -4331,7 +4331,7 @@
               "dependencies": [
                 "32605dc9ff03b3686dd68e7c4175118b2644d3b7922cdb9acd20d13c31640498"
               ],
-              "checked_at": "2026-10-25T14:41:26.624054900+00:00"
+              "checked_at": "2026-10-25T17:58:30.284894500+00:00"
             },
             "version": "1.1.2211.304",
             "version_packed": 281479416578352,
@@ -4373,7 +4373,7 @@
               "dependencies": [
                 "5de0a18ee8539e3a7e3e921f4a298b5a1d3cae41d63567a09e6a8009e36ef64b"
               ],
-              "checked_at": "2026-10-25T14:41:26.749701600+00:00"
+              "checked_at": "2026-10-25T17:58:30.655772700+00:00"
             },
             "version": "1.1.2212.610",
             "version_packed": 281479416644194,
@@ -4505,7 +4505,7 @@
               "dependencies": [
                 "9622e7fc2deefc0a47c324aa2438e6536da3e524d6c0e1e42b5b3fefd3dcb911"
               ],
-              "checked_at": "2026-10-25T14:41:26.863213500+00:00"
+              "checked_at": "2026-10-25T17:58:30.999729300+00:00"
             },
             "version": "1.2.2304.1701",
             "version_packed": 281483717641893,
@@ -4547,7 +4547,7 @@
               "dependencies": [
                 "c4a5ac69adecd9af78173c88f2c7171bed4ade942003006c1f54b4d3bd25edfd"
               ],
-              "checked_at": "2026-10-25T14:41:26.973663400+00:00"
+              "checked_at": "2026-10-25T17:58:31.495103700+00:00"
             },
             "version": "1.2.2305.1502",
             "version_packed": 281483717707230,
@@ -4589,7 +4589,7 @@
               "dependencies": [
                 "8153f567f2b0ad51a2301ea713ec95206d09b43d186cf31aea80fa138edf8f45"
               ],
-              "checked_at": "2026-10-25T14:41:27.102632+00:00"
+              "checked_at": "2026-10-25T17:58:31.809275900+00:00"
             },
             "version": "1.2.2311.1405",
             "version_packed": 281483718100349,
@@ -4631,7 +4631,7 @@
               "dependencies": [
                 "b9765608905f23ea94958bafd6ec362becae87cd1c53d75ab33ca1181e4a39dc"
               ],
-              "checked_at": "2026-10-25T14:41:27.207541500+00:00"
+              "checked_at": "2026-10-25T17:58:32.148094500+00:00"
             },
             "version": "1.2.2407.1501",
             "version_packed": 281483724391901,
@@ -4673,7 +4673,7 @@
               "dependencies": [
                 "3e47c8228d91862b4767e8fa039c72cfca2d555e8350934929e781c42c68ae68"
               ],
-              "checked_at": "2026-10-25T14:41:27.316267700+00:00"
+              "checked_at": "2026-10-25T17:58:32.497709+00:00"
             },
             "version": "1.2.2504.401",
             "version_packed": 281483730747793,
@@ -4733,7 +4733,7 @@
               "dependencies": [
                 "0ffba5eefb5c1a5f52d253ab012f1310264b8a9fdb3e9a907a161e64b709f533"
               ],
-              "checked_at": "2026-10-25T14:41:27.430878800+00:00"
+              "checked_at": "2026-10-25T17:58:33.309968100+00:00"
             },
             "version": "1.3.2506.2501",
             "version_packed": 281488025848261,
@@ -4811,7 +4811,7 @@
               "dependencies": [
                 "10b799f73d7458b77d57bdb9ea92db72a2f6ba6378534280092d234cd87fcc5e"
               ],
-              "checked_at": "2026-10-25T14:41:27.571750300+00:00"
+              "checked_at": "2026-10-25T17:58:33.819884600+00:00"
             },
             "version": "1.4.2603.504",
             "version_packed": 281492327170552,
@@ -4819,7 +4819,7 @@
             "sha256": "c6a160899d2c607e1547476b210e36b1ce059a78feb6dc027a2a0cf4a6f22b78",
             "size_bytes": 2517064,
             "signed": true,
-            "released_at": "2026-10-25T14:41:27.571731800Z",
+            "released_at": "2026-10-25T17:58:33.819867400Z",
             "source": "nuget:microsoft.direct3d.directstorage@1.4.0-preview1-2603.504",
             "cdn_url": "https://api.nuget.org/v3-flatcontainer/microsoft.direct3d.directstorage/1.4.0-preview1-2603.504/microsoft.direct3d.directstorage.1.4.0-preview1-2603.504.nupkg",
             "release_notes": null,
@@ -4853,7 +4853,7 @@
               "dependencies": [
                 "bf7ab2750a4f29f8d695d3e93d84d8c99eb5e6c6646b5f514f700afa402386c6"
               ],
-              "checked_at": "2026-10-25T14:41:27.740873800+00:00"
+              "checked_at": "2026-10-25T17:58:34.449454800+00:00"
             },
             "version": "1.4.2606.904",
             "version_packed": 281492327367560,
@@ -4861,7 +4861,7 @@
             "sha256": "4e92a4ba8a1851281cfc003ef833b64c9e56b7a6a667e30eae4a004a4b41f02a",
             "size_bytes": 2517304,
             "signed": true,
-            "released_at": "2026-10-25T14:41:27.740856300Z",
+            "released_at": "2026-10-25T17:58:34.449438600Z",
             "source": "nuget:microsoft.direct3d.directstorage@1.4.0-preview2-2606.904",
             "cdn_url": "https://api.nuget.org/v3-flatcontainer/microsoft.direct3d.directstorage/1.4.0-preview2-2606.904/microsoft.direct3d.directstorage.1.4.0-preview2-2606.904.nupkg",
             "release_notes": null,
@@ -4886,7 +4886,7 @@
             "sha256": "756c81decd8ab626058e8daaa08d9a19",
             "size_bytes": 12803624,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915864400Z",
+            "released_at": "2026-10-25T17:56:32.765821700Z",
             "source": "Microsoft Flight Simulator (via TechPowerUp)",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss_g/dlss_g_v1.0.1.0_756C81DECD8AB626058E8DAAA08D9A19.zip",
             "release_notes": "",
@@ -4904,7 +4904,7 @@
             "sha256": "36931062a0b9227011885514914c7a3b",
             "size_bytes": 12799528,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915865300Z",
+            "released_at": "2026-10-25T17:56:32.765822600Z",
             "source": "Witcher 3 (via TechPowerUp)",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss_g/dlss_g_v1.0.2.0_36931062A0B9227011885514914C7A3B.zip",
             "release_notes": "",
@@ -4922,7 +4922,7 @@
             "sha256": "9a44c28a5e5a915f884e2ed7dfc5d4b4",
             "size_bytes": 12799528,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915866Z",
+            "released_at": "2026-10-25T17:56:32.765823400Z",
             "source": "Spiderman Remastered (via TechPowerUp)",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss_g/dlss_g_v1.0.3.0_9A44C28A5E5A915F884E2ED7DFC5D4B4.zip",
             "release_notes": "",
@@ -4940,7 +4940,7 @@
             "sha256": "de3479e49e53a8ab4950f8c72a415239",
             "size_bytes": 12876840,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915867300Z",
+            "released_at": "2026-10-25T17:56:32.765824900Z",
             "source": "Portal RTX (via TechPowerUp)",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss_g/dlss_g_v1.0.4.0_DE3479E49E53A8AB4950F8C72A415239.zip",
             "release_notes": "",
@@ -4958,7 +4958,7 @@
             "sha256": "4f39303b168462a4f2ecf04fead1a9e8",
             "size_bytes": 12932648,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915868Z",
+            "released_at": "2026-10-25T17:56:32.765826Z",
             "source": "Hitman 3 (via TechPowerUp)",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss_g/dlss_g_v1.0.5.0_4F39303B168462A4F2ECF04FEAD1A9E8.zip",
             "release_notes": "",
@@ -4976,7 +4976,7 @@
             "sha256": "f869fbd1ad307071cf7997b66c1e1e76",
             "size_bytes": 12936744,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915868600Z",
+            "released_at": "2026-10-25T17:56:32.765826800Z",
             "source": "Forza Horizon 5 (via TechPowerUp)",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss_g/dlss_g_v1.0.6.0_F869FBD1AD307071CF7997B66C1E1E76.zip",
             "release_notes": "",
@@ -4994,7 +4994,7 @@
             "sha256": "bbaeb66b55bea5a97ef12b949af52bc0",
             "size_bytes": 12936744,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915869200Z",
+            "released_at": "2026-10-25T17:56:32.765827500Z",
             "source": "The Witcher 3 (via TechPowerUp)",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss_g/dlss_g_v1.0.7.0_BBAEB66B55BEA5A97EF12B949AF52BC0.zip",
             "release_notes": "",
@@ -5012,7 +5012,7 @@
             "sha256": "3209de901666436042f4ce59344df47f",
             "size_bytes": 13181992,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915869900Z",
+            "released_at": "2026-10-25T17:56:32.765828300Z",
             "source": "Cyberpunk Overdrive (via TechPowerUp)",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss_g/dlss_g_v3.1.1.0_3209DE901666436042F4CE59344DF47F.zip",
             "release_notes": "",
@@ -5030,7 +5030,7 @@
             "sha256": "2a3feb039ffb9ea70dc690b21e918417",
             "size_bytes": 12997672,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915870600Z",
+            "released_at": "2026-10-25T17:56:32.765829200Z",
             "source": "Forza Horizon 5 (via TechPowerUp)",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss_g/dlss_g_v3.1.11.0_2A3FEB039FFB9EA70DC690B21E918417.zip",
             "release_notes": "",
@@ -5048,7 +5048,7 @@
             "sha256": "76f8be4e38a0789bce0dcde2cea9a324",
             "size_bytes": 13004328,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915871400Z",
+            "released_at": "2026-10-25T17:56:32.765830Z",
             "source": "Diablo IV Beta (via TechPowerUp)",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss_g/dlss_g_v3.1.12.0_76F8BE4E38A0789BCE0DCDE2CEA9A324.zip",
             "release_notes": "",
@@ -5066,7 +5066,7 @@
             "sha256": "ef9b5fa50410a45a13014cb55aae950d",
             "size_bytes": 13001768,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915872200Z",
+            "released_at": "2026-10-25T17:56:32.765831Z",
             "source": "Diablo IV (via TechPowerUp)",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss_g/dlss_g_v3.1.13.0_EF9B5FA50410A45A13014CB55AAE950D.zip",
             "release_notes": "",
@@ -5084,7 +5084,7 @@
             "sha256": "8363e2ac2e3e512ac5ab2d364aa4c245",
             "size_bytes": 12569128,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915872800Z",
+            "released_at": "2026-10-25T17:56:32.765831800Z",
             "source": "Desordre (via TechPowerUp)",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss_g/dlss_g_v3.1.30.0_8363E2AC2E3E512AC5AB2D364AA4C245.zip",
             "release_notes": "CL 33088933",
@@ -5102,7 +5102,7 @@
             "sha256": "1b21da1d91ab05b83625729d0b683797",
             "size_bytes": 12582456,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915873500Z",
+            "released_at": "2026-10-25T17:56:32.765832600Z",
             "source": "NVIDIA UE5 Plugin (via TechPowerUp)",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss_g/dlss_g_v3.5.0.0_1B21DA1D91AB05B83625729D0B683797.zip",
             "release_notes": "CL 33190482",
@@ -5120,7 +5120,7 @@
             "sha256": "4de45236c2aa62cd25f1d670e0c5deaf",
             "size_bytes": 11698216,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915874300Z",
+            "released_at": "2026-10-25T17:56:32.765833500Z",
             "source": "NVIDIA UE5 Plugin (via TechPowerUp)",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss_g/dlss_g_v3.5.10.0_4DE45236C2AA62CD25F1D670E0C5DEAF.zip",
             "release_notes": "CL 33396148",
@@ -5138,7 +5138,7 @@
             "sha256": "67453779383c58139267a9b15839bb78",
             "size_bytes": 11727912,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915875Z",
+            "released_at": "2026-10-25T17:56:32.765834500Z",
             "source": "Naraka Bladepoint (via TechPowerUp)",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss_g/dlss_g_v3.6.0.0_67453779383C58139267A9B15839BB78.zip",
             "release_notes": "CL 33629598",
@@ -5156,7 +5156,7 @@
             "sha256": "ee98cd63c16316882c3e5d56e51fc680",
             "size_bytes": 11778088,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915875700Z",
+            "released_at": "2026-10-25T17:56:32.765835400Z",
             "source": "NVIDIA SDK (via TechPowerUp)",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss_g/dlss_g_v3.7.0.0_EE98CD63C16316882C3E5D56E51FC680.zip",
             "release_notes": "CL 33904986",
@@ -5174,7 +5174,7 @@
             "sha256": "b16e50dd7c60d254aab782278c2ef73c",
             "size_bytes": 11779112,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915876400Z",
+            "released_at": "2026-10-25T17:56:32.765836100Z",
             "source": "Senua's Saga: Hellblade II (via TechPowerUp)",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss_g/dlss_g_v3.7.1.0_B16E50DD7C60D254AAB782278C2EF73C.zip",
             "release_notes": "CL 34181968",
@@ -5192,7 +5192,7 @@
             "sha256": "69e9f9dc32d0aef4e7c986e2339a0e52",
             "size_bytes": 9477688,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915877100Z",
+            "released_at": "2026-10-25T17:56:32.765836900Z",
             "source": "Diablo IV (via TechPowerUp)",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss_g/dlss_g_v3.7.10.0_69E9F9DC32D0AEF4E7C986E2339A0E52.zip",
             "release_notes": "CL 34270846",
@@ -5210,7 +5210,7 @@
             "sha256": "db7b5c2c8686e1586cc56d5bdb64965c",
             "size_bytes": 9283120,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915877700Z",
+            "released_at": "2026-10-25T17:56:32.765837700Z",
             "source": "Diablo IV (via TechPowerUp)",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss_g/dlss_g_v3.8.1.0_DB7B5C2C8686E1586CC56D5BDB64965C.zip",
             "release_notes": "CL 35007158",
@@ -5228,7 +5228,7 @@
             "sha256": "11ecc4bf7fe5cefcf4a737e95b6752ff",
             "size_bytes": 7607336,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915878400Z",
+            "released_at": "2026-10-25T17:56:32.765838900Z",
             "source": "Cyberpunk 2077 2.21",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss_g/dlss_g_v310.1.0.0_11ECC4BF7FE5CEFCF4A737E95B6752FF.zip",
             "release_notes": "CL 35304964",
@@ -5246,7 +5246,7 @@
             "sha256": "26c2eafe046cdd403a1850f71186595c",
             "size_bytes": 7595560,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915879100Z",
+            "released_at": "2026-10-25T17:56:32.765839600Z",
             "source": "NVIDIA Driver",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss_g/dlss_g_v310.2.0.0_26C2EAFE046CDD403A1850F71186595C.zip",
             "release_notes": "CL 35440459",
@@ -5264,7 +5264,7 @@
             "sha256": "96cb06ff5a84e4e90591973bf99a7d45",
             "size_bytes": 7597104,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915879800Z",
+            "released_at": "2026-10-25T17:56:32.765840400Z",
             "source": "beeradmoore/dlss-swapper",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss_g/dlss_g_v310.2.1.0_96CB06FF5A84E4E90591973BF99A7D45.zip",
             "release_notes": "CL 35516211",
@@ -5605,7 +5605,7 @@
             "sha256": "625907de06a912414fdb8444c91b262c",
             "size_bytes": 71719976,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915834Z",
+            "released_at": "2026-10-25T17:56:32.765786Z",
             "source": "Alan Wake 2 (via TechPowerUp)",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss_d/dlss_d_v3.5.0.0_625907DE06A912414FDB8444C91B262C.zip",
             "release_notes": "CL 33367307",
@@ -5623,7 +5623,7 @@
             "sha256": "ce8b65654872a30dc6b771aae8ca98ad",
             "size_bytes": 71894568,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915834800Z",
+            "released_at": "2026-10-25T17:56:32.765787300Z",
             "source": "Alan Wake  (via TechPowerUp)2",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss_d/dlss_d_v3.5.10.0_CE8B65654872A30DC6B771AAE8CA98AD.zip",
             "release_notes": "CL 33457773",
@@ -5641,7 +5641,7 @@
             "sha256": "622fcb76d37a2d73811756e891cc80e8",
             "size_bytes": 38426680,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915835700Z",
+            "released_at": "2026-10-25T17:56:32.765788300Z",
             "source": "Portal with RTX (via TechPowerUp)",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss_d/dlss_d_v3.7.0.0_622FCB76D37A2D73811756E891CC80E8.zip",
             "release_notes": "CL 33812812",
@@ -5659,7 +5659,7 @@
             "sha256": "fdfac845ab72d509a24ea2c16a1619c4",
             "size_bytes": 43790888,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915836400Z",
+            "released_at": "2026-10-25T17:56:32.765789300Z",
             "source": "The First Descendant (via TechPowerUp)",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss_d/dlss_d_v3.7.10.0_FDFAC845AB72D509A24EA2C16A1619C4.zip",
             "release_notes": "CL 34201261",
@@ -5677,7 +5677,7 @@
             "sha256": "f2f968b15cd295d13d571d0d18170e10",
             "size_bytes": 44006968,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915837100Z",
+            "released_at": "2026-10-25T17:56:32.765790100Z",
             "source": "Star Wars Outlaws (via TechPowerUp)",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss_d/dlss_d_v3.7.20.0_F2F968B15CD295D13D571D0D18170E10.zip",
             "release_notes": "CL 34733527",
@@ -5695,7 +5695,7 @@
             "sha256": "10c793f0b14efedc595838bb8a09fd28",
             "size_bytes": 65630248,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915837800Z",
+            "released_at": "2026-10-25T17:56:32.765790900Z",
             "source": "Cyberpunk 2077 2.21",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss_d/dlss_d_v310.1.0.0_10C793F0B14EFEDC595838BB8A09FD28.zip",
             "release_notes": "CL 35269843",
@@ -5713,7 +5713,7 @@
             "sha256": "e6081b848ea68880db8adc83cdfb15dc",
             "size_bytes": 72957992,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915838500Z",
+            "released_at": "2026-10-25T17:56:32.765792300Z",
             "source": "NVIDIA Driver",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss_d/dlss_d_v310.2.0.0_E6081B848EA68880DB8ADC83CDFB15DC.zip",
             "release_notes": "CL 35440459",
@@ -6144,7 +6144,7 @@
             "sha256": "5e7b70421ece9dcca09260a38e4e9172",
             "size_bytes": 5564400,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915625600Z",
+            "released_at": "2026-10-25T17:56:32.765521100Z",
             "source": "Anthem (via TechPowerUp)",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss/dlss_v1.1.6.0_5E7B70421ECE9DCCA09260A38E4E9172.zip",
             "release_notes": "CL 26519365",
@@ -6162,7 +6162,7 @@
             "sha256": "5ee9de2ae9d76a32c727c1b6ff21e0fa",
             "size_bytes": 5646688,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915626400Z",
+            "released_at": "2026-10-25T17:56:32.765522Z",
             "source": "Monster Hunter World (via TechPowerUp)",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss/dlss_v1.1.13.0_5EE9DE2AE9D76A32C727C1B6FF21E0FA.zip",
             "release_notes": "CL 27720038",
@@ -6180,7 +6180,7 @@
             "sha256": "899ebc3ac0637125d7578d87fef42970",
             "size_bytes": 5771120,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915629100Z",
+            "released_at": "2026-10-25T17:56:32.765523Z",
             "source": "Sword of Legends Online (via TechPowerUp)",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss/dlss_v1.2.14.0_899EBC3AC0637125D7578D87FEF42970.zip",
             "release_notes": "CL 26937653",
@@ -6198,7 +6198,7 @@
             "sha256": "b92191e7a0b994a297ff8b2012eba529",
             "size_bytes": 5737784,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915629900Z",
+            "released_at": "2026-10-25T17:56:32.765523800Z",
             "source": "Control (via TechPowerUp)",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss/dlss_v1.3.2.0_B92191E7A0B994A297FF8B2012EBA529.zip",
             "release_notes": "CL 27036528",
@@ -6216,7 +6216,7 @@
             "sha256": "d30c27ca983f9792512c6f5874c60b2e",
             "size_bytes": 6344168,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915630700Z",
+            "released_at": "2026-10-25T17:56:32.765524700Z",
             "source": "Control (via TechPowerUp)",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss/dlss_v2.0.34.0_D30C27CA983F9792512C6F5874C60B2E.zip",
             "release_notes": "CL 28581698",
@@ -6234,7 +6234,7 @@
             "sha256": "acb8b647ba19dcc638dd50ff621f7801",
             "size_bytes": 6290920,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915631400Z",
+            "released_at": "2026-10-25T17:56:32.765526700Z",
             "source": "F1 2020 (via TechPowerUp)",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss/dlss_v2.0.38.0_ACB8B647BA19DCC638DD50FF621F7801.zip",
             "release_notes": "CL 28843986",
@@ -6252,7 +6252,7 @@
             "sha256": "1a30408f7ad1bdaec0ef81b5e2313c4e",
             "size_bytes": 11562296,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915632Z",
+            "released_at": "2026-10-25T17:56:32.765527500Z",
             "source": "Minecraft Bedrock Edition (via TechPowerUp)",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss/dlss_v2.1.16.0_1A30408F7AD1BDAEC0EF81B5E2313C4E.zip",
             "release_notes": "CL 28844053",
@@ -6270,7 +6270,7 @@
             "sha256": "0a82a657e294219b6dc8875897a2cced",
             "size_bytes": 11731432,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915632800Z",
+            "released_at": "2026-10-25T17:56:32.765528400Z",
             "source": "Death Stranding (via TechPowerUp)",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss/dlss_v2.1.19.0_0A82A657E294219B6DC8875897A2CCED.zip",
             "release_notes": "CL 28939566",
@@ -6288,7 +6288,7 @@
             "sha256": "5af4c12dde0e9dfa54ed76fe9e4db647",
             "size_bytes": 11772216,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915635Z",
+            "released_at": "2026-10-25T17:56:32.765529100Z",
             "source": "TechPowerUp",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss/dlss_v2.1.24.0_5AF4C12DDE0E9DFA54ED76FE9E4DB647.zip",
             "release_notes": "CL 28996384",
@@ -6306,7 +6306,7 @@
             "sha256": "18b651a8df80464512ed19fa9859b585",
             "size_bytes": 11773928,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915635900Z",
+            "released_at": "2026-10-25T17:56:32.765529900Z",
             "source": "Control (via TechPowerUp)",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss/dlss_v2.1.25.0_18B651A8DF80464512ED19FA9859B585.zip",
             "release_notes": "CL 29009287",
@@ -6324,7 +6324,7 @@
             "sha256": "f92355a0a6376447c7d0fc0a3cfc2f43",
             "size_bytes": 11773416,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915636600Z",
+            "released_at": "2026-10-25T17:56:32.765530600Z",
             "source": "Bright Memory Infinite Benchmark (via TechPowerUp)",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss/dlss_v2.1.28.0_F92355A0A6376447C7D0FC0A3CFC2F43.zip",
             "release_notes": "CL 29017803",
@@ -6360,7 +6360,7 @@
             "sha256": "3e68d270cef16027da3ff3ba3b974537",
             "size_bytes": 11773752,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915638100Z",
+            "released_at": "2026-10-25T17:56:32.765533300Z",
             "source": "Watch Dogs Legion (via TechPowerUp)",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss/dlss_v2.1.31.0_3E68D270CEF16027DA3FF3BA3B974537.zip",
             "release_notes": "CL 29083287",
@@ -6378,7 +6378,7 @@
             "sha256": "fb72213cf0f3cf103a16cfe7d930f707",
             "size_bytes": 11784504,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915638800Z",
+            "released_at": "2026-10-25T17:56:32.765534200Z",
             "source": "TechPowerUp",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss/dlss_v2.1.35.0_FB72213CF0F3CF103A16CFE7D930F707.zip",
             "release_notes": "CL 29167882",
@@ -6396,7 +6396,7 @@
             "sha256": "6cbf57c2d08d775808aef61c9671db5b",
             "size_bytes": 11887416,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915641400Z",
+            "released_at": "2026-10-25T17:56:32.765535Z",
             "source": "Cyberpunk 2077 (via TechPowerUp)",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss/dlss_v2.1.39.0_6CBF57C2D08D775808AEF61C9671DB5B.zip",
             "release_notes": "CL 29218479",
@@ -6414,7 +6414,7 @@
             "sha256": "8e3ac0a089abe2b319e2926b38db0ff9",
             "size_bytes": 11888616,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915642400Z",
+            "released_at": "2026-10-25T17:56:32.765535700Z",
             "source": "TechPowerUp",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss/dlss_v2.1.40.0_8E3AC0A089ABE2B319E2926B38DB0FF9.zip",
             "release_notes": "CL 29272686",
@@ -6432,7 +6432,7 @@
             "sha256": "6672c90b5afef2153259f84929364b2a",
             "size_bytes": 13758192,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915643200Z",
+            "released_at": "2026-10-25T17:56:32.765536600Z",
             "source": "System Shock Demo (via TechPowerUp)",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss/dlss_v2.1.50.0_6672C90B5AFEF2153259F84929364B2A.zip",
             "release_notes": "CL 29518444",
@@ -6450,7 +6450,7 @@
             "sha256": "4950c49d5e337f3146bcd51a26ab8cc6",
             "size_bytes": 13758192,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915643900Z",
+            "released_at": "2026-10-25T17:56:32.765538600Z",
             "source": "F1 2020 (via TechPowerUp)",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss/dlss_v2.1.51.0_4950C49D5E337F3146BCD51A26AB8CC6.zip",
             "release_notes": "CL 29469881",
@@ -6468,7 +6468,7 @@
             "sha256": "430ee0d531f4b89a7cc65524ccc5d912",
             "size_bytes": 13758192,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915644600Z",
+            "released_at": "2026-10-25T17:56:32.765539700Z",
             "source": "Fortnite (via TechPowerUp)",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss/dlss_v2.1.52.0_430EE0D531F4B89A7CC65524CCC5D912.zip",
             "release_notes": "CL 29573341",
@@ -6486,7 +6486,7 @@
             "sha256": "e696265c702cc90cbcf4974faeebb9f4",
             "size_bytes": 13756768,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915645300Z",
+            "released_at": "2026-10-25T17:56:32.765540600Z",
             "source": "TechPowerUp",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss/dlss_v2.1.53.0_E696265C702CC90CBCF4974FAEEBB9F4.zip",
             "release_notes": "CL 29608517",
@@ -6504,7 +6504,7 @@
             "sha256": "72c53fe8cf9114143680f3bc56cea1a7",
             "size_bytes": 13805424,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915647400Z",
+            "released_at": "2026-10-25T17:56:32.765541400Z",
             "source": "Metro Exodus Enhanced (via TechPowerUp)",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss/dlss_v2.1.55.0_72C53FE8CF9114143680F3BC56CEA1A7.zip",
             "release_notes": "CL 29708548",
@@ -6522,7 +6522,7 @@
             "sha256": "2b1b8d32e4866e7d7734acf2bcc830b1",
             "size_bytes": 14905712,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915648300Z",
+            "released_at": "2026-10-25T17:56:32.765542200Z",
             "source": "COD MW (via TechPowerUp)",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss/dlss_v2.1.58.0_2B1B8D32E4866E7D7734ACF2BCC830B1.zip",
             "release_notes": "CL 29760797",
@@ -6540,7 +6540,7 @@
             "sha256": "ecf487bc067ed07b90a3452db0203655",
             "size_bytes": 14904688,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915649Z",
+            "released_at": "2026-10-25T17:56:32.765543100Z",
             "source": "TechPowerUp",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss/dlss_v2.1.62.0_ECF487BC067ED07B90A3452DB0203655.zip",
             "release_notes": "CL 29884341",
@@ -6558,7 +6558,7 @@
             "sha256": "262b728f1692e2550cf1cc9a41681a59",
             "size_bytes": 14904688,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915649700Z",
+            "released_at": "2026-10-25T17:56:32.765545Z",
             "source": "No Man's Sky (via TechPowerUp)",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss/dlss_v2.1.63.0_262B728F1692E2550CF1CC9A41681A59.zip",
             "release_notes": "CL 29912254",
@@ -6576,7 +6576,7 @@
             "sha256": "1a81316e57aba6c9c46fae53936c3933",
             "size_bytes": 14908784,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915650400Z",
+            "released_at": "2026-10-25T17:56:32.765546Z",
             "source": "Doom Eternal (via TechPowerUp)",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss/dlss_v2.1.66.0_1A81316E57ABA6C9C46FAE53936C3933.zip",
             "release_notes": "CL 30017708",
@@ -6594,7 +6594,7 @@
             "sha256": "52219034574426fef16b19d2495648c0",
             "size_bytes": 14444400,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915651100Z",
+            "released_at": "2026-10-25T17:56:32.765547Z",
             "source": "Rainbow Six Siege (via TechPowerUp)",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss/dlss_v2.2.6.0_52219034574426FEF16B19D2495648C0.zip",
             "release_notes": "CL 29980697",
@@ -6612,7 +6612,7 @@
             "sha256": "5b9b917af8fb72d63f073a0e0f621d94",
             "size_bytes": 14445936,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915654Z",
+            "released_at": "2026-10-25T17:56:32.765547800Z",
             "source": "F1 2021 (via TechPowerUp)",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss/dlss_v2.2.9.0_5B9B917AF8FB72D63F073A0E0F621D94.zip",
             "release_notes": "CL 30084522",
@@ -6630,7 +6630,7 @@
             "sha256": "062215c828802b9202ada4ca4d3619b4",
             "size_bytes": 14447984,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915654800Z",
+            "released_at": "2026-10-25T17:56:32.765548600Z",
             "source": "Rust (via TechPowerUp)",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss/dlss_v2.2.10.0_062215C828802B9202ADA4CA4D3619B4.zip",
             "release_notes": "CL 30115323",
@@ -6648,7 +6648,7 @@
             "sha256": "65345301ba1a985aa9ac3ea6d671abdf",
             "size_bytes": 14449864,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915655600Z",
+            "released_at": "2026-10-25T17:56:32.765549200Z",
             "source": "No Man's Sky (via TechPowerUp)",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss/dlss_v2.2.11.0_65345301BA1A985AA9AC3EA6D671ABDF.zip",
             "release_notes": "CL 30183294",
@@ -6666,7 +6666,7 @@
             "sha256": "110f5ca0453c6f3901fd148ea5cc7650",
             "size_bytes": 14449872,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915656200Z",
+            "released_at": "2026-10-25T17:56:32.765551300Z",
             "source": "Call of Duty Warzone (via TechPowerUp)",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss/dlss_v2.2.14.0_110F5CA0453C6F3901FD148EA5CC7650.zip",
             "release_notes": "CL 30231549",
@@ -6684,7 +6684,7 @@
             "sha256": "c9dcdcd97e19529a7c89432693c8ec0c",
             "size_bytes": 14450376,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915657Z",
+            "released_at": "2026-10-25T17:56:32.765552300Z",
             "source": "Marvel Avengers (via TechPowerUp)",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss/dlss_v2.2.15.0_C9DCDCD97E19529A7C89432693C8EC0C.zip",
             "release_notes": "CL 30254073",
@@ -6702,7 +6702,7 @@
             "sha256": "ad5efa68fa353d1f9d4c0c3acbba85c8",
             "size_bytes": 14673608,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915659800Z",
+            "released_at": "2026-10-25T17:56:32.765553900Z",
             "source": "DLSS-2.2.1.zip",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss/dlss_v2.2.16.0_AD5EFA68FA353D1F9D4C0C3ACBBA85C8.zip",
             "release_notes": "CL 30278952",
@@ -6720,7 +6720,7 @@
             "sha256": "cd71ee48b994ac254dff5dec20828be7",
             "size_bytes": 14452944,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915662300Z",
+            "released_at": "2026-10-25T17:56:32.765557900Z",
             "source": "NVIDIA - Experimental DLSS Models",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss/dlss_v2.2.18.0_CD71EE48B994AC254DFF5DEC20828BE7.zip",
             "release_notes": "CL 30439076",
@@ -6738,7 +6738,7 @@
             "sha256": "90b46302dc96fc3d38ba26040daecfc3",
             "size_bytes": 14677704,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915663700Z",
+            "released_at": "2026-10-25T17:56:32.765559600Z",
             "source": "DLSS-2.3.0.zip",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss/dlss_v2.3.0.0_90B46302DC96FC3D38BA26040DAECFC3.zip",
             "release_notes": "CL 30447826",
@@ -6756,7 +6756,7 @@
             "sha256": "93b5f0e7784860ca4c69deadce577561",
             "size_bytes": 14677712,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915666600Z",
+            "released_at": "2026-10-25T17:56:32.765561300Z",
             "source": "DLSS-2.3.1.zip",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss/dlss_v2.3.1.0_93B5F0E7784860CA4C69DEADCE577561.zip",
             "release_notes": "CL 30473807",
@@ -6774,7 +6774,7 @@
             "sha256": "d62b6857f2f874e3892b30abce3dc603",
             "size_bytes": 14461648,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915667400Z",
+            "released_at": "2026-10-25T17:56:32.765562100Z",
             "source": "Sword and Fairy 7 (via TechPowerUp)",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss/dlss_v2.3.2.0_D62B6857F2F874E3892B30ABCE3DC603.zip",
             "release_notes": "CL 30482926",
@@ -6792,7 +6792,7 @@
             "sha256": "229dd563c5a7cfe67a927c06333249da",
             "size_bytes": 14462152,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915668100Z",
+            "released_at": "2026-10-25T17:56:32.765564200Z",
             "source": "Swords of Legends Online (via TechPowerUp)",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss/dlss_v2.3.3.0_229DD563C5A7CFE67A927C06333249DA.zip",
             "release_notes": "CL 30520575",
@@ -6810,7 +6810,7 @@
             "sha256": "49b252e0f803a01c0cf6964ed4b16ad8",
             "size_bytes": 14464712,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915668800Z",
+            "released_at": "2026-10-25T17:56:32.765565300Z",
             "source": "Jurassic World Evolution 2 (via TechPowerUp)",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss/dlss_v2.3.4.0_49B252E0F803A01C0CF6964ED4B16AD8.zip",
             "release_notes": "CL 30584640",
@@ -6828,7 +6828,7 @@
             "sha256": "f59a89ca2150f107a1d9de4ca8ca8ddc",
             "size_bytes": 14467280,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915669500Z",
+            "released_at": "2026-10-25T17:56:32.765566200Z",
             "source": "Horizon Zero Dawn (via TechPowerUp)",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss/dlss_v2.3.5.0_F59A89CA2150F107A1D9DE4CA8CA8DDC.zip",
             "release_notes": "CL 30668210",
@@ -6846,7 +6846,7 @@
             "sha256": "0c1eda5e9d60b4d66e075fe0cb672794",
             "size_bytes": 14621184,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915670200Z",
+            "released_at": "2026-10-25T17:56:32.765567100Z",
             "source": "Dying Light 2 (via TechPowerUp)",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss/dlss_v2.3.7.0_0C1EDA5E9D60B4D66E075FE0CB672794.zip",
             "release_notes": "CL 30888174",
@@ -6864,7 +6864,7 @@
             "sha256": "f3938d96eb0600634cb16e01a4d6ea1f",
             "size_bytes": 14619848,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915672500Z",
+            "released_at": "2026-10-25T17:56:32.765568Z",
             "source": "Chorus (via TechPowerUp)",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss/dlss_v2.3.9.0_F3938D96EB0600634CB16E01A4D6EA1F.zip",
             "release_notes": "CL 30929354",
@@ -6882,7 +6882,7 @@
             "sha256": "476d66c9f9dc333e907cbdd8c3d227c7",
             "size_bytes": 15029968,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915675Z",
+            "released_at": "2026-10-25T17:56:32.765572100Z",
             "source": "DLSS-2.3.3.zip",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss/dlss_v2.3.11.0_476D66C9F9DC333E907CBDD8C3D227C7.zip",
             "release_notes": "CL 30954459",
@@ -6900,7 +6900,7 @@
             "sha256": "941eb47df770cbfc434c34ca9239a254",
             "size_bytes": 15032952,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915676400Z",
+            "released_at": "2026-10-25T17:56:32.765573800Z",
             "source": "DLSS-2.4.0.zip",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss/dlss_v2.4.0.0_941EB47DF770CBFC434C34CA9239A254.zip",
             "release_notes": "CL 31105907",
@@ -6918,7 +6918,7 @@
             "sha256": "68b0e070cadb1a48237b027549f6a216",
             "size_bytes": 14814464,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915679400Z",
+            "released_at": "2026-10-25T17:56:32.765598300Z",
             "source": "Baldur's Gate 3 (via TechPowerUp)",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss/dlss_v2.4.2.0_68B0E070CADB1A48237B027549F6A216.zip",
             "release_notes": "CL 31212662",
@@ -6936,7 +6936,7 @@
             "sha256": "dea5f1dabf86203c3210e21df9cfcf07",
             "size_bytes": 14816512,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915680300Z",
+            "released_at": "2026-10-25T17:56:32.765599300Z",
             "source": "Evil Dead (via TechPowerUp)",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss/dlss_v2.4.3.0_DEA5F1DABF86203C3210E21DF9CFCF07.zip",
             "release_notes": "CL 31309745",
@@ -6954,7 +6954,7 @@
             "sha256": "03a5a7be0e4d83487dd68dfb88fd0036",
             "size_bytes": 14852216,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915680900Z",
+            "released_at": "2026-10-25T17:56:32.765601700Z",
             "source": "Microsoft Flight Simulator SU10 (via TechPowerUp)",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss/dlss_v2.4.6.0_03A5A7BE0E4D83487DD68DFB88FD0036.zip",
             "release_notes": "CL 31353423",
@@ -6972,7 +6972,7 @@
             "sha256": "c1e931321a9818fa896abe03823d4c1e",
             "size_bytes": 14149736,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915681600Z",
+            "released_at": "2026-10-25T17:56:32.765602600Z",
             "source": "Sackboy (via TechPowerUp)",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss/dlss_v2.4.11.0_C1E931321A9818FA896ABE03823D4C1E.zip",
             "release_notes": "CL 31481051",
@@ -6990,7 +6990,7 @@
             "sha256": "31bfd8f750f87e5040557d95c2345080",
             "size_bytes": 24002088,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915685500Z",
+            "released_at": "2026-10-25T17:56:32.765605200Z",
             "source": "Spider-Man: Miles Morales (via TechPowerUp)",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss/dlss_v2.4.12.0_31BFD8F750F87E5040557D95C2345080.zip",
             "release_notes": "CL 32015014",
@@ -7008,7 +7008,7 @@
             "sha256": "578d0a372c0d59a704513bb22a7db234",
             "size_bytes": 25176120,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915686400Z",
+            "released_at": "2026-10-25T17:56:32.765606Z",
             "source": "WRC Generations (via TechPowerUp)",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss/dlss_v2.4.13.0_578D0A372C0D59A704513BB22A7DB234.zip",
             "release_notes": "CL 32022682",
@@ -7026,7 +7026,7 @@
             "sha256": "87a8231ac086ad8ee6b3c57140f25dcc",
             "size_bytes": 25176104,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915687100Z",
+            "released_at": "2026-10-25T17:56:32.765608Z",
             "source": "Marvel's Midnight Suns Dec 10 Patch (via TechPowerUp)",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss/dlss_v2.5.0.0_87A8231AC086AD8EE6B3C57140F25DCC.zip",
             "release_notes": "CL 32141080",
@@ -7044,7 +7044,7 @@
             "sha256": "dfe932d0b3955e649c1f759382d4e0d4",
             "size_bytes": 25179192,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915687800Z",
+            "released_at": "2026-10-25T17:56:32.765608900Z",
             "source": "Portal RTX new patch (via TechPowerUp)",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss/dlss_v2.5.1.0_DFE932D0B3955E649C1F759382D4E0D4.zip",
             "release_notes": "CL 32211295",
@@ -7062,7 +7062,7 @@
             "sha256": "1df72f79aaeea7dfa86fae385641078c",
             "size_bytes": 36856360,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915691600Z",
+            "released_at": "2026-10-25T17:56:32.765612100Z",
             "source": "DLSS-3.1.0.zip",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss/dlss_v3.1.1.0_1DF72F79AAEEA7DFA86FAE385641078C.zip",
             "release_notes": "CL 32342834",
@@ -7080,7 +7080,7 @@
             "sha256": "fcede5737d34413ce16cc0be9a6203af",
             "size_bytes": 35399736,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915692400Z",
+            "released_at": "2026-10-25T17:56:32.765612900Z",
             "source": "The Last of Us (via TechPowerUp)",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss/dlss_v3.1.2.0_FCEDE5737D34413CE16CC0BE9A6203AF.zip",
             "release_notes": "CL 32544569",
@@ -7098,7 +7098,7 @@
             "sha256": "6b1e6a22cc459b636d9a0170c56a46b6",
             "size_bytes": 35552824,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915694700Z",
+            "released_at": "2026-10-25T17:56:32.765616700Z",
             "source": "DLSS-3.1.10.zip",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss/dlss_v3.1.11.0_6B1E6A22CC459B636D9A0170C56A46B6.zip",
             "release_notes": "CL 32597869",
@@ -7116,7 +7116,7 @@
             "sha256": "e985d98c7b57c8f0fae244b6fce106e8",
             "size_bytes": 35568696,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915699Z",
+            "released_at": "2026-10-25T17:56:32.765619400Z",
             "source": "DLSS-3.1.13.zip",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss/dlss_v3.1.13.0_E985D98C7B57C8F0FAE244B6FCE106E8.zip",
             "release_notes": "CL 32841675",
@@ -7134,7 +7134,7 @@
             "sha256": "5baca22835d10d0069de04b54a5cc2cd",
             "size_bytes": 51860520,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915700300Z",
+            "released_at": "2026-10-25T17:56:32.765622500Z",
             "source": "DLSS-3.1.30.zip",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss/dlss_v3.1.30.0_5BACA22835D10D0069DE04B54A5CC2CD.zip",
             "release_notes": "CL 33088933",
@@ -7152,7 +7152,7 @@
             "sha256": "b4c2d62576a96b82cfc47e6bb5282244",
             "size_bytes": 51859496,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915704300Z",
+            "released_at": "2026-10-25T17:56:32.765625700Z",
             "source": "DLSS-3.5.0.zip",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss/dlss_v3.5.0.0_B4C2D62576A96B82CFC47E6BB5282244.zip",
             "release_notes": "CL 33190482",
@@ -7170,7 +7170,7 @@
             "sha256": "c8fae97c2df886cbf8eb1cc671f9b87c",
             "size_bytes": 53850152,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915705800Z",
+            "released_at": "2026-10-25T17:56:32.765628800Z",
             "source": "DLSS-3.5.10.zip",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss/dlss_v3.5.10.0_C8FAE97C2DF886CBF8EB1CC671F9B87C.zip",
             "release_notes": "CL 33396148",
@@ -7188,7 +7188,7 @@
             "sha256": "49ce45d36d0fe6e498f2aae54d94bdee",
             "size_bytes": 47438904,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915706500Z",
+            "released_at": "2026-10-25T17:56:32.765629900Z",
             "source": "Naraka Bladepoint (via TechPowerUp)",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss/dlss_v3.6.0.0_49CE45D36D0FE6E498F2AAE54D94BDEE.zip",
             "release_notes": "CL 33629598",
@@ -7206,7 +7206,7 @@
             "sha256": "060f8a4c3c25925de8e86f73451fc615",
             "size_bytes": 51412024,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915709400Z",
+            "released_at": "2026-10-25T17:56:32.765631600Z",
             "source": "DLSS-3.7.0.zip",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss/dlss_v3.7.0.0_060F8A4C3C25925DE8E86F73451FC615.zip",
             "release_notes": "CL 33860605",
@@ -7224,7 +7224,7 @@
             "sha256": "6af88a88ba51c1abe5a81ed0afa08cfc",
             "size_bytes": 51432488,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915711Z",
+            "released_at": "2026-10-25T17:56:32.765633200Z",
             "source": "DLSS-3.7.10.zip",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss/dlss_v3.7.10.0_6AF88A88BA51C1ABE5A81ED0AFA08CFC.zip",
             "release_notes": "CL 34360990",
@@ -7242,7 +7242,7 @@
             "sha256": "feb2fa31ae7e4a418a367281aee41e47",
             "size_bytes": 51438136,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915713300Z",
+            "released_at": "2026-10-25T17:56:32.765637300Z",
             "source": "DLSS-3.7.20.zip",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss/dlss_v3.7.20.0_FEB2FA31AE7E4A418A367281AEE41E47.zip",
             "release_notes": "CL 34733527",
@@ -7260,7 +7260,7 @@
             "sha256": "aed94e7029846c356882db166b824f5e",
             "size_bytes": 24925344,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915715400Z",
+            "released_at": "2026-10-25T17:56:32.765638Z",
             "source": "NVIDIA Driver (DirectSR) (via TechPowerUp)",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss/dlss_v3.8.10.0_AED94E7029846C356882DB166B824F5E.zip",
             "release_notes": "CL 0",
@@ -7278,7 +7278,7 @@
             "sha256": "117595d4839dcab18501249cbeee9b7a",
             "size_bytes": 44609064,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915716300Z",
+            "released_at": "2026-10-25T17:56:32.765638900Z",
             "source": "Cyberpunk 2077 2.21",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss/dlss_v310.1.0.0_117595D4839DCAB18501249CBEEE9B7A.zip",
             "release_notes": "CL 35322723",
@@ -7296,7 +7296,7 @@
             "sha256": "3a875f45c315d09e5f4548cc9288f178",
             "size_bytes": 48971832,
             "signed": true,
-            "released_at": "2026-10-25T14:38:45.915717100Z",
+            "released_at": "2026-10-25T17:56:32.765639800Z",
             "source": "NVIDIA Driver",
             "cdn_url": "https://dlss-swapper-downloads.beeradmoore.com/dlss/dlss_v310.2.1.0_3A875F45C315D09E5F4548CC9288F178.zip",
             "release_notes": "CL 35454170",
@@ -7672,7 +7672,7 @@
                 "e653a7e5c8d29074199e6582791b4c6964784d4446b01a03e3f2c68519f03f27",
                 "bfa0e149fbdf7697825e30d2a35812a40d523d931275fda01b409653571239a4"
               ],
-              "checked_at": "2026-10-25T14:39:50.186016+00:00"
+              "checked_at": "2026-10-25T17:57:15.383031100+00:00"
             },
             "version": "2.7.32.0",
             "version_packed": 562980020289536,
@@ -7733,7 +7733,7 @@
                 "4b475e22b9b4a5bc13172f70d4384152ea97731fc3740e41f258c0db27004879",
                 "47bb6f675f6d79e20f7fc05ce716184c56782f2e1d7829fd8fb3f1f5e07455bd"
               ],
-              "checked_at": "2026-10-25T14:39:41.313506900+00:00"
+              "checked_at": "2026-10-25T17:57:10.935264600+00:00"
             },
             "version": "2.8.0.0",
             "version_packed": 562984313159680,
@@ -7794,7 +7794,7 @@
                 "5267d13301c021676089cc9ccc4ff364fda37a160521f039edbad931ac18749d",
                 "fb6d6aee52624888a7976e7de1139bdee1c9f342ad8382aed13e95a75e1aafb7"
               ],
-              "checked_at": "2026-10-25T14:39:34.007177600+00:00"
+              "checked_at": "2026-10-25T17:57:06.351471200+00:00"
             },
             "version": "2.9.0.0",
             "version_packed": 562988608126976,
@@ -7855,7 +7855,7 @@
                 "590f8de2c854944aa1f0b00e7a7a8b25d34c5940717d44c26b6a075c6a4880b2",
                 "51c56067a6764ae58db48691f66e66477e8cc3ef0e7f5507435b28e352fc8b87"
               ],
-              "checked_at": "2026-10-25T14:39:29.242799900+00:00"
+              "checked_at": "2026-10-25T17:57:03.236528700+00:00"
             },
             "version": "2.10.0.0",
             "version_packed": 562992903094272,
@@ -7916,7 +7916,7 @@
                 "73bd4e7bdb9851b7a278d0ce0e552c7fe298d2f26dd497fd5bfeca2a1cf5f3bc",
                 "66946de15fb3810c6e3400cd6654992be5b7477299d764e183f5bf301720c0ab"
               ],
-              "checked_at": "2026-10-25T14:39:21.488374+00:00"
+              "checked_at": "2026-10-25T17:56:59.046689900+00:00"
             },
             "version": "2.10.3.0",
             "version_packed": 562992903290880,
@@ -7977,7 +7977,7 @@
                 "e0b32e491384d0a9f50c1c9d66e653e1293683e3a105e9de20ff41fd2b9645ef",
                 "7426c7154040fe36a319e0acfc1595ce4ed381e67c91c391bf24677a6bc95d75"
               ],
-              "checked_at": "2026-10-25T14:39:14.162739600+00:00"
+              "checked_at": "2026-10-25T17:56:55.061969700+00:00"
             },
             "version": "2.11.1.0",
             "version_packed": 562997198127104,
@@ -8038,7 +8038,7 @@
                 "fe0e9684e7a7659b49d8dbe6c729eac6611311a8b29bf773b1cece5f8a6373e8",
                 "dbcb9724ce8e86b8f28e9cdb685324ef5b61e7d241786f070b15455b80399563"
               ],
-              "checked_at": "2026-10-25T14:39:06.541938300+00:00"
+              "checked_at": "2026-10-25T17:56:49.924582100+00:00"
             },
             "version": "2.12.0.0",
             "version_packed": 563001493028864,
@@ -8099,7 +8099,7 @@
                 "c760dcaf7cec52c05fdea38d663de3ce922bbfde664e36da04a7b89453abbe2e",
                 "71e6456b2d6f989b66d36a7b9c876904a1eb4fe4bfd3cabc9bdfe15a71e57f07"
               ],
-              "checked_at": "2026-10-25T14:38:58.096515900+00:00"
+              "checked_at": "2026-10-25T17:56:44.967234+00:00"
             },
             "version": "2.14.1.0",
             "version_packed": 563010083028992,
@@ -8142,7 +8142,7 @@
                 "642dea7ecfd15f986471778c896dc3583f6f9be1d05b7e3815bd53d11d53511c",
                 "f9906ec926f056cacb111c153dbc4ef6b7727dd7370c72ab08dbd5eb577ada4f"
               ],
-              "checked_at": "2026-10-25T14:38:52.417742200+00:00"
+              "checked_at": "2026-10-25T17:56:39.491135500+00:00"
             },
             "version": "2.14.16.0",
             "version_packed": 563010084012032,
@@ -8208,7 +8208,7 @@
                 "e653a7e5c8d29074199e6582791b4c6964784d4446b01a03e3f2c68519f03f27",
                 "bfa0e149fbdf7697825e30d2a35812a40d523d931275fda01b409653571239a4"
               ],
-              "checked_at": "2026-10-25T14:39:50.186029+00:00"
+              "checked_at": "2026-10-25T17:57:15.383022400+00:00"
             },
             "version": "2.7.32.0",
             "version_packed": 562980020289536,
@@ -8269,7 +8269,7 @@
                 "4b475e22b9b4a5bc13172f70d4384152ea97731fc3740e41f258c0db27004879",
                 "47bb6f675f6d79e20f7fc05ce716184c56782f2e1d7829fd8fb3f1f5e07455bd"
               ],
-              "checked_at": "2026-10-25T14:39:41.313510300+00:00"
+              "checked_at": "2026-10-25T17:57:10.935249300+00:00"
             },
             "version": "2.8.0.0",
             "version_packed": 562984313159680,
@@ -8330,7 +8330,7 @@
                 "5267d13301c021676089cc9ccc4ff364fda37a160521f039edbad931ac18749d",
                 "fb6d6aee52624888a7976e7de1139bdee1c9f342ad8382aed13e95a75e1aafb7"
               ],
-              "checked_at": "2026-10-25T14:39:34.007149+00:00"
+              "checked_at": "2026-10-25T17:57:06.351485300+00:00"
             },
             "version": "2.9.0.0",
             "version_packed": 562988608126976,
@@ -8391,7 +8391,7 @@
                 "590f8de2c854944aa1f0b00e7a7a8b25d34c5940717d44c26b6a075c6a4880b2",
                 "51c56067a6764ae58db48691f66e66477e8cc3ef0e7f5507435b28e352fc8b87"
               ],
-              "checked_at": "2026-10-25T14:39:29.242808300+00:00"
+              "checked_at": "2026-10-25T17:57:03.236511700+00:00"
             },
             "version": "2.10.0.0",
             "version_packed": 562992903094272,
@@ -8452,7 +8452,7 @@
                 "73bd4e7bdb9851b7a278d0ce0e552c7fe298d2f26dd497fd5bfeca2a1cf5f3bc",
                 "66946de15fb3810c6e3400cd6654992be5b7477299d764e183f5bf301720c0ab"
               ],
-              "checked_at": "2026-10-25T14:39:21.488360400+00:00"
+              "checked_at": "2026-10-25T17:56:59.046664400+00:00"
             },
             "version": "2.10.3.0",
             "version_packed": 562992903290880,
@@ -8513,7 +8513,7 @@
                 "e0b32e491384d0a9f50c1c9d66e653e1293683e3a105e9de20ff41fd2b9645ef",
                 "7426c7154040fe36a319e0acfc1595ce4ed381e67c91c391bf24677a6bc95d75"
               ],
-              "checked_at": "2026-10-25T14:39:14.162728500+00:00"
+              "checked_at": "2026-10-25T17:56:55.061982+00:00"
             },
             "version": "2.11.1.0",
             "version_packed": 562997198127104,
@@ -8574,7 +8574,7 @@
                 "fe0e9684e7a7659b49d8dbe6c729eac6611311a8b29bf773b1cece5f8a6373e8",
                 "dbcb9724ce8e86b8f28e9cdb685324ef5b61e7d241786f070b15455b80399563"
               ],
-              "checked_at": "2026-10-25T14:39:06.541904+00:00"
+              "checked_at": "2026-10-25T17:56:49.924545400+00:00"
             },
             "version": "2.12.0.0",
             "version_packed": 563001493028864,
@@ -8635,7 +8635,7 @@
                 "c760dcaf7cec52c05fdea38d663de3ce922bbfde664e36da04a7b89453abbe2e",
                 "71e6456b2d6f989b66d36a7b9c876904a1eb4fe4bfd3cabc9bdfe15a71e57f07"
               ],
-              "checked_at": "2026-10-25T14:38:58.096539400+00:00"
+              "checked_at": "2026-10-25T17:56:44.967241200+00:00"
             },
             "version": "2.14.1.0",
             "version_packed": 563010083028992,
@@ -8678,7 +8678,7 @@
                 "642dea7ecfd15f986471778c896dc3583f6f9be1d05b7e3815bd53d11d53511c",
                 "f9906ec926f056cacb111c153dbc4ef6b7727dd7370c72ab08dbd5eb577ada4f"
               ],
-              "checked_at": "2026-10-25T14:38:52.417774300+00:00"
+              "checked_at": "2026-10-25T17:56:39.491127800+00:00"
             },
             "version": "2.14.16.0",
             "version_packed": 563010084012032,
@@ -8744,7 +8744,7 @@
                 "e653a7e5c8d29074199e6582791b4c6964784d4446b01a03e3f2c68519f03f27",
                 "bfa0e149fbdf7697825e30d2a35812a40d523d931275fda01b409653571239a4"
               ],
-              "checked_at": "2026-10-25T14:39:50.185981300+00:00"
+              "checked_at": "2026-10-25T17:57:15.383014500+00:00"
             },
             "version": "2.7.32.0",
             "version_packed": 562980020289536,
@@ -8805,7 +8805,7 @@
                 "4b475e22b9b4a5bc13172f70d4384152ea97731fc3740e41f258c0db27004879",
                 "47bb6f675f6d79e20f7fc05ce716184c56782f2e1d7829fd8fb3f1f5e07455bd"
               ],
-              "checked_at": "2026-10-25T14:39:41.313488100+00:00"
+              "checked_at": "2026-10-25T17:57:10.935245700+00:00"
             },
             "version": "2.8.0.0",
             "version_packed": 562984313159680,
@@ -8866,7 +8866,7 @@
                 "5267d13301c021676089cc9ccc4ff364fda37a160521f039edbad931ac18749d",
                 "fb6d6aee52624888a7976e7de1139bdee1c9f342ad8382aed13e95a75e1aafb7"
               ],
-              "checked_at": "2026-10-25T14:39:34.007169500+00:00"
+              "checked_at": "2026-10-25T17:57:06.351506900+00:00"
             },
             "version": "2.9.0.0",
             "version_packed": 562988608126976,
@@ -8927,7 +8927,7 @@
                 "590f8de2c854944aa1f0b00e7a7a8b25d34c5940717d44c26b6a075c6a4880b2",
                 "51c56067a6764ae58db48691f66e66477e8cc3ef0e7f5507435b28e352fc8b87"
               ],
-              "checked_at": "2026-10-25T14:39:29.242827300+00:00"
+              "checked_at": "2026-10-25T17:57:03.236519400+00:00"
             },
             "version": "2.10.0.0",
             "version_packed": 562992903094272,
@@ -8988,7 +8988,7 @@
                 "73bd4e7bdb9851b7a278d0ce0e552c7fe298d2f26dd497fd5bfeca2a1cf5f3bc",
                 "66946de15fb3810c6e3400cd6654992be5b7477299d764e183f5bf301720c0ab"
               ],
-              "checked_at": "2026-10-25T14:39:21.488348600+00:00"
+              "checked_at": "2026-10-25T17:56:59.046699+00:00"
             },
             "version": "2.10.3.0",
             "version_packed": 562992903290880,
@@ -9049,7 +9049,7 @@
                 "e0b32e491384d0a9f50c1c9d66e653e1293683e3a105e9de20ff41fd2b9645ef",
                 "7426c7154040fe36a319e0acfc1595ce4ed381e67c91c391bf24677a6bc95d75"
               ],
-              "checked_at": "2026-10-25T14:39:14.162725300+00:00"
+              "checked_at": "2026-10-25T17:56:55.061958100+00:00"
             },
             "version": "2.11.1.0",
             "version_packed": 562997198127104,
@@ -9110,7 +9110,7 @@
                 "fe0e9684e7a7659b49d8dbe6c729eac6611311a8b29bf773b1cece5f8a6373e8",
                 "dbcb9724ce8e86b8f28e9cdb685324ef5b61e7d241786f070b15455b80399563"
               ],
-              "checked_at": "2026-10-25T14:39:06.541931200+00:00"
+              "checked_at": "2026-10-25T17:56:49.924558300+00:00"
             },
             "version": "2.12.0.0",
             "version_packed": 563001493028864,
@@ -9171,7 +9171,7 @@
                 "c760dcaf7cec52c05fdea38d663de3ce922bbfde664e36da04a7b89453abbe2e",
                 "71e6456b2d6f989b66d36a7b9c876904a1eb4fe4bfd3cabc9bdfe15a71e57f07"
               ],
-              "checked_at": "2026-10-25T14:38:58.096523800+00:00"
+              "checked_at": "2026-10-25T17:56:44.967230600+00:00"
             },
             "version": "2.14.1.0",
             "version_packed": 563010083028992,
@@ -9214,7 +9214,7 @@
                 "642dea7ecfd15f986471778c896dc3583f6f9be1d05b7e3815bd53d11d53511c",
                 "f9906ec926f056cacb111c153dbc4ef6b7727dd7370c72ab08dbd5eb577ada4f"
               ],
-              "checked_at": "2026-10-25T14:38:52.417786100+00:00"
+              "checked_at": "2026-10-25T17:56:39.491146+00:00"
             },
             "version": "2.14.16.0",
             "version_packed": 563010084012032,
@@ -9280,7 +9280,7 @@
                 "e653a7e5c8d29074199e6582791b4c6964784d4446b01a03e3f2c68519f03f27",
                 "bfa0e149fbdf7697825e30d2a35812a40d523d931275fda01b409653571239a4"
               ],
-              "checked_at": "2026-10-25T14:39:50.186065700+00:00"
+              "checked_at": "2026-10-25T17:57:15.382986800+00:00"
             },
             "version": "2.7.32.0",
             "version_packed": 562980020289536,
@@ -9341,7 +9341,7 @@
                 "4b475e22b9b4a5bc13172f70d4384152ea97731fc3740e41f258c0db27004879",
                 "47bb6f675f6d79e20f7fc05ce716184c56782f2e1d7829fd8fb3f1f5e07455bd"
               ],
-              "checked_at": "2026-10-25T14:39:41.313475600+00:00"
+              "checked_at": "2026-10-25T17:57:10.935268200+00:00"
             },
             "version": "2.8.0.0",
             "version_packed": 562984313159680,
@@ -9402,7 +9402,7 @@
                 "5267d13301c021676089cc9ccc4ff364fda37a160521f039edbad931ac18749d",
                 "fb6d6aee52624888a7976e7de1139bdee1c9f342ad8382aed13e95a75e1aafb7"
               ],
-              "checked_at": "2026-10-25T14:39:34.007157600+00:00"
+              "checked_at": "2026-10-25T17:57:06.351493600+00:00"
             },
             "version": "2.9.0.0",
             "version_packed": 562988608126976,
@@ -9463,7 +9463,7 @@
                 "590f8de2c854944aa1f0b00e7a7a8b25d34c5940717d44c26b6a075c6a4880b2",
                 "51c56067a6764ae58db48691f66e66477e8cc3ef0e7f5507435b28e352fc8b87"
               ],
-              "checked_at": "2026-10-25T14:39:29.242812400+00:00"
+              "checked_at": "2026-10-25T17:57:03.236540500+00:00"
             },
             "version": "2.10.0.0",
             "version_packed": 562992903094272,
@@ -9524,7 +9524,7 @@
                 "73bd4e7bdb9851b7a278d0ce0e552c7fe298d2f26dd497fd5bfeca2a1cf5f3bc",
                 "66946de15fb3810c6e3400cd6654992be5b7477299d764e183f5bf301720c0ab"
               ],
-              "checked_at": "2026-10-25T14:39:21.488354200+00:00"
+              "checked_at": "2026-10-25T17:56:59.046707100+00:00"
             },
             "version": "2.10.3.0",
             "version_packed": 562992903290880,
@@ -9585,7 +9585,7 @@
                 "e0b32e491384d0a9f50c1c9d66e653e1293683e3a105e9de20ff41fd2b9645ef",
                 "7426c7154040fe36a319e0acfc1595ce4ed381e67c91c391bf24677a6bc95d75"
               ],
-              "checked_at": "2026-10-25T14:39:14.162713300+00:00"
+              "checked_at": "2026-10-25T17:56:55.061966100+00:00"
             },
             "version": "2.11.1.0",
             "version_packed": 562997198127104,
@@ -9646,7 +9646,7 @@
                 "fe0e9684e7a7659b49d8dbe6c729eac6611311a8b29bf773b1cece5f8a6373e8",
                 "dbcb9724ce8e86b8f28e9cdb685324ef5b61e7d241786f070b15455b80399563"
               ],
-              "checked_at": "2026-10-25T14:39:06.541911500+00:00"
+              "checked_at": "2026-10-25T17:56:49.924562300+00:00"
             },
             "version": "2.12.0.0",
             "version_packed": 563001493028864,
@@ -9707,7 +9707,7 @@
                 "c760dcaf7cec52c05fdea38d663de3ce922bbfde664e36da04a7b89453abbe2e",
                 "71e6456b2d6f989b66d36a7b9c876904a1eb4fe4bfd3cabc9bdfe15a71e57f07"
               ],
-              "checked_at": "2026-10-25T14:38:58.096507200+00:00"
+              "checked_at": "2026-10-25T17:56:44.967249100+00:00"
             },
             "version": "2.14.1.0",
             "version_packed": 563010083028992,
@@ -9750,7 +9750,7 @@
                 "642dea7ecfd15f986471778c896dc3583f6f9be1d05b7e3815bd53d11d53511c",
                 "f9906ec926f056cacb111c153dbc4ef6b7727dd7370c72ab08dbd5eb577ada4f"
               ],
-              "checked_at": "2026-10-25T14:38:52.417760800+00:00"
+              "checked_at": "2026-10-25T17:56:39.491111600+00:00"
             },
             "version": "2.14.16.0",
             "version_packed": 563010084012032,
@@ -9815,7 +9815,7 @@
               "dependencies": [
                 "bfa0e149fbdf7697825e30d2a35812a40d523d931275fda01b409653571239a4"
               ],
-              "checked_at": "2026-10-25T14:39:50.186057700+00:00"
+              "checked_at": "2026-10-25T17:57:15.382961300+00:00"
             },
             "version": "2.7.32.0",
             "version_packed": 562980020289536,
@@ -9875,7 +9875,7 @@
               "dependencies": [
                 "47bb6f675f6d79e20f7fc05ce716184c56782f2e1d7829fd8fb3f1f5e07455bd"
               ],
-              "checked_at": "2026-10-25T14:39:41.313483700+00:00"
+              "checked_at": "2026-10-25T17:57:10.935252800+00:00"
             },
             "version": "2.8.0.0",
             "version_packed": 562984313159680,
@@ -9935,7 +9935,7 @@
               "dependencies": [
                 "fb6d6aee52624888a7976e7de1139bdee1c9f342ad8382aed13e95a75e1aafb7"
               ],
-              "checked_at": "2026-10-25T14:39:34.007181500+00:00"
+              "checked_at": "2026-10-25T17:57:06.351502500+00:00"
             },
             "version": "2.9.0.0",
             "version_packed": 562988608126976,
@@ -9995,7 +9995,7 @@
               "dependencies": [
                 "51c56067a6764ae58db48691f66e66477e8cc3ef0e7f5507435b28e352fc8b87"
               ],
-              "checked_at": "2026-10-25T14:39:29.242816300+00:00"
+              "checked_at": "2026-10-25T17:57:03.236532800+00:00"
             },
             "version": "2.10.0.0",
             "version_packed": 562992903094272,
@@ -10055,7 +10055,7 @@
               "dependencies": [
                 "66946de15fb3810c6e3400cd6654992be5b7477299d764e183f5bf301720c0ab"
               ],
-              "checked_at": "2026-10-25T14:39:21.488364500+00:00"
+              "checked_at": "2026-10-25T17:56:59.046694300+00:00"
             },
             "version": "2.10.3.0",
             "version_packed": 562992903290880,
@@ -10115,7 +10115,7 @@
               "dependencies": [
                 "7426c7154040fe36a319e0acfc1595ce4ed381e67c91c391bf24677a6bc95d75"
               ],
-              "checked_at": "2026-10-25T14:39:14.162704200+00:00"
+              "checked_at": "2026-10-25T17:56:55.061962100+00:00"
             },
             "version": "2.11.1.0",
             "version_packed": 562997198127104,
@@ -10175,7 +10175,7 @@
               "dependencies": [
                 "dbcb9724ce8e86b8f28e9cdb685324ef5b61e7d241786f070b15455b80399563"
               ],
-              "checked_at": "2026-10-25T14:39:06.541927600+00:00"
+              "checked_at": "2026-10-25T17:56:49.924574200+00:00"
             },
             "version": "2.12.0.0",
             "version_packed": 563001493028864,
@@ -10235,7 +10235,7 @@
               "dependencies": [
                 "71e6456b2d6f989b66d36a7b9c876904a1eb4fe4bfd3cabc9bdfe15a71e57f07"
               ],
-              "checked_at": "2026-10-25T14:38:58.096520+00:00"
+              "checked_at": "2026-10-25T17:56:44.967244900+00:00"
             },
             "version": "2.14.1.0",
             "version_packed": 563010083028992,
@@ -10277,7 +10277,7 @@
               "dependencies": [
                 "f9906ec926f056cacb111c153dbc4ef6b7727dd7370c72ab08dbd5eb577ada4f"
               ],
-              "checked_at": "2026-10-25T14:38:52.417765500+00:00"
+              "checked_at": "2026-10-25T17:56:39.491152300+00:00"
             },
             "version": "2.14.16.0",
             "version_packed": 563010084012032,
@@ -10342,7 +10342,7 @@
               "dependencies": [
                 "e653a7e5c8d29074199e6582791b4c6964784d4446b01a03e3f2c68519f03f27"
               ],
-              "checked_at": "2026-10-25T14:39:50.185995300+00:00"
+              "checked_at": "2026-10-25T17:57:15.383040800+00:00"
             },
             "version": "2.7.32.0",
             "version_packed": 562980020289536,
@@ -10402,7 +10402,7 @@
               "dependencies": [
                 "4b475e22b9b4a5bc13172f70d4384152ea97731fc3740e41f258c0db27004879"
               ],
-              "checked_at": "2026-10-25T14:39:41.313491700+00:00"
+              "checked_at": "2026-10-25T17:57:10.935241100+00:00"
             },
             "version": "2.8.0.0",
             "version_packed": 562984313159680,
@@ -10462,7 +10462,7 @@
               "dependencies": [
                 "5267d13301c021676089cc9ccc4ff364fda37a160521f039edbad931ac18749d"
               ],
-              "checked_at": "2026-10-25T14:39:34.007185300+00:00"
+              "checked_at": "2026-10-25T17:57:06.351488900+00:00"
             },
             "version": "2.9.0.0",
             "version_packed": 562988608126976,
@@ -10522,7 +10522,7 @@
               "dependencies": [
                 "590f8de2c854944aa1f0b00e7a7a8b25d34c5940717d44c26b6a075c6a4880b2"
               ],
-              "checked_at": "2026-10-25T14:39:29.242819900+00:00"
+              "checked_at": "2026-10-25T17:57:03.236524200+00:00"
             },
             "version": "2.10.0.0",
             "version_packed": 562992903094272,
@@ -10582,7 +10582,7 @@
               "dependencies": [
                 "73bd4e7bdb9851b7a278d0ce0e552c7fe298d2f26dd497fd5bfeca2a1cf5f3bc"
               ],
-              "checked_at": "2026-10-25T14:39:21.488339500+00:00"
+              "checked_at": "2026-10-25T17:56:59.046710600+00:00"
             },
             "version": "2.10.3.0",
             "version_packed": 562992903290880,
@@ -10642,7 +10642,7 @@
               "dependencies": [
                 "e0b32e491384d0a9f50c1c9d66e653e1293683e3a105e9de20ff41fd2b9645ef"
               ],
-              "checked_at": "2026-10-25T14:39:14.162721700+00:00"
+              "checked_at": "2026-10-25T17:56:55.061953800+00:00"
             },
             "version": "2.11.1.0",
             "version_packed": 562997198127104,
@@ -10702,7 +10702,7 @@
               "dependencies": [
                 "fe0e9684e7a7659b49d8dbe6c729eac6611311a8b29bf773b1cece5f8a6373e8"
               ],
-              "checked_at": "2026-10-25T14:39:06.541915400+00:00"
+              "checked_at": "2026-10-25T17:56:49.924570300+00:00"
             },
             "version": "2.12.0.0",
             "version_packed": 563001493028864,
@@ -10762,7 +10762,7 @@
               "dependencies": [
                 "c760dcaf7cec52c05fdea38d663de3ce922bbfde664e36da04a7b89453abbe2e"
               ],
-              "checked_at": "2026-10-25T14:38:58.096527400+00:00"
+              "checked_at": "2026-10-25T17:56:44.967213600+00:00"
             },
             "version": "2.14.1.0",
             "version_packed": 563010083028992,
@@ -10804,7 +10804,7 @@
               "dependencies": [
                 "642dea7ecfd15f986471778c896dc3583f6f9be1d05b7e3815bd53d11d53511c"
               ],
-              "checked_at": "2026-10-25T14:38:52.417770100+00:00"
+              "checked_at": "2026-10-25T17:56:39.491158500+00:00"
             },
             "version": "2.14.16.0",
             "version_packed": 563010084012032,
@@ -10870,7 +10870,7 @@
                 "e653a7e5c8d29074199e6582791b4c6964784d4446b01a03e3f2c68519f03f27",
                 "bfa0e149fbdf7697825e30d2a35812a40d523d931275fda01b409653571239a4"
               ],
-              "checked_at": "2026-10-25T14:39:50.186039100+00:00"
+              "checked_at": "2026-10-25T17:57:15.383005800+00:00"
             },
             "version": "2.7.32.0",
             "version_packed": 562980020289536,
@@ -10931,7 +10931,7 @@
                 "4b475e22b9b4a5bc13172f70d4384152ea97731fc3740e41f258c0db27004879",
                 "47bb6f675f6d79e20f7fc05ce716184c56782f2e1d7829fd8fb3f1f5e07455bd"
               ],
-              "checked_at": "2026-10-25T14:39:41.313499700+00:00"
+              "checked_at": "2026-10-25T17:57:10.935256700+00:00"
             },
             "version": "2.8.0.0",
             "version_packed": 562984313159680,
@@ -10992,7 +10992,7 @@
                 "5267d13301c021676089cc9ccc4ff364fda37a160521f039edbad931ac18749d",
                 "fb6d6aee52624888a7976e7de1139bdee1c9f342ad8382aed13e95a75e1aafb7"
               ],
-              "checked_at": "2026-10-25T14:39:34.007165900+00:00"
+              "checked_at": "2026-10-25T17:57:06.351480200+00:00"
             },
             "version": "2.9.0.0",
             "version_packed": 562988608126976,
@@ -11053,7 +11053,7 @@
                 "590f8de2c854944aa1f0b00e7a7a8b25d34c5940717d44c26b6a075c6a4880b2",
                 "51c56067a6764ae58db48691f66e66477e8cc3ef0e7f5507435b28e352fc8b87"
               ],
-              "checked_at": "2026-10-25T14:39:29.242823900+00:00"
+              "checked_at": "2026-10-25T17:57:03.236548200+00:00"
             },
             "version": "2.10.0.0",
             "version_packed": 562992903094272,
@@ -11114,7 +11114,7 @@
                 "73bd4e7bdb9851b7a278d0ce0e552c7fe298d2f26dd497fd5bfeca2a1cf5f3bc",
                 "66946de15fb3810c6e3400cd6654992be5b7477299d764e183f5bf301720c0ab"
               ],
-              "checked_at": "2026-10-25T14:39:21.488309800+00:00"
+              "checked_at": "2026-10-25T17:56:59.046714900+00:00"
             },
             "version": "2.10.3.0",
             "version_packed": 562992903290880,
@@ -11175,7 +11175,7 @@
                 "e0b32e491384d0a9f50c1c9d66e653e1293683e3a105e9de20ff41fd2b9645ef",
                 "7426c7154040fe36a319e0acfc1595ce4ed381e67c91c391bf24677a6bc95d75"
               ],
-              "checked_at": "2026-10-25T14:39:14.162717600+00:00"
+              "checked_at": "2026-10-25T17:56:55.061976800+00:00"
             },
             "version": "2.11.1.0",
             "version_packed": 562997198127104,
@@ -11236,7 +11236,7 @@
                 "fe0e9684e7a7659b49d8dbe6c729eac6611311a8b29bf773b1cece5f8a6373e8",
                 "dbcb9724ce8e86b8f28e9cdb685324ef5b61e7d241786f070b15455b80399563"
               ],
-              "checked_at": "2026-10-25T14:39:06.541923800+00:00"
+              "checked_at": "2026-10-25T17:56:49.924566+00:00"
             },
             "version": "2.12.0.0",
             "version_packed": 563001493028864,
@@ -11297,7 +11297,7 @@
                 "c760dcaf7cec52c05fdea38d663de3ce922bbfde664e36da04a7b89453abbe2e",
                 "71e6456b2d6f989b66d36a7b9c876904a1eb4fe4bfd3cabc9bdfe15a71e57f07"
               ],
-              "checked_at": "2026-10-25T14:38:58.096542700+00:00"
+              "checked_at": "2026-10-25T17:56:44.967237800+00:00"
             },
             "version": "2.14.1.0",
             "version_packed": 563010083028992,
@@ -11340,7 +11340,7 @@
                 "642dea7ecfd15f986471778c896dc3583f6f9be1d05b7e3815bd53d11d53511c",
                 "f9906ec926f056cacb111c153dbc4ef6b7727dd7370c72ab08dbd5eb577ada4f"
               ],
-              "checked_at": "2026-10-25T14:38:52.417782300+00:00"
+              "checked_at": "2026-10-25T17:56:39.491085100+00:00"
             },
             "version": "2.14.16.0",
             "version_packed": 563010084012032,
@@ -11406,7 +11406,7 @@
                 "e653a7e5c8d29074199e6582791b4c6964784d4446b01a03e3f2c68519f03f27",
                 "bfa0e149fbdf7697825e30d2a35812a40d523d931275fda01b409653571239a4"
               ],
-              "checked_at": "2026-10-25T14:39:50.186047200+00:00"
+              "checked_at": "2026-10-25T17:57:15.382979300+00:00"
             },
             "version": "2.7.32.0",
             "version_packed": 562980020289536,
@@ -11467,7 +11467,7 @@
                 "4b475e22b9b4a5bc13172f70d4384152ea97731fc3740e41f258c0db27004879",
                 "47bb6f675f6d79e20f7fc05ce716184c56782f2e1d7829fd8fb3f1f5e07455bd"
               ],
-              "checked_at": "2026-10-25T14:39:41.313495800+00:00"
+              "checked_at": "2026-10-25T17:57:10.935231900+00:00"
             },
             "version": "2.8.0.0",
             "version_packed": 562984313159680,
@@ -11528,7 +11528,7 @@
                 "5267d13301c021676089cc9ccc4ff364fda37a160521f039edbad931ac18749d",
                 "fb6d6aee52624888a7976e7de1139bdee1c9f342ad8382aed13e95a75e1aafb7"
               ],
-              "checked_at": "2026-10-25T14:39:34.007173+00:00"
+              "checked_at": "2026-10-25T17:57:06.351497700+00:00"
             },
             "version": "2.9.0.0",
             "version_packed": 562988608126976,
@@ -11589,7 +11589,7 @@
                 "590f8de2c854944aa1f0b00e7a7a8b25d34c5940717d44c26b6a075c6a4880b2",
                 "51c56067a6764ae58db48691f66e66477e8cc3ef0e7f5507435b28e352fc8b87"
               ],
-              "checked_at": "2026-10-25T14:39:29.242833600+00:00"
+              "checked_at": "2026-10-25T17:57:03.236544200+00:00"
             },
             "version": "2.10.0.0",
             "version_packed": 562992903094272,
@@ -11650,7 +11650,7 @@
                 "73bd4e7bdb9851b7a278d0ce0e552c7fe298d2f26dd497fd5bfeca2a1cf5f3bc",
                 "66946de15fb3810c6e3400cd6654992be5b7477299d764e183f5bf301720c0ab"
               ],
-              "checked_at": "2026-10-25T14:39:21.488344300+00:00"
+              "checked_at": "2026-10-25T17:56:59.046702900+00:00"
             },
             "version": "2.10.3.0",
             "version_packed": 562992903290880,
@@ -11711,7 +11711,7 @@
                 "e0b32e491384d0a9f50c1c9d66e653e1293683e3a105e9de20ff41fd2b9645ef",
                 "7426c7154040fe36a319e0acfc1595ce4ed381e67c91c391bf24677a6bc95d75"
               ],
-              "checked_at": "2026-10-25T14:39:14.162731400+00:00"
+              "checked_at": "2026-10-25T17:56:55.061944500+00:00"
             },
             "version": "2.11.1.0",
             "version_packed": 562997198127104,
@@ -11772,7 +11772,7 @@
                 "fe0e9684e7a7659b49d8dbe6c729eac6611311a8b29bf773b1cece5f8a6373e8",
                 "dbcb9724ce8e86b8f28e9cdb685324ef5b61e7d241786f070b15455b80399563"
               ],
-              "checked_at": "2026-10-25T14:39:06.541934300+00:00"
+              "checked_at": "2026-10-25T17:56:49.924553400+00:00"
             },
             "version": "2.12.0.0",
             "version_packed": 563001493028864,
@@ -11833,7 +11833,7 @@
                 "c760dcaf7cec52c05fdea38d663de3ce922bbfde664e36da04a7b89453abbe2e",
                 "71e6456b2d6f989b66d36a7b9c876904a1eb4fe4bfd3cabc9bdfe15a71e57f07"
               ],
-              "checked_at": "2026-10-25T14:38:58.096531500+00:00"
+              "checked_at": "2026-10-25T17:56:44.967222400+00:00"
             },
             "version": "2.14.1.0",
             "version_packed": 563010083028992,
@@ -11876,7 +11876,7 @@
                 "642dea7ecfd15f986471778c896dc3583f6f9be1d05b7e3815bd53d11d53511c",
                 "f9906ec926f056cacb111c153dbc4ef6b7727dd7370c72ab08dbd5eb577ada4f"
               ],
-              "checked_at": "2026-10-25T14:38:52.417778100+00:00"
+              "checked_at": "2026-10-25T17:56:39.491163800+00:00"
             },
             "version": "2.14.16.0",
             "version_packed": 563010084012032,
@@ -11942,7 +11942,7 @@
                 "e653a7e5c8d29074199e6582791b4c6964784d4446b01a03e3f2c68519f03f27",
                 "bfa0e149fbdf7697825e30d2a35812a40d523d931275fda01b409653571239a4"
               ],
-              "checked_at": "2026-10-25T14:39:50.186007200+00:00"
+              "checked_at": "2026-10-25T17:57:15.382995900+00:00"
             },
             "version": "2.7.32.0",
             "version_packed": 562980020289536,
@@ -12003,7 +12003,7 @@
                 "4b475e22b9b4a5bc13172f70d4384152ea97731fc3740e41f258c0db27004879",
                 "47bb6f675f6d79e20f7fc05ce716184c56782f2e1d7829fd8fb3f1f5e07455bd"
               ],
-              "checked_at": "2026-10-25T14:39:41.313503400+00:00"
+              "checked_at": "2026-10-25T17:57:10.935260700+00:00"
             },
             "version": "2.8.0.0",
             "version_packed": 562984313159680,
@@ -12064,7 +12064,7 @@
                 "5267d13301c021676089cc9ccc4ff364fda37a160521f039edbad931ac18749d",
                 "fb6d6aee52624888a7976e7de1139bdee1c9f342ad8382aed13e95a75e1aafb7"
               ],
-              "checked_at": "2026-10-25T14:39:34.007161400+00:00"
+              "checked_at": "2026-10-25T17:57:06.351510200+00:00"
             },
             "version": "2.9.0.0",
             "version_packed": 562988608126976,
@@ -12125,7 +12125,7 @@
                 "590f8de2c854944aa1f0b00e7a7a8b25d34c5940717d44c26b6a075c6a4880b2",
                 "51c56067a6764ae58db48691f66e66477e8cc3ef0e7f5507435b28e352fc8b87"
               ],
-              "checked_at": "2026-10-25T14:39:29.242830300+00:00"
+              "checked_at": "2026-10-25T17:57:03.236536800+00:00"
             },
             "version": "2.10.0.0",
             "version_packed": 562992903094272,
@@ -12186,7 +12186,7 @@
                 "73bd4e7bdb9851b7a278d0ce0e552c7fe298d2f26dd497fd5bfeca2a1cf5f3bc",
                 "66946de15fb3810c6e3400cd6654992be5b7477299d764e183f5bf301720c0ab"
               ],
-              "checked_at": "2026-10-25T14:39:21.488370+00:00"
+              "checked_at": "2026-10-25T17:56:59.046683400+00:00"
             },
             "version": "2.10.3.0",
             "version_packed": 562992903290880,
@@ -12247,7 +12247,7 @@
                 "e0b32e491384d0a9f50c1c9d66e653e1293683e3a105e9de20ff41fd2b9645ef",
                 "7426c7154040fe36a319e0acfc1595ce4ed381e67c91c391bf24677a6bc95d75"
               ],
-              "checked_at": "2026-10-25T14:39:14.162734900+00:00"
+              "checked_at": "2026-10-25T17:56:55.061973100+00:00"
             },
             "version": "2.11.1.0",
             "version_packed": 562997198127104,
@@ -12308,7 +12308,7 @@
                 "fe0e9684e7a7659b49d8dbe6c729eac6611311a8b29bf773b1cece5f8a6373e8",
                 "dbcb9724ce8e86b8f28e9cdb685324ef5b61e7d241786f070b15455b80399563"
               ],
-              "checked_at": "2026-10-25T14:39:06.541919300+00:00"
+              "checked_at": "2026-10-25T17:56:49.924577900+00:00"
             },
             "version": "2.12.0.0",
             "version_packed": 563001493028864,
@@ -12369,7 +12369,7 @@
                 "c760dcaf7cec52c05fdea38d663de3ce922bbfde664e36da04a7b89453abbe2e",
                 "71e6456b2d6f989b66d36a7b9c876904a1eb4fe4bfd3cabc9bdfe15a71e57f07"
               ],
-              "checked_at": "2026-10-25T14:38:58.096535300+00:00"
+              "checked_at": "2026-10-25T17:56:44.967226900+00:00"
             },
             "version": "2.14.1.0",
             "version_packed": 563010083028992,
@@ -12412,7 +12412,7 @@
                 "642dea7ecfd15f986471778c896dc3583f6f9be1d05b7e3815bd53d11d53511c",
                 "f9906ec926f056cacb111c153dbc4ef6b7727dd7370c72ab08dbd5eb577ada4f"
               ],
-              "checked_at": "2026-10-25T14:38:52.417756400+00:00"
+              "checked_at": "2026-10-25T17:56:39.491119500+00:00"
             },
             "version": "2.14.16.0",
             "version_packed": 563010084012032,
@@ -12437,20 +12437,20 @@
   },
   "sources": {
     "anticheat": {
-      "last_attempt": "2026-10-25T14:41:28.013335700+00:00",
-      "last_success": "2026-10-25T14:41:28.013335700+00:00",
+      "last_attempt": "2026-10-25T17:58:34.661508200+00:00",
+      "last_success": "2026-10-25T17:58:34.661508200+00:00",
       "error": null,
       "families": []
     },
     "areweanticheatyet": {
-      "last_attempt": "2026-10-25T14:41:28.012094200+00:00",
-      "last_success": "2026-10-25T14:41:28.012094200+00:00",
+      "last_attempt": "2026-10-25T17:58:34.660147100+00:00",
+      "last_success": "2026-10-25T17:58:34.660147100+00:00",
       "error": null,
       "families": []
     },
     "directstorage": {
-      "last_attempt": "2026-10-25T14:41:27.741155+00:00",
-      "last_success": "2026-10-25T14:41:27.741155+00:00",
+      "last_attempt": "2026-10-25T17:58:34.449657200+00:00",
+      "last_success": "2026-10-25T17:58:34.449657200+00:00",
       "error": null,
       "families": [
         "microsoft/direct_storage",
@@ -12458,8 +12458,8 @@
       ]
     },
     "dlss_swapper": {
-      "last_attempt": "2026-10-25T14:38:45.916432200+00:00",
-      "last_success": "2026-10-25T14:38:45.916432200+00:00",
+      "last_attempt": "2026-10-25T17:56:32.766449200+00:00",
+      "last_success": "2026-10-25T17:56:32.766449200+00:00",
       "error": null,
       "families": [
         "nvidia/dlss_sr",
@@ -12474,8 +12474,8 @@
       ]
     },
     "fsr": {
-      "last_attempt": "2026-10-25T14:41:26.181303+00:00",
-      "last_success": "2026-10-25T14:41:26.181303+00:00",
+      "last_attempt": "2026-10-25T17:58:29.370865600+00:00",
+      "last_success": "2026-10-25T17:58:29.370865600+00:00",
       "error": null,
       "families": [
         "amd/fsr_denoiser",
@@ -12486,14 +12486,14 @@
       ]
     },
     "pcgamingwiki": {
-      "last_attempt": "2026-10-25T14:41:28.012030300+00:00",
+      "last_attempt": "2026-10-25T17:58:34.660084200+00:00",
       "last_success": null,
       "error": "PCGW anticheat query: PCGamingWiki permissiondenied: You don't have permission to run arbitrary Cargo queries.",
       "families": []
     },
     "streamline": {
-      "last_attempt": "2026-10-25T14:39:50.192654300+00:00",
-      "last_success": "2026-10-25T14:39:50.192654300+00:00",
+      "last_attempt": "2026-10-25T17:57:15.389893600+00:00",
+      "last_success": "2026-10-25T17:57:15.389893600+00:00",
       "error": null,
       "families": [
         "nvidia/reflex",
@@ -12508,8 +12508,8 @@
       ]
     },
     "xess": {
-      "last_attempt": "2026-10-25T14:40:52.388507+00:00",
-      "last_success": "2026-10-25T14:40:52.388507+00:00",
+      "last_attempt": "2026-10-25T17:57:59.935248+00:00",
+      "last_success": "2026-10-25T17:57:59.935248+00:00",
       "error": null,
       "families": [
         "intel/xell",
